@@ -1,0 +1,65 @@
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.57ae4846.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.12a8c386.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.aed8a0b4.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.79821eaa.svg) format("svg");
+  font-weight:700;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.9aaece45.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.5042fa22.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.11a0fbbc.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.15edf12a.svg) format("svg");
+  font-weight:400;
+  font-style:italic;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.2f3c6578.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.b98aa5ee.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.5877d380.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.6f82d0d3.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Harman Retro;
+  src:url(https://internetingishard.netlify.app/Harman-Retro-webfont.cf231d3b.eot);
+  src:url(https://internetingishard.netlify.app/Harman-Retro-webfont.cf231d3b.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.46246e6e.woff2) format("woff2"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.f4cfa8ac.woff) format("woff"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.51471392.ttf) format("truetype"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.959b79bc.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Harman Simple;
+  src:url(https://internetingishard.netlify.app/Harman-Simple-webfont.66675f5c.eot);
+  src:url(https://internetingishard.netlify.app/Harman-Simple-webfont.66675f5c.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.1478a69a.woff2) format("woff2"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.ce530aec.woff) format("woff"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.90894152.ttf) format("truetype"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.1946f8f0.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Harman Retro;
+  src:url(https://internetingishard.netlify.app/Harman-Retro-webfont.cf231d3b.eot);
+  src:url(https://internetingishard.netlify.app/Harman-Retro-webfont.cf231d3b.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.46246e6e.woff2) format("woff2"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.f4cfa8ac.woff) format("woff"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.51471392.ttf) format("truetype"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.959b79bc.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+}  
+
+body { 
+    font-size: 17px; 
+    line-height: 1.6em; 
+    font-family: Century; 
+    color: #5d6063; 
+    background-color: #fff; 
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-font-smoothing: antialiased; 
+    min-width: 320px; 
+    position: relative; 
+    z-index: 1;
+} 
+
+   
+h1 { 
+    font-family: Harman Retro; 
+    font-weight: 400; 
+    font-size: 37px; 
+    line-height: 40px; 
+    text-transform: lowercase;
+} 
+

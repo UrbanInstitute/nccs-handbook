@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NCCS Research Guide",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "sector-overview.html",
+    "href": "sector-overview.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2\n\n\n\ndat$hour12 &lt;- format( date.vec, format=\"%l %p\" )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n# set the levels so they are in the correct order\ntime.levels &lt;-\n  c( \"12 AM\", \" 1 AM\", \" 2 AM\", \" 3 AM\", \" 4 AM\", \" 5 AM\", \n     \" 6 AM\", \" 7 AM\", \" 8 AM\", \" 9 AM\", \"10 AM\", \"11 AM\", \n     \"12 PM\", \" 1 PM\", \" 2 PM\", \" 3 PM\", \" 4 PM\", \" 5 PM\", \n     \" 6 PM\", \" 7 PM\", \" 8 PM\", \" 9 PM\", \"10 PM\", \"11 PM\" )\n\ndat$hour12 &lt;- factor( dat$hour12, levels=time.levels )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n\nqplot( data=d3, x=as.numeric(as.character(hour)), y=harm ) + \n  geom_line( color=\"steelblue\", size=0.8 ) + \n  geom_point( color=\"darkblue\", size=3 ) + \n  geom_hline( yintercept=mean.harm, color=\"black\" ) + \n  facet_wrap( ~ age, ncol=4 ) + \n  xlab(\"Time of Day (24hrs)\") + ylab(\"Rate of Harm\") +\n  ggtitle(\"Proportion of Accidents Resulting in Harm\") +\n  # theme_fivethirtyeight() \n  theme_wsj( base_size=10, color=\"gray\" )"
+  },
+  {
+    "objectID": "standard-01.html",
+    "href": "standard-01.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2\n\n\n\ndat$hour12 &lt;- format( date.vec, format=\"%l %p\" )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n# set the levels so they are in the correct order\ntime.levels &lt;-\n  c( \"12 AM\", \" 1 AM\", \" 2 AM\", \" 3 AM\", \" 4 AM\", \" 5 AM\", \n     \" 6 AM\", \" 7 AM\", \" 8 AM\", \" 9 AM\", \"10 AM\", \"11 AM\", \n     \"12 PM\", \" 1 PM\", \" 2 PM\", \" 3 PM\", \" 4 PM\", \" 5 PM\", \n     \" 6 PM\", \" 7 PM\", \" 8 PM\", \" 9 PM\", \"10 PM\", \"11 PM\" )\n\ndat$hour12 &lt;- factor( dat$hour12, levels=time.levels )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n\nqplot( data=d3, x=as.numeric(as.character(hour)), y=harm ) + \n  geom_line( color=\"steelblue\", size=0.8 ) + \n  geom_point( color=\"darkblue\", size=3 ) + \n  geom_hline( yintercept=mean.harm, color=\"black\" ) + \n  facet_wrap( ~ age, ncol=4 ) + \n  xlab(\"Time of Day (24hrs)\") + ylab(\"Rate of Harm\") +\n  ggtitle(\"Proportion of Accidents Resulting in Harm\") +\n  # theme_fivethirtyeight() \n  theme_wsj( base_size=10, color=\"gray\" )"
+  },
+  {
+    "objectID": "standard-02.html",
+    "href": "standard-02.html",
+    "title": "4  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2\n\n\n\ndat$hour12 &lt;- format( date.vec, format=\"%l %p\" )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n# set the levels so they are in the correct order\ntime.levels &lt;-\n  c( \"12 AM\", \" 1 AM\", \" 2 AM\", \" 3 AM\", \" 4 AM\", \" 5 AM\", \n     \" 6 AM\", \" 7 AM\", \" 8 AM\", \" 9 AM\", \"10 AM\", \"11 AM\", \n     \"12 PM\", \" 1 PM\", \" 2 PM\", \" 3 PM\", \" 4 PM\", \" 5 PM\", \n     \" 6 PM\", \" 7 PM\", \" 8 PM\", \" 9 PM\", \"10 PM\", \"11 PM\" )\n\ndat$hour12 &lt;- factor( dat$hour12, levels=time.levels )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n\nqplot( data=d3, x=as.numeric(as.character(hour)), y=harm ) + \n  geom_line( color=\"steelblue\", size=0.8 ) + \n  geom_point( color=\"darkblue\", size=3 ) + \n  geom_hline( yintercept=mean.harm, color=\"black\" ) + \n  facet_wrap( ~ age, ncol=4 ) + \n  xlab(\"Time of Day (24hrs)\") + ylab(\"Rate of Harm\") +\n  ggtitle(\"Proportion of Accidents Resulting in Harm\") +\n  # theme_fivethirtyeight() \n  theme_wsj( base_size=10, color=\"gray\" )"
+  },
+  {
+    "objectID": "standard-03.html",
+    "href": "standard-03.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2\n\n\n\ndat$hour12 &lt;- format( date.vec, format=\"%l %p\" )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n# set the levels so they are in the correct order\ntime.levels &lt;-\n  c( \"12 AM\", \" 1 AM\", \" 2 AM\", \" 3 AM\", \" 4 AM\", \" 5 AM\", \n     \" 6 AM\", \" 7 AM\", \" 8 AM\", \" 9 AM\", \"10 AM\", \"11 AM\", \n     \"12 PM\", \" 1 PM\", \" 2 PM\", \" 3 PM\", \" 4 PM\", \" 5 PM\", \n     \" 6 PM\", \" 7 PM\", \" 8 PM\", \" 9 PM\", \"10 PM\", \"11 PM\" )\n\ndat$hour12 &lt;- factor( dat$hour12, levels=time.levels )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n\nqplot( data=d3, x=as.numeric(as.character(hour)), y=harm ) + \n  geom_line( color=\"steelblue\", size=0.8 ) + \n  geom_point( color=\"darkblue\", size=3 ) + \n  geom_hline( yintercept=mean.harm, color=\"black\" ) + \n  facet_wrap( ~ age, ncol=4 ) + \n  xlab(\"Time of Day (24hrs)\") + ylab(\"Rate of Harm\") +\n  ggtitle(\"Proportion of Accidents Resulting in Harm\") +\n  # theme_fivethirtyeight() \n  theme_wsj( base_size=10, color=\"gray\" )"
+  },
+  {
+    "objectID": "standard-04.html",
+    "href": "standard-04.html",
+    "title": "6  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2\n\n\n\ndat$hour12 &lt;- format( date.vec, format=\"%l %p\" )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n# set the levels so they are in the correct order\ntime.levels &lt;-\n  c( \"12 AM\", \" 1 AM\", \" 2 AM\", \" 3 AM\", \" 4 AM\", \" 5 AM\", \n     \" 6 AM\", \" 7 AM\", \" 8 AM\", \" 9 AM\", \"10 AM\", \"11 AM\", \n     \"12 PM\", \" 1 PM\", \" 2 PM\", \" 3 PM\", \" 4 PM\", \" 5 PM\", \n     \" 6 PM\", \" 7 PM\", \" 8 PM\", \" 9 PM\", \"10 PM\", \"11 PM\" )\n\ndat$hour12 &lt;- factor( dat$hour12, levels=time.levels )\ntable( dat$hour12 ) %&gt;% head() %&gt;% pander()\n\n\nqplot( data=d3, x=as.numeric(as.character(hour)), y=harm ) + \n  geom_line( color=\"steelblue\", size=0.8 ) + \n  geom_point( color=\"darkblue\", size=3 ) + \n  geom_hline( yintercept=mean.harm, color=\"black\" ) + \n  facet_wrap( ~ age, ncol=4 ) + \n  xlab(\"Time of Day (24hrs)\") + ylab(\"Rate of Harm\") +\n  ggtitle(\"Proportion of Accidents Resulting in Harm\") +\n  # theme_fivethirtyeight() \n  theme_wsj( base_size=10, color=\"gray\" )"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]

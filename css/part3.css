@@ -1,0 +1,291 @@
+<div class="content__wrapper content__wrapper--tall snipcss-e5JfD">
+  <div class="subheading">
+    <h2 class="subheading__heading">
+      <span id="style-HOMst" class="style-HOMst">
+        Modern Techniques
+      </span>
+    </h2>
+  </div>
+  <div class="list-and-text">
+    <div class="list-and-text__list">
+      <ul>
+        <li>
+          <a href="/html-and-css/flexbox/">
+            Flexbox
+          </a>
+        </li>
+        <li>
+          <a href="/html-and-css/responsive-design/">
+            Responsive Design
+          </a>
+        </li>
+        <li>
+          <a href="/html-and-css/responsive-images/">
+            Responsive Images
+          </a>
+        </li>
+        <li>
+          <a href="/html-and-css/semantic-html/">
+            Semantic HTML
+          </a>
+        </li>
+        <li>
+          <a href="/html-and-css/web-typography/">
+            Web Typography
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="list-and-text__text content__between">
+      <p>
+        Our HTML &amp; CSS tutorial covers modern techniques that are now considered best practices amongst professional web developers. 
+      </p>
+      <p>
+        Whether you’re a complete beginner or a full-time web developer who just wants to brush up on the state of the industry, these chapters are for you. 
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.57ae4846.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.12a8c386.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.aed8a0b4.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.79821eaa.svg) format("svg");
+  font-weight:700;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.9aaece45.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.5042fa22.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.11a0fbbc.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.15edf12a.svg) format("svg");
+  font-weight:400;
+  font-style:italic;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.2f3c6578.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.b98aa5ee.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.5877d380.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.6f82d0d3.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Harman Retro;
+  src:url(https://internetingishard.netlify.app/Harman-Retro-webfont.cf231d3b.eot);
+  src:url(https://internetingishard.netlify.app/Harman-Retro-webfont.cf231d3b.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.46246e6e.woff2) format("woff2"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.f4cfa8ac.woff) format("woff"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.51471392.ttf) format("truetype"),url(https://internetingishard.netlify.app/Harman-Retro-webfont.959b79bc.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Harman Simple;
+  src:url(https://internetingishard.netlify.app/Harman-Simple-webfont.66675f5c.eot);
+  src:url(https://internetingishard.netlify.app/Harman-Simple-webfont.66675f5c.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.1478a69a.woff2) format("woff2"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.ce530aec.woff) format("woff"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.90894152.ttf) format("truetype"),url(https://internetingishard.netlify.app/Harman-Simple-webfont.1946f8f0.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+  body {  
+    background:linear-gradient(0deg,#f9fafb 0,#fff);
+    font-size:17px;
+    line-height:1.6em;
+    font-family:Century;
+    color:#5d6063;
+  }  
+@media only screen and (min-width: 750px){     
+  body {  
+    font-size:18px;
+    line-height:28px;
+  }  
+}  
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+body { 
+    font-size: 17px; 
+    line-height: 1.6em; 
+    font-family: Century; 
+    color: #5d6063; 
+    background-color: #fff; 
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-font-smoothing: antialiased; 
+    min-width: 320px; 
+    position: relative; 
+    z-index: 1;
+} 
+
+@media only screen and (min-width: 750px){ 
+  body { 
+    font-size: 18px; 
+    line-height: 28px;
+  } 
+}     
+
+.content__wrapper { 
+    max-width: 580px; 
+    margin-left: auto; 
+    margin-right: auto;
+} 
+
+@media only screen and (min-width: 750px){ 
+  .content__wrapper { 
+    padding-top: 80px; 
+    padding-bottom: 80px;
+  } 
+
+  .content__wrapper--tall { 
+    padding-top: 102px; 
+    padding-bottom: 98px;
+  } 
+}     
+
+.subheading { 
+    text-align: center;
+} 
+
+.content__wrapper > *  { 
+    margin-bottom: 26px;
+} 
+
+@media only screen and (min-width: 750px){ 
+  .content__wrapper > *  { 
+    margin-bottom: 28px;
+  } 
+
+  .content__wrapper > .subheading  { 
+    margin-bottom: 18px;
+  } 
+}     
+
+@media only screen and (min-width: 500px){ 
+  .list-and-text { 
+    display: -webkit-box; 
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-align: start; 
+    -webkit-align-items: flex-start; 
+    -ms-flex-align: start; 
+    align-items: flex-start;
+  } 
+}     
+
+.content__wrapper > :last-child  { 
+    margin-bottom: 0;
+} 
+
+h2 { 
+    font-weight: 400;
+} 
+
+.subheading__heading { 
+    font-family: Harman Retro; 
+    font-size: 31px; 
+    line-height: 41px; 
+    text-transform: lowercase; 
+    display: inline;
+} 
+
+@media only screen and (min-width: 750px){ 
+  .subheading__heading { 
+    font-size: 32px; 
+    line-height: 42px; 
+    padding-top: 118px;
+  } 
+}     
+
+.subheading__heading:after { 
+    content: ""; 
+    border-top: 1px solid #959ba0; 
+    height: 1px; 
+    width: 100%; 
+    display: block; 
+    position: relative; 
+    top: -21px; 
+    z-index: -1;
+} 
+
+@media only screen and (min-width: 750px){ 
+  .subheading__heading:after { 
+    left: -18px; 
+    padding-right: 36px;
+  } 
+}     
+
+@media only screen and (min-width: 500px){ 
+  .list-and-text__list { 
+    -webkit-box-flex: 1; 
+    -webkit-flex: 1; 
+    -ms-flex: 1; 
+    flex: 1; 
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 9px; 
+    padding-right: 26px;
+  } 
+
+  .list-and-text__text { 
+    -webkit-box-flex: 2.7; 
+    -webkit-flex: 2.7; 
+    -ms-flex: 2.7; 
+    flex: 2.7; 
+    padding-top: 9px; 
+    padding-bottom: 9px; 
+    padding-left: 26px; 
+    border-left: 1px solid #eaedf0;
+  } 
+}     
+
+.subheading__heading span  { 
+    background-color: #fff; 
+    box-shadow: 11px 0 0 #fff,-13px 0 0 #fff; 
+    -webkit-box-decoration-break: clone; 
+    box-decoration-break: clone;
+} 
+
+.list-and-text ul  { 
+    list-style-type: none; 
+    font-family: Harman Simple;
+} 
+
+.content__between > *  { 
+    margin-bottom: 26px;
+} 
+
+@media only screen and (min-width: 750px){ 
+  .content__between > *  { 
+    margin-bottom: 28px;
+  } 
+}     
+
+.content__between > :last-child  { 
+    margin-bottom: 0;
+} 
+
+a:link { 
+    color: #5995da; 
+    text-decoration: none;
+} 
+
+a:hover { 
+    color: #76aeed; 
+    border-bottom: 1px solid #76aeed;
+} 
+
+a:visited { 
+    color: #407fc7;
+} 
+
+a:hover,a:visited:hover { 
+    color: #76aeed; 
+    border-bottom: 1px solid #76aeed;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-HOMst.style-HOMst {  
+   background-color: rgb(251, 252, 252);  
+    box-shadow: rgb(251, 252, 252) 11px 0px 0px, rgb(251, 252, 252) -13px 0px 0px;  
+}  

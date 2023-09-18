@@ -1,0 +1,92 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "NCCS Research Guide"
+  output-file: "research-guide"
+  author:   
+  - Jesse Lecy   
+  - Hannah Martin
+  date: last-modified
+  sidebar: 
+    background: "#F5F5F5"
+    logo: img/urban-logo-v6.png
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - sector-overview.qmd
+    - standard-01.qmd
+    - standard-02.qmd
+    - standard-03.qmd
+    - standard-04.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: lux
+    highlight-style: solarized
+    css: style.css
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
+# SYNTAX HIGHLIGHTING
+# https://kate-editor.org/themes/
+# https://www.garrickadenbuie.com/blog/pandoc-syntax-highlighting-examples/
+# https://hbiostat.org/rflow/rformat.html
+
+
+
+# TOP CHOICE
+#
+# highlight-style: solarized
+# div.sourceCode {
+#     background-color: #f5f2eb;  /* same as sidebar #F5F5F5 */
+#     border: 1px solid #ececec;  /* yellow #fff2cf */
+#     border-radius: .25rem;
+# }
+
+
+#  atom-one
+
+# highlight-style: zenburn
+# div.sourceCode {
+#     background-color: #353535;
+#     border: 1px solid #ececec;
+#     border-radius: .25rem;
+# }
+
+# highlight-style: solarized
+# div.sourceCode {
+#    background-color: #fff2cf;
+#    border: 1px solid #ececec;
+#    border-radius: .25rem;
+# }
+
+# a11y
+# arrow
+# atom-one
+# ayu
+# breeze
+# github
+# gruvbox
+# pygments
+# tango
+# espresso
+# zenburn
+# kate
+# monochrome
+# breezedark
+# haddock
+# dracula
+# monokai
+# nord
+# oblivion
+# printing
+# radical
+# solarized
+# vim-dark

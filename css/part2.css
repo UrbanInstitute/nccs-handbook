@@ -1,0 +1,164 @@
+<div class="content__wrapper content__wrapper--first snipcss-ffgSL">
+  <p>
+    Learning HTML and CSS is hard, but it doesn’t have to be. This 14-chapter tutorial is one of the friendliest HTML and CSS guides on the Internet. We’ll walk you through everything from selecting a good text editor (which is surprisingly important) to building full-fledged, professional-quality web pages from scratch. 
+  </p>
+  <figure class="diagram">
+    <div class="diagram__wrapper" style="max-width:352px">
+      <div class="diagram__padding" style="padding-bottom:42.61363636363637%">
+        <img class="diagram__image medium-zoom-image" alt="Diagram: a person creating web pages" src="https://internetingishard.netlify.app/becoming-a-web-developer-0530f1.3b5388b5.png" width="352" height="150">
+      </div>
+    </div>
+  </figure>
+  <p>
+    We designed 
+    <a href="/html-and-css/">
+      <em>
+        HTML &amp; CSS Is Hard
+      </em>
+    </a>
+    to be the only introduction to HTML and CSS that you’ll ever need. If you put in the effort to read every section and write every code snippet, this tutorial has the potential to replace hundreds or even thousand of dollars worth of online courses and live training. 
+  </p>
+  <p>
+    Our goal is to make it as easy as possible for complete beginners to become professional web developers, so if you’ve never written a line of HTML or CSS, but you’re contemplating a career shift, grab a cup of coffee, take a seat, and let’s get to work. 
+  </p>
+</div>
+
+
+
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.57ae4846.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.12a8c386.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.aed8a0b4.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.79821eaa.svg) format("svg");
+  font-weight:700;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.9aaece45.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.5042fa22.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.11a0fbbc.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.15edf12a.svg) format("svg");
+  font-weight:400;
+  font-style:italic;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.2f3c6578.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.b98aa5ee.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.5877d380.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.6f82d0d3.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+  body {  
+    background:linear-gradient(0deg,#f9fafb 0,#fff);
+    font-size:17px;
+    line-height:1.6em;
+    font-family:Century;
+    color:#5d6063;
+  }  
+@media only screen and (min-width: 750px){     
+  body {  
+    font-size:18px;
+    line-height:28px;
+  }  
+}  
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+body { 
+    font-size: 17px; 
+    line-height: 1.6em; 
+    font-family: Century; 
+    color: #5d6063; 
+    background-color: #fff; 
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-font-smoothing: antialiased; 
+    min-width: 320px; 
+    position: relative; 
+    z-index: 1;
+} 
+
+@media only screen and (min-width: 750px){ 
+  body { 
+    font-size: 18px; 
+    line-height: 28px;
+  } 
+}     
+
+.content__wrapper { 
+    max-width: 580px; 
+    margin-left: auto; 
+    margin-right: auto;
+} 
+
+@media only screen and (min-width: 750px){ 
+  .content__wrapper { 
+    padding-top: 80px; 
+    padding-bottom: 80px;
+  } 
+
+  .content__wrapper--first { 
+    padding-top: 42px;
+  } 
+}     
+
+.content__wrapper > *  { 
+    margin-bottom: 26px;
+} 
+
+@media only screen and (min-width: 750px){ 
+  .content__wrapper > *  { 
+    margin-bottom: 28px;
+  } 
+}     
+
+figure { 
+    display: block;
+} 
+
+.content__wrapper > .diagram ,.content__wrapper > figure  { 
+    width: 100%;
+} 
+
+.content__wrapper > .diagram ,.content__wrapper > figure  { 
+    margin-top: -14px; 
+    margin-bottom: 13px;
+} 
+
+.content__wrapper > :last-child  { 
+    margin-bottom: 0;
+} 
+
+.diagram__wrapper { 
+    margin: 0 auto;
+} 
+
+a:visited { 
+    color: #407fc7;
+} 
+
+a:hover,a:visited:hover { 
+    color: #76aeed; 
+    border-bottom: 1px solid #76aeed;
+} 
+
+.diagram__padding { 
+    position: relative; 
+    width: 100%; 
+    height: 0;
+} 
+
+.diagram__image { 
+    width: 100%; 
+    height: auto; 
+    position: absolute;
+} 
+
+.medium-zoom-image { 
+    cursor: pointer; 
+    cursor: zoom-in; 
+    transition: transform .3s cubic-bezier(.2,0,.2,1)!important;
+} 
+
+
+

@@ -1,0 +1,110 @@
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.f90149b3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.57ae4846.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.12a8c386.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.aed8a0b4.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Bold-webfont.79821eaa.svg) format("svg");
+  font-weight:700;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.525e13e3.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.9aaece45.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.5042fa22.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.11a0fbbc.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Italic-webfont.15edf12a.svg) format("svg");
+  font-weight:400;
+  font-style:italic;
+} 
+@font-face { 
+  font-family:Century;
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot);
+  src:url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.69f3d138.eot?) format("embedded-opentype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.2f3c6578.woff2) format("woff2"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.b98aa5ee.woff) format("woff"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.5877d380.ttf) format("truetype"),url(https://internetingishard.netlify.app/CenturySchoolbook-Regular-webfont.6f82d0d3.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+} 
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+@import url('https://fonts.googleapis.com/css?family=Bevan');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.cdnfonts.com/css/bauhaus-modern');
+@import url('https://fonts.cdnfonts.com/css/ofexer');
+@import url('https://fonts.cdnfonts.com/css/cooper-std');
+
+/* color: #5d6063;  */
+
+body {  
+    background-color: #fff; 
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-font-smoothing: antialiased; 
+    position: relative; 
+    z-index: 1;
+} 
+
+p { 
+    font-size: 17px; 
+    line-height: 1.6em; 
+    font-family: Century; 
+    color: #696969; 
+} 
+
+
+/*    font-family: Jura, Arial, sans-serif; 
+    font-weight: 400; 
+    font-size: 37px; 
+    line-height: 50px;  */
+   
+h1, h1.title, h1.data-number { 
+    /* font-family: "Gravitas One"; */
+    /* font-family: 'Bauhaus Modern', sans-serif; */
+    /* font-family: 'ofexer', sans-serif; */
+    font-family: 'Cooper Std', sans-serif;
+    font-size: 40px; font-style: 
+    normal; font-variant: 
+    normal; font-weight: 900;
+    line-height: 50px;
+    text-transform: none;
+    color:   #0a4c6a;
+} 
+
+h1.data-number { 
+    color:  #0a4c6a;  /* #353535 */
+}
+
+h2, h3, h4, .header-section-number {
+    color: #0a4c6a; /* #12719e*/
+    font-family: 'Cooper Std', sans-serif;
+    normal; font-weight: 900;
+}
+
+/*
+# custom syntax color
+# background-color: #565656;
+# color: #fff2cf;
+*/
+
+div.sourceCode {
+    background-color: #f5f2eb;;  /* same as sidebar #F5F5F5 */
+    border: 1px solid #ececec;  /* yellow #fff2cf */
+    border-radius: .25rem;
+}
+
+tbody {
+  font-size: 0.85em;
+}
+
+pre {
+    margin-bottom: 40px;
+    line-height: 1.0em;
+}
+
+code {
+    line-height: 1.0em;
+}
+
+
+div.sidebar-item-container .active, 
+div.sidebar-item-container .show > .nav-link, 
+div.sidebar-item-container .sidebar-link > code {
+    color: #12719e;
+    font-weight: bold;
+}
