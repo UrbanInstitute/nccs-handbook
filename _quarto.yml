@@ -10,8 +10,8 @@ book:
   - Hannah Martin
   date: last-modified
   sidebar: 
-    background: "#F5F5F5"
-    logo: img/urban-logo-v6.png
+    background: "#1273A1"  
+    logo: img/logo-white.png
   chapters:
     - index.qmd
     - intro.qmd
@@ -20,6 +20,7 @@ book:
     - standard-02.qmd
     - standard-03.qmd
     - standard-04.qmd
+    - standard-10.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -39,6 +40,9 @@ editor: visual
 # https://www.garrickadenbuie.com/blog/pandoc-syntax-highlighting-examples/
 # https://hbiostat.org/rflow/rformat.html
 
+  # sidebar: 
+  #   background: "#F5F5F5"
+  #   logo: img/urban-logo-v6.png
 
 
 # TOP CHOICE

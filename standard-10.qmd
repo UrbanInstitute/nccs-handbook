@@ -1,7 +1,4 @@
----
-title: "Foundation Taxonomy"
-bibliography: references.bib
----
+# Foundations, Trusts, and Grant-Making Organizations
 
 This chapter covers foundation types. It explains two variables: FNDNCD (reason for 501(c)(3) status) and FRCD (filing requirement code).
 
@@ -11,7 +8,7 @@ To qualify as a 501(c)(3) private foundation, a foundation must exist to advance
 
 -   Charitable, which includes:
 
-    -   \"Relief of the poor, the distressed, or the underprivileged;
+    -   "Relief of the poor, the distressed, or the underprivileged;
 
     -   Advancement of religion;
 
@@ -27,7 +24,7 @@ To qualify as a 501(c)(3) private foundation, a foundation must exist to advance
 
     -   Defending human and civil rights secured by law; and
 
-    -   Combating community deterioration and juvenile delinquency.\"
+    -   Combating community deterioration and juvenile delinquency."
 
 -   Religious
 
@@ -41,9 +38,9 @@ To qualify as a 501(c)(3) private foundation, a foundation must exist to advance
 
 -   Fostering national or international amateur sports competition
 
--   Prevention of cruelty to children or animals[^1]
+-   Prevention of cruelty to children or animals[^standard-10-1]
 
-[^1]: [@irs-exempt-purposes]
+[^standard-10-1]: [@irs-exempt-purposes]
 
 501(c)(3) foundations indicate which exempt purpose(s) they advance when they file Form 1023 or 1023-EZ to apply for recognition of exemption from federal income tax (aka "tax-exempt status") [@irs-2014b; @irs-2020a].
 
@@ -85,37 +82,37 @@ To qualify as a 501(c)(3) public charity, rather than a 501(c)(3) private founda
 
     -   Type III non-functionally integrated -- those operated in connection with the supported organization(s) that are not functionally integrated [@irs-2022f]
 
-501(c)(3) organizations indicate whether they are a public charity or a private foundation when they file Form 1023 or 1023-EZ, and if they are a public charity, they must select the reason they are not a private foundation [@irs-2014b; @irs-2020a]. 501(c)(3) public charities also select the reason they are not a private foundation when they file Schedule A (Form 990) every year [@irs-2022f]. Private foundations that later want to be reclassified as public charities must terminate their private foundation status and apply for public charity status.[^2]
+501(c)(3) organizations indicate whether they are a public charity or a private foundation when they file Form 1023 or 1023-EZ, and if they are a public charity, they must select the reason they are not a private foundation [@irs-2014b; @irs-2020a]. 501(c)(3) public charities also select the reason they are not a private foundation when they file Schedule A (Form 990) every year [@irs-2022f]. Private foundations that later want to be reclassified as public charities must terminate their private foundation status and apply for public charity status.[^standard-10-2]
 
-[^2]: [@irs-instructions-8940]
+[^standard-10-2]: [@irs-instructions-8940]
 
-Most 501(c)(3) foundations that qualify for public charity status must file an annual Form 990-N, 990-EZ, or 990.[^3]
+Most 501(c)(3) foundations that qualify for public charity status must file an annual Form 990-N, 990-EZ, or 990.[^standard-10-3]
 
-[^3]: [@irs-who-must-file]
+[^standard-10-3]: [@irs-who-must-file]
 
 ### Private foundations
 
 The IRS distinguishes between 3 types of 501(c)(3) private foundations:
 
-1.  **Private operating foundations** use most of their resources to actively conduct their exempt activities.[^4]
-2.  **Exempt operating foundations** are private operating foundations that have been publicly supported for at least 10 years, have governing bodies with less than 25% disqualified individuals and that broadly represent the general public, and have no disqualified individuals as officers.[^5] "Disqualified individuals" in this case refers to substantial contributors to the foundation; owners of more than 20% of the total combined voting power of a corporation, the profits interest of a partnership, or the beneficial interest of a trust or unincorporated enterprise (if these entities are substantial contributors to the foundation); and family members of any individuals previously described.[^6]
-3.  **Grant-making (private nonoperating) foundations** are all other private foundations.[^7]
+1.  **Private operating foundations** use most of their resources to actively conduct their exempt activities.[^standard-10-4]
+2.  **Exempt operating foundations** are private operating foundations that have been publicly supported for at least 10 years, have governing bodies with less than 25% disqualified individuals and that broadly represent the general public, and have no disqualified individuals as officers.[^standard-10-5] "Disqualified individuals" in this case refers to substantial contributors to the foundation; owners of more than 20% of the total combined voting power of a corporation, the profits interest of a partnership, or the beneficial interest of a trust or unincorporated enterprise (if these entities are substantial contributors to the foundation); and family members of any individuals previously described.[^standard-10-6]
+3.  **Grant-making (private nonoperating) foundations** are all other private foundations.[^standard-10-7]
 
-[^4]: [@irs-private-op]
+[^standard-10-4]: [@irs-private-op]
 
-[^5]: [@irs-exempt-op]
+[^standard-10-5]: [@irs-exempt-op]
 
-[^6]: [@irs-disqualified]
+[^standard-10-6]: [@irs-disqualified]
 
-[^7]: [@irs-grantmaking]
+[^standard-10-7]: [@irs-grantmaking]
 
-501(c)(3) private foundations indicate whether they are a private operating foundation when they file Form 1023 [@irs-2020a]. This option is not available to Form 1023-EZ filers [@irs-2014b]. Later, private operating foundations that want recognition of exempt private operating foundation status must file Form 8940, Request for Miscellaneous Determination, to obtain a determination letter.[^8]
+501(c)(3) private foundations indicate whether they are a private operating foundation when they file Form 1023 [@irs-2020a]. This option is not available to Form 1023-EZ filers [@irs-2014b]. Later, private operating foundations that want recognition of exempt private operating foundation status must file Form 8940, Request for Miscellaneous Determination, to obtain a determination letter.[^standard-10-8]
 
-[^8]: [@irs-def-of-exempt-op]
+[^standard-10-8]: [@irs-def-of-exempt-op]
 
-Private foundations must file an annual Form 990-PF.[^9]
+Private foundations must file an annual Form 990-PF.[^standard-10-9]
 
-[^9]: [@irs-990pf-instructions]
+[^standard-10-9]: [@irs-990pf-instructions]
 
 ### Advantages of private operating foundations and exempt operating foundations over grant-making (private nonoperating) foundations
 
@@ -123,16 +120,16 @@ Private operating foundations have the following advantages over grant-making (p
 
 -   They are exempt from the excise tax on failure to distribute income.
 -   Donors can deduct contributions to these foundations to the extent of 50% of their adjusted gross income, instead of 30%.
--   Private foundations can make qualifying distributions to them, as long as they are not controlled by said private foundation.[^10]
+-   Private foundations can make qualifying distributions to them, as long as they are not controlled by said private foundation.[^standard-10-10]
 
-[^10]: [@irs-private-op]
+[^standard-10-10]: [@irs-private-op]
 
 In addition, *exempt* operating foundations have the following advantages over grant-making (private nonoperating) foundations:
 
 -   They are exempt from taxes on net investment income.
--   Private foundations can make grants to them without following expenditure responsibility requirements.[^11]
+-   Private foundations can make grants to them without following expenditure responsibility requirements.[^standard-10-11]
 
-[^11]: [@irs-exempt-op]
+[^standard-10-11]: [@irs-exempt-op]
 
 ### Advantages of public charities over private foundations
 
@@ -148,42 +145,42 @@ The IRS imposes several taxes, restrictions, and requirements on private foundat
 
 -   Private foundations must pay excise taxes on jeopardizing investments (i.e., those that jeopardize the carrying out of exempt purposes).
 
--   Private foundations must pay excise taxes on expenditures that do not further exempt purposes, such as lobbying.[^12]
+-   Private foundations must pay excise taxes on expenditures that do not further exempt purposes, such as lobbying.[^standard-10-12]
 
-[^12]: [@irs-private-foundations]
+[^standard-10-12]: [@irs-private-foundations]
 
 ## 4947(a)(1) charitable trusts
 
-A 4947(a)(1) charitable trusts is "a trust that is not tax exempt, all of the unexpired interests of which are devoted to one or more charitable purposes, and for which a charitable contribution deduction was allowed under a specific section of the Internal Revenue Code."[^13]
+A 4947(a)(1) charitable trusts is "a trust that is not tax exempt, all of the unexpired interests of which are devoted to one or more charitable purposes, and for which a charitable contribution deduction was allowed under a specific section of the Internal Revenue Code."[^standard-10-13]
 
-[^13]: [@irs-charitable-trusts]
+[^standard-10-13]: [@irs-charitable-trusts]
 
-The IRS treats them as private foundations unless they meet one of the requirements for being a public charity.[^14]
+The IRS treats them as private foundations unless they meet one of the requirements for being a public charity.[^standard-10-14]
 
-[^14]: [@irs-charitable-trusts]
+[^standard-10-14]: [@irs-charitable-trusts]
 
-4947(a)(1) charitable trusts not treated as private foundations must file an annual Form 990-EZ or 990.[^15] 4947(a)(1) charitable trusts treated as private foundations must file an annual Form 990-PF.[^16]
+4947(a)(1) charitable trusts not treated as private foundations must file an annual Form 990-EZ or 990.[^standard-10-15] 4947(a)(1) charitable trusts treated as private foundations must file an annual Form 990-PF.[^standard-10-16]
 
-[^15]: [@irs-990ez-instructions; @irs-990-instructions]
+[^standard-10-15]: [@irs-990ez-instructions; @irs-990-instructions]
 
-[^16]: [@irs-990pf-instructions]
+[^standard-10-16]: [@irs-990pf-instructions]
 
 ## 4947(a)(2) split-interest charitable trusts
 
-4947(a)(2) split-interest charitable trusts "make distributions to both charitable and noncharitable beneficiaries, while providing tax benefits to their donor."[^17] They are not exempt from federal income tax.[^18]
+4947(a)(2) split-interest charitable trusts "make distributions to both charitable and noncharitable beneficiaries, while providing tax benefits to their donor."[^standard-10-17] They are not exempt from federal income tax.[^standard-10-18]
 
-[^17]: [@irs-split-interest-trust-stats]
+[^standard-10-17]: [@irs-split-interest-trust-stats]
 
-[^18]: [@irs-form-5227]
+[^standard-10-18]: [@irs-form-5227]
 
-4947(a)(2) split-interest charitable trusts must file an annual Form 5227: Split-Interest Trust Information Return.[^19]
+4947(a)(2) split-interest charitable trusts must file an annual Form 5227: Split-Interest Trust Information Return.[^standard-10-19]
 
-[^19]: [@irs-form-5227]
+[^standard-10-19]: [@irs-form-5227]
 
 ## FNDNCD - reason for 501(c)(3) status
 
 | Value | Description                                                                                       | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|---------------|------------------------|-----------------------------|
+|-------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 00    | All organizations except 501(c)(3)                                                                | Organizations that are not 501(c)(3) public charities or private foundations                                                                                                                                                                                                                                                                                                                                                                   |
 | 02    | Private operating foundation exempt from paying excise taxes on investment income                 | 501(c)(3) private foundations: exempt operating foundations                                                                                                                                                                                                                                                                                                                                                                                    |
 | 03    | Private operating foundation (other)                                                              | 501(c)(3) private foundations: private operating foundations                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -205,27 +202,27 @@ The IRS treats them as private foundations unless they meet one of the requireme
 
 ## FRCD - filing requirement code
 
-| Value | Description                                                            | Meaning |
-|-------|------------------------------------------------------------------------|---------|
-| 000   | 990 - Not required to file (all other)                                 |         |
-| 001   | 990PF Required - 990 not required to file (all other)                  |         |
-| 010   | 990 (all other) or 990EZ return                                        |         |
-| 011   | 990PF Required (all other)                                             |         |
-| 020   | 990 - Required to file Form 990-N (Income less than \$25,000 per year) |         |
-| 021   | 990PF Required - 990 Required to file Form 990-N (Income               
-         less than \$25,000 per year)                                            |         |
-| 030   | 990 - Group return                                                     |         |
-| 031   | 990PF Required - Group return                                          |         |
-| 040   | 990 - Required to file Form 990-BL, Black Lung Trusts                  |         |
-| 041   | 990PF Required - 990 Required to file Form 990-BL,                     
-         Black Lung Trusts                                                       |         |
-| 060   | 990 - Not required to file (church)                                    |         |
-| 061   | 990PF Required - Not required to file (church)                         |         |
-| 070   | 990 - Government 501(c)(1)                                             |         |
-| 071   | 990PF Required - Government 501(c)(1)                                  |         |
-| 130   | 990 - Not required to file (religious organization)                    |         |
-| 131   | 990PF Required - Not required to file (religious organization)         |         |
-| 140   | 990 - Not required to file (instrumentalities of                       
-         states or political subdivisions)                                       |         |
-| 141   | 990PF Required - Not required to file                                  
-         (instrumentalities of states or political subdivisions)                 |         |
+| Value                                                   | Description                                                            | Meaning |
+|---------------------------------------------------------|------------------------------------------------------------------------|---------|
+| 000                                                     | 990 - Not required to file (all other)                                 |         |
+| 001                                                     | 990PF Required - 990 not required to file (all other)                  |         |
+| 010                                                     | 990 (all other) or 990EZ return                                        |         |
+| 011                                                     | 990PF Required (all other)                                             |         |
+| 020                                                     | 990 - Required to file Form 990-N (Income less than \$25,000 per year) |         |
+| 021                                                     | 990PF Required - 990 Required to file Form 990-N (Income               |         |
+| less than \$25,000 per year)                            |                                                                        |         |
+| 030                                                     | 990 - Group return                                                     |         |
+| 031                                                     | 990PF Required - Group return                                          |         |
+| 040                                                     | 990 - Required to file Form 990-BL, Black Lung Trusts                  |         |
+| 041                                                     | 990PF Required - 990 Required to file Form 990-BL,                     |         |
+| Black Lung Trusts                                       |                                                                        |         |
+| 060                                                     | 990 - Not required to file (church)                                    |         |
+| 061                                                     | 990PF Required - Not required to file (church)                         |         |
+| 070                                                     | 990 - Government 501(c)(1)                                             |         |
+| 071                                                     | 990PF Required - Government 501(c)(1)                                  |         |
+| 130                                                     | 990 - Not required to file (religious organization)                    |         |
+| 131                                                     | 990PF Required - Not required to file (religious organization)         |         |
+| 140                                                     | 990 - Not required to file (instrumentalities of                       |         |
+| states or political subdivisions)                       |                                                                        |         |
+| 141                                                     | 990PF Required - Not required to file                                  |         |
+| (instrumentalities of states or political subdivisions) |                                                                        |         |

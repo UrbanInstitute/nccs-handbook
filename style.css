@@ -41,19 +41,44 @@ body {
 } 
 
 p { 
-    font-size: 17px; 
-    line-height: 1.6em; 
+    font-size: 16px; 
+    line-height: 1.5em; 
     font-family: Century; 
     color: #696969; 
 } 
 
+li p {
+    font-size: 12px;
+    line-height: 0.8em;
+    font-family: Century;
+    color: #696969;
+}
+
+section#footnotes ol li {
+    font-size: 10px;
+    line-height: 1.1em;
+    font-family: Century;
+    color: #696969;
+}
+
+section#footnotes ol li p {
+    font-size: 10px;
+    line-height: 1.1em;
+    font-family: Century;
+    color: #696969;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 /*    font-family: Jura, Arial, sans-serif; 
     font-weight: 400; 
     font-size: 37px; 
     line-height: 50px;  */
    
-h1, h1.title, h1.data-number { 
+h1, h1.title { 
     /* font-family: "Gravitas One"; */
     /* font-family: 'Bauhaus Modern', sans-serif; */
     /* font-family: 'ofexer', sans-serif; */
@@ -61,9 +86,11 @@ h1, h1.title, h1.data-number {
     font-size: 40px; font-style: 
     normal; font-variant: 
     normal; font-weight: 900;
-    line-height: 50px;
+    line-height: 45px;
     text-transform: none;
     color:   #0a4c6a;
+    margin-bottom: 90px;
+    margin-top: 20px;
 } 
 
 h1.data-number { 
@@ -74,6 +101,19 @@ h2, h3, h4, .header-section-number {
     color: #0a4c6a; /* #12719e*/
     font-family: 'Cooper Std', sans-serif;
     normal; font-weight: 900;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+h3, h4 {
+    margin-top: 60px;
+}
+
+
+.sidebar-title {
+    color: #fff;
 }
 
 /*
@@ -88,8 +128,16 @@ div.sourceCode {
     border-radius: .25rem;
 }
 
+.table td {
+    padding: 0.2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+        
 tbody {
-  font-size: 0.85em;
+  font-size: 0.75em;
 }
 
 pre {
