@@ -41,28 +41,29 @@ body {
 } 
 
 p { 
-    font-size: 16px; 
+    font-size: 17px; 
     line-height: 1.5em; 
     font-family: Century; 
-    color: #696969; 
+    color: #696969;
+    margin-top: 20px;
 } 
 
 li p {
-    font-size: 12px;
-    line-height: 0.8em;
+    font-size: 16px;
+    line-height: 1em;
     font-family: Century;
     color: #696969;
 }
 
 section#footnotes ol li {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.1em;
     font-family: Century;
     color: #696969;
 }
 
 section#footnotes ol li p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.1em;
     font-family: Century;
     color: #696969;
@@ -84,23 +85,25 @@ h1, h1.title {
     /* font-family: 'ofexer', sans-serif; */
     font-family: 'Cooper Std', sans-serif;
     font-size: 40px; font-style: 
-    normal; font-variant: 
-    normal; font-weight: 900;
+    font-weight: 900;
     line-height: 45px;
     text-transform: none;
-    color:   #0a4c6a;
+    color:   #1273A1;
     margin-bottom: 90px;
     margin-top: 20px;
 } 
 
-h1.data-number { 
-    color:  #0a4c6a;  /* #353535 */
-}
 
-h2, h3, h4, .header-section-number {
-    color: #0a4c6a; /* #12719e*/
+
+
+h2, h3, h4 {
+    color: #1273A1; /* #12719e*/
     font-family: 'Cooper Std', sans-serif;
     normal; font-weight: 900;
+}
+
+.header-section-number {
+    color: #1273A1;
 }
 
 h2 {
@@ -114,6 +117,17 @@ h3, h4 {
 
 .sidebar-title {
     color: #fff;
+}
+
+.sidebar-item .chapter-number {
+    color: #fff;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active, 
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid  #1696d2;
+    color: #1696d2 !important;
+    font-weight: bold;
 }
 
 /*
@@ -153,6 +167,7 @@ code {
 div.sidebar-item-container .active, 
 div.sidebar-item-container .show > .nav-link, 
 div.sidebar-item-container .sidebar-link > code {
-    color: #12719e;
+    color: #fdbf11;
     font-weight: bold;
 }
+
