@@ -218,7 +218,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, boxrule=0pt, sharp corners, breakable, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners, breakable, frame hidden, boxrule=0pt]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -514,13 +514,85 @@ In summary, this book has no content whatsoever.
 \chapter{Foundations, Trusts, and Grant-Making
 Organizations}\label{foundations-trusts-and-grant-making-organizations}}
 
-This chapter covers foundation types. It explains two variables: FNDNCD
-(reason for 501(c)(3) status) and FRCD (filing requirement code).
+This chapter explains NCCS's taxonomy for foundations, trusts, and
+grant-making organizations:
 
-\hypertarget{c3-foundations}{%
-\section{501(c)(3) foundations}\label{c3-foundations}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1831}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8169}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Organization Type
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 & Not a foundation, trust, or grant-making organization \\
+1 & 501(c)(3) private foundation, trust, or grant-making organization:
+private operating foundation (IRS status) \& corporate foundation (NTEE
+code) \\
+2 & 501(c)(3) private foundation, trust, or grant-making organization:
+private operating foundation (IRS status) \& private independent
+foundation (NTEE code) \\
+3 & 501(c)(3) private foundation, trust, or grant-making organization:
+private operating foundation (IRS status) \& private operating
+foundation (NTEE code) \\
+4 & 501(c)(3) private foundation, trust, or grant-making organization:
+private operating foundation (IRS status), other (NTEE code) \\
+5 & 501(c)(3) private foundation, trust, or grant-making organization:
+exempt operating foundation (IRS status) \& corporate foundation (NTEE
+code) \\
+6 & 501(c)(3) private foundation, trust, or grant-making organization:
+exempt operating foundation (IRS status) \& private independent
+foundation (NTEE code) \\
+7 & 501(c)(3) private foundation, trust, or grant-making organization:
+exempt operating foundation (IRS status) \& private operating foundation
+(NTEE code) \\
+8 & 501(c)(3) private foundation, trust, or grant-making organization:
+exempt operating foundation (IRS status), other (NTEE code) \\
+9 & 501(c)(3) private foundation, trust, or grant-making organization:
+grant-making (private nonoperating) foundation (IRS status) \& corporate
+foundation (NTEE code) \\
+10 & 501(c)(3) private foundation, trust, or grant-making organization:
+grant-making (private nonoperating) foundation (IRS status) \& private
+independent foundation (NTEE code) \\
+11 & 501(c)(3) private foundation, trust, or grant-making organization:
+grant-making (private nonoperating) foundation (IRS status) \& private
+operating foundation (NTEE code) \\
+12 & 501(c)(3) private foundation, trust, or grant-making organization:
+grant-making (private nonoperating) foundation (IRS status), other (NTEE
+code) \\
+13 & 501(c)(3) public foundation, trust, or grant-making organization:
+community foundation \\
+14 & 501(c)(3) public foundation, trust, or grant-making organization:
+supporting organization - single organization support \\
+15 & 501(c)(3) public foundation, trust, or grant-making organization:
+supporting organization - multiple organization support \\
+16 & 501(c)(3) public foundation, trust, or grant-making organization:
+other public foundation \\
+17 & Other community foundation \\
+18 & Other supporting organization - single organization support \\
+19 & Other supporting organization - multiple organization support \\
+20 & Other public foundation \\
+21 & 501(c)(17) trust providing for the payment of supplemental
+unemployment compensation benefits \\
+22 & 501(c)(18) employee funded pension trust \\
+23 & 501(c)(21) black lung benefit trust \\
+24 & 4947(a)(1) charitable trust treated as a private foundation \\
+25 & 4947(a)(1) charitable trust not treated as a private foundation \\
+26 & 4947(a)(2) split-interest charitable trust \\
+\end{longtable}
 
-To qualify as a 501(c)(3) private foundation, a foundation must exist to
+Each type of organization is described in detail below.
+
+\hypertarget{c3-foundations-trusts-and-grant-making-organizations}{%
+\section{501(c)(3) foundations, trusts, and grant-making
+organizations}\label{c3-foundations-trusts-and-grant-making-organizations}}
+
+To qualify as a 501(c)(3) organization, an organization must exist to
 advance one of the following exempt purposes:
 
 \begin{itemize}
@@ -564,16 +636,464 @@ advance one of the following exempt purposes:
     Purposes -- Internal Revenue Code Section 501(c)(3),''} n.d.)}
 \end{itemize}
 
-501(c)(3) foundations indicate which exempt purpose(s) they advance when
-they file Form 1023 or 1023-EZ to apply for recognition of exemption
-from federal income tax (aka ``tax-exempt status'') (Service 2014,
-2020).
+501(c)(3) organizations indicate which exempt purpose(s) they advance
+when they file Form 1023 or 1023-EZ to apply for recognition of
+exemption from federal income tax (aka ``tax-exempt status'') (Service
+2014, 2020).
 
-501(c)(3) foundations are either public charities or private
-foundations.
+501(c)(3) organizations are either private foundations or public
+charities.
 
-\hypertarget{public-charities}{%
-\subsection{Public charities}\label{public-charities}}
+\hypertarget{c3-private-foundations}{%
+\subsection{501(c)(3) private
+foundations}\label{c3-private-foundations}}
+
+The IRS distinguishes between three types of 501(c)(3) private
+foundations: private operating foundations, exempt operating
+foundations, and grant-making (private nonoperating) foundations.
+
+501(c)(3) private foundations indicate whether they are a private
+operating foundation when they file Form 1023 (Service 2020). This
+option is not available to Form 1023-EZ filers (Service 2014). Later,
+private operating foundations that want recognition of exempt private
+operating foundation status must file Form 8940, Request for
+Miscellaneous Determination, to obtain a determination
+letter.\footnote{({``Definition of Exempt Operating Foundation,''} n.d.)}
+
+501(c)(3) private foundations must file an annual Form
+990-PF.\footnote{({``Instructions for Form 990-PF (2022),''} n.d.)}
+
+\hypertarget{c3-private-foundation-private-operating-foundation-irs-status-corporate-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: private operating
+foundation (IRS status) \& corporate foundation (NTEE
+code)}\label{c3-private-foundation-private-operating-foundation-irs-status-corporate-foundation-ntee-code}}
+
+Private operating foundations (IRS status) use most of their resources
+to actively conduct their exempt activities.\footnote{({``Private
+  Operating Foundations,''} n.d.)}
+
+Corporate foundations (NTEE code) are ``private foundations whose grant
+funds are derived primarily from the contributions of a profit-making
+business organization.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) private operating foundations (IRS status)
+that are also corporate foundations (NTEE code) using FNDNCD (reason for
+501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for
+FNDNCD indicate that an organization is a 501(c)(3) private operating
+foundation (IRS status), and values of T21 for NTEECC indicate that an
+organization is a corporate foundation (NTEE code).
+
+\hypertarget{c3-private-foundation-private-operating-foundation-irs-status-private-independent-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: private operating
+foundation (IRS status) \& private independent foundation (NTEE
+code)}\label{c3-private-foundation-private-operating-foundation-irs-status-private-independent-foundation-ntee-code}}
+
+Private operating foundations (IRS status) use most of their resources
+to actively conduct their exempt activities.\footnote{({``Private
+  Operating Foundations,''} n.d.)}
+
+Private independent foundations (NTEE code) are ``private foundations
+that make grants based on charitable endowments. Because of their
+endowments, they are focused primarily on grantmaking and generally do
+not actively raise funds or seek public financial support. These are the
+most common type of private foundation They are generally endowed,
+usually from a single individual or family. Private foundations are
+considered family foundations if relatives or the original donor are
+still active on the board of trustees or in the operation of the
+foundation.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) private operating foundations (IRS status)
+that are also private independent foundations (NTEE code) using FNDNCD
+(reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose).
+Values of 3 for FNDNCD indicate that an organization is a 501(c)(3)
+private operating foundation (IRS status), and values of T22 for NTEECC
+indicate that an organization is a private independent foundation (NTEE
+code).
+
+\hypertarget{c3-private-foundation-private-operating-foundation-irs-status-private-operating-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: private operating
+foundation (IRS status) \& private operating foundation (NTEE
+code)}\label{c3-private-foundation-private-operating-foundation-irs-status-private-operating-foundation-ntee-code}}
+
+Private operating foundations (IRS status) use most of their resources
+to actively conduct their exempt activities.\footnote{({``Private
+  Operating Foundations,''} n.d.)}
+
+Private operating foundations (NTEE code) are ``private foundations that
+use a bulk of their resources to provide charitable services or run
+charitable programs of their own. They make few, if any, grants to
+outside organizations and, like private independent foundations, they
+generally do not raise funds from the public.''\footnote{({``IRS
+  Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) private operating foundations (IRS status)
+that are also private operating foundations (NTEE code) using FNDNCD
+(reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose).
+Values of 3 for FNDNCD indicate that an organization is a 501(c)(3)
+private operating foundation (IRS status), and values of T23 for NTEECC
+indicate that an organization is a private operating foundation (NTEE
+code).
+
+\hypertarget{c3-private-foundation-private-operating-foundation-irs-status-other-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: private operating
+foundation (IRS status), other (NTEE
+code)}\label{c3-private-foundation-private-operating-foundation-irs-status-other-ntee-code}}
+
+Private operating foundations (IRS status) use most of their resources
+to actively conduct their exempt activities.\footnote{({``Private
+  Operating Foundations,''} n.d.)}
+
+We can identify 501(c)(3) private operating foundations (IRS status)
+that are not corporate foundations, private independent foundations, or
+private operating foundations (NTEE codes) using FNDNCD (reason for
+501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for
+FNDNCD indicate that an organization is a 501(c)(3) private operating
+foundation (IRS status), and values of anything other than T21, T22, and
+T23 for NTEECC indicate that an organization is not a corporate
+foundation, private independent foundation, or private operating
+foundation (NTEE codes).
+
+\hypertarget{c3-private-foundation-exempt-operating-foundation-irs-status-corporate-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: exempt operating foundation
+(IRS status) \& corporate foundation (NTEE
+code)}\label{c3-private-foundation-exempt-operating-foundation-irs-status-corporate-foundation-ntee-code}}
+
+Exempt operating foundations (IRS status) are private operating
+foundations that have been publicly supported for at least 10 years,
+have governing bodies with less than 25\% disqualified individuals and
+that broadly represent the general public, and have no disqualified
+individuals as officers.\footnote{({``Exempt Operating Foundations,''}
+  n.d.)} ``Disqualified individuals'' in this case refers to substantial
+contributors to the foundation; owners of more than 20\% of the total
+combined voting power of a corporation, the profits interest of a
+partnership, or the beneficial interest of a trust or unincorporated
+enterprise (if these entities are substantial contributors to the
+foundation); and family members of any individuals previously
+described.\footnote{({``'Disqualified Individual' -- Exempt Operating
+  Foundation,''} n.d.)}
+
+Corporate foundations (NTEE code) are ``private foundations whose grant
+funds are derived primarily from the contributions of a profit-making
+business organization.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) exempt operating foundations (IRS status) that
+are also corporate foundations (NTEE code) using FNDNCD (reason for
+501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 2 for
+FNDNCD indicate that an organization is a 501(c)(3) exempt operating
+foundation (IRS status), and values of T21 for NTEECC indicate that an
+organization is a corporate foundation (NTEE code).
+
+\hypertarget{c3-private-foundation-exempt-operating-foundation-irs-status-private-independent-foundation-ntee-code-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: exempt operating foundation
+(IRS status) \& private independent foundation (NTEE code) (NTEE
+code)}\label{c3-private-foundation-exempt-operating-foundation-irs-status-private-independent-foundation-ntee-code-ntee-code}}
+
+Exempt operating foundations (IRS status) are private operating
+foundations that have been publicly supported for at least 10 years,
+have governing bodies with less than 25\% disqualified individuals and
+that broadly represent the general public, and have no disqualified
+individuals as officers.\footnote{({``Exempt Operating Foundations,''}
+  n.d.)} ``Disqualified individuals'' in this case refers to substantial
+contributors to the foundation; owners of more than 20\% of the total
+combined voting power of a corporation, the profits interest of a
+partnership, or the beneficial interest of a trust or unincorporated
+enterprise (if these entities are substantial contributors to the
+foundation); and family members of any individuals previously
+described.\footnote{({``'Disqualified Individual' -- Exempt Operating
+  Foundation,''} n.d.)}
+
+Private independent foundations (NTEE code) are ``private foundations
+that make grants based on charitable endowments. Because of their
+endowments, they are focused primarily on grantmaking and generally do
+not actively raise funds or seek public financial support. These are the
+most common type of private foundation They are generally endowed,
+usually from a single individual or family. Private foundations are
+considered family foundations if relatives or the original donor are
+still active on the board of trustees or in the operation of the
+foundation.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) exempt operating foundations (IRS status) that
+are also private independent foundations (NTEE code) using FNDNCD
+(reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose).
+Values of 2 for FNDNCD indicate that an organization is a 501(c)(3)
+exempt operating foundation (IRS status), and values of T22 for NTEECC
+indicate that an organization is a private independent foundation (NTEE
+code).
+
+\hypertarget{c3-private-foundation-exempt-operating-foundation-irs-status-private-operating-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: exempt operating foundation
+(IRS status) \& private operating foundation (NTEE
+code)}\label{c3-private-foundation-exempt-operating-foundation-irs-status-private-operating-foundation-ntee-code}}
+
+Exempt operating foundations (IRS status) are private operating
+foundations that have been publicly supported for at least 10 years,
+have governing bodies with less than 25\% disqualified individuals and
+that broadly represent the general public, and have no disqualified
+individuals as officers.\footnote{({``Exempt Operating Foundations,''}
+  n.d.)} ``Disqualified individuals'' in this case refers to substantial
+contributors to the foundation; owners of more than 20\% of the total
+combined voting power of a corporation, the profits interest of a
+partnership, or the beneficial interest of a trust or unincorporated
+enterprise (if these entities are substantial contributors to the
+foundation); and family members of any individuals previously
+described.\footnote{({``'Disqualified Individual' -- Exempt Operating
+  Foundation,''} n.d.)}
+
+Private operating foundations (NTEE code) are ``private foundations that
+use a bulk of their resources to provide charitable services or run
+charitable programs of their own. They make few, if any, grants to
+outside organizations and, like private independent foundations, they
+generally do not raise funds from the public.''\footnote{({``IRS
+  Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) exempt operating foundations (IRS status) that
+are also private operating foundations (NTEE code) using FNDNCD (reason
+for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 2
+for FNDNCD indicate that an organization is a 501(c)(3) exempt operating
+foundation (IRS status), and values of T23 for NTEECC indicate that an
+organization is a private operating foundation (NTEE code).
+
+\hypertarget{c3-private-foundation-exempt-operating-foundation-irs-status-other-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: exempt operating foundation
+(IRS status), other (NTEE
+code)}\label{c3-private-foundation-exempt-operating-foundation-irs-status-other-ntee-code}}
+
+Exempt operating foundations (IRS status) are private operating
+foundations that have been publicly supported for at least 10 years,
+have governing bodies with less than 25\% disqualified individuals and
+that broadly represent the general public, and have no disqualified
+individuals as officers.\footnote{({``Exempt Operating Foundations,''}
+  n.d.)} ``Disqualified individuals'' in this case refers to substantial
+contributors to the foundation; owners of more than 20\% of the total
+combined voting power of a corporation, the profits interest of a
+partnership, or the beneficial interest of a trust or unincorporated
+enterprise (if these entities are substantial contributors to the
+foundation); and family members of any individuals previously
+described.\footnote{({``'Disqualified Individual' -- Exempt Operating
+  Foundation,''} n.d.)}
+
+We can identify 501(c)(3) exempt operating foundations (IRS status) that
+are not corporate foundations, private independent foundations, or
+private operating foundations (NTEE codes) using FNDNCD (reason for
+501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 2 for
+FNDNCD indicate that an organization is a 501(c)(3) exempt operating
+foundation (IRS status), and values of anything other than T21, T22, and
+T23 for NTEECC indicate that an organization is not a corporate
+foundation, private independent foundation, or private operating
+foundation (NTEE codes).
+
+\hypertarget{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-corporate-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: grant-making (private
+nonoperating) foundation (IRS status) \& corporate foundation (NTEE
+code)}\label{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-corporate-foundation-ntee-code}}
+
+Grant-making (private nonoperating) foundations (IRS status) are all
+other private foundations.\footnote{({``Grant-Making Foundations,''}
+  n.d.)}
+
+Private operating foundations have the following advantages over
+grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from the excise tax on failure to distribute income.
+\item
+  Donors can deduct contributions to these foundations to the extent of
+  50\% of their adjusted gross income, instead of 30\%.
+\item
+  Private foundations can make qualifying distributions to them, as long
+  as they are not controlled by said private foundation.\footnote{({``Private
+    Operating Foundations,''} n.d.)}
+\end{itemize}
+
+In addition, \emph{exempt} operating foundations have the following
+advantages over grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from taxes on net investment income.
+\item
+  Private foundations can make grants to them without following
+  expenditure responsibility requirements.\footnote{({``Exempt Operating
+    Foundations,''} n.d.)}
+\end{itemize}
+
+Corporate foundations (NTEE code) are ``private foundations whose grant
+funds are derived primarily from the contributions of a profit-making
+business organization.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) grant-making (private nonoperating)
+foundations (IRS status) that are also corporate foundations (NTEE code)
+using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary
+purpose). Values of 4 indicate that an organization is a 501(c)(3)
+grant-making (private nonoperating) foundation (IRS status), and values
+of T21 for NTEECC indicate that an organization is a corporate
+foundation (NTEE code).
+
+\hypertarget{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-private-independent-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: grant-making (private
+nonoperating) foundation (IRS status) \& private independent foundation
+(NTEE
+code)}\label{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-private-independent-foundation-ntee-code}}
+
+Grant-making (private nonoperating) foundations (IRS status) are all
+other private foundations.\footnote{({``Grant-Making Foundations,''}
+  n.d.)}
+
+Private operating foundations have the following advantages over
+grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from the excise tax on failure to distribute income.
+\item
+  Donors can deduct contributions to these foundations to the extent of
+  50\% of their adjusted gross income, instead of 30\%.
+\item
+  Private foundations can make qualifying distributions to them, as long
+  as they are not controlled by said private foundation.\footnote{({``Private
+    Operating Foundations,''} n.d.)}
+\end{itemize}
+
+In addition, \emph{exempt} operating foundations have the following
+advantages over grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from taxes on net investment income.
+\item
+  Private foundations can make grants to them without following
+  expenditure responsibility requirements.\footnote{({``Exempt Operating
+    Foundations,''} n.d.)}
+\end{itemize}
+
+Private independent foundations (NTEE code) are ``private foundations
+that make grants based on charitable endowments. Because of their
+endowments, they are focused primarily on grantmaking and generally do
+not actively raise funds or seek public financial support. These are the
+most common type of private foundation They are generally endowed,
+usually from a single individual or family. Private foundations are
+considered family foundations if relatives or the original donor are
+still active on the board of trustees or in the operation of the
+foundation.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) grant-making (private nonoperating)
+foundations (IRS status) that are also private independent foundations
+(NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC
+(NTEECC primary purpose). Values of 4 indicate that an organization is a
+501(c)(3) grant-making (private nonoperating) foundation (IRS status),
+and values of T22 for NTEECC indicate that an organization is a private
+independent foundation (NTEE code).
+
+\hypertarget{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-private-operating-foundation-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: grant-making (private
+nonoperating) foundation (IRS status) \& private operating foundation
+(NTEE
+code)}\label{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-private-operating-foundation-ntee-code}}
+
+Grant-making (private nonoperating) foundations (IRS status) are all
+other private foundations.\footnote{({``Grant-Making Foundations,''}
+  n.d.)}
+
+Private operating foundations have the following advantages over
+grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from the excise tax on failure to distribute income.
+\item
+  Donors can deduct contributions to these foundations to the extent of
+  50\% of their adjusted gross income, instead of 30\%.
+\item
+  Private foundations can make qualifying distributions to them, as long
+  as they are not controlled by said private foundation.\footnote{({``Private
+    Operating Foundations,''} n.d.)}
+\end{itemize}
+
+In addition, \emph{exempt} operating foundations have the following
+advantages over grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from taxes on net investment income.
+\item
+  Private foundations can make grants to them without following
+  expenditure responsibility requirements.\footnote{({``Exempt Operating
+    Foundations,''} n.d.)}
+\end{itemize}
+
+Private operating foundations (NTEE code) are ``private foundations that
+use a bulk of their resources to provide charitable services or run
+charitable programs of their own. They make few, if any, grants to
+outside organizations and, like private independent foundations, they
+generally do not raise funds from the public.''\footnote{({``IRS
+  Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) grant-making (private nonoperating)
+foundations (IRS status) that are also private operating foundations
+(NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC
+(NTEECC primary purpose). Values of 4 indicate that an organization is a
+501(c)(3) grant-making (private nonoperating) foundation (IRS status),
+and values of T23 for NTEECC indicate that an organization is a private
+operating foundation (NTEE code).
+
+\hypertarget{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-other-ntee-code}{%
+\subsubsection{501(c)(3) private foundation: grant-making (private
+nonoperating) foundation (IRS status), other (NTEE
+code)}\label{c3-private-foundation-grant-making-private-nonoperating-foundation-irs-status-other-ntee-code}}
+
+Grant-making (private nonoperating) foundations (IRS status) are all
+other private foundations.\footnote{({``Grant-Making Foundations,''}
+  n.d.)}
+
+Private operating foundations have the following advantages over
+grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from the excise tax on failure to distribute income.
+\item
+  Donors can deduct contributions to these foundations to the extent of
+  50\% of their adjusted gross income, instead of 30\%.
+\item
+  Private foundations can make qualifying distributions to them, as long
+  as they are not controlled by said private foundation.\footnote{({``Private
+    Operating Foundations,''} n.d.)}
+\end{itemize}
+
+In addition, \emph{exempt} operating foundations have the following
+advantages over grant-making (private nonoperating) foundations:
+
+\begin{itemize}
+\tightlist
+\item
+  They are exempt from taxes on net investment income.
+\item
+  Private foundations can make grants to them without following
+  expenditure responsibility requirements.\footnote{({``Exempt Operating
+    Foundations,''} n.d.)}
+\end{itemize}
+
+We can identify 501(c)(3) grant-making (private nonoperating)
+foundations (IRS status) that are not corporate foundations, private
+independent foundations, or private operating foundations (NTEE codes)
+using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary
+purpose). Values of 4 indicate that an organization is a 501(c)(3)
+grant-making (private nonoperating) foundation (IRS status), and values
+of anything other than T21, T22, and T23 for NTEECC indicate that an
+organization is not a corporate foundation, private independent
+foundation, or private operating foundation (NTEE codes).
+
+\hypertarget{c3-public-foundations-trusts-and-grant-making-organizations}{%
+\subsection{501(c)(3) public foundations, trusts, and grant-making
+organizations}\label{c3-public-foundations-trusts-and-grant-making-organizations}}
 
 To qualify as a 501(c)(3) public charity, rather than a 501(c)(3)
 private foundation, an organization must be one of the following:
@@ -647,90 +1167,6 @@ want to be reclassified as public charities must terminate their private
 foundation status and apply for public charity status.\footnote{({``Instructions
   for Form 8940 (04/2023),''} n.d.)}
 
-Most 501(c)(3) foundations that qualify for public charity status must
-file an annual Form 990-N, 990-EZ, or 990.\footnote{({``Annual Exempt
-  Organization Return: Who Must File,''} n.d.)}
-
-\hypertarget{private-foundations}{%
-\subsection{Private foundations}\label{private-foundations}}
-
-The IRS distinguishes between 3 types of 501(c)(3) private foundations:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \textbf{Private operating foundations} use most of their resources to
-  actively conduct their exempt activities.\footnote{({``Private
-    Operating Foundations,''} n.d.)}
-\item
-  \textbf{Exempt operating foundations} are private operating
-  foundations that have been publicly supported for at least 10 years,
-  have governing bodies with less than 25\% disqualified individuals and
-  that broadly represent the general public, and have no disqualified
-  individuals as officers.\footnote{({``Exempt Operating Foundations,''}
-    n.d.)} ``Disqualified individuals'' in this case refers to
-  substantial contributors to the foundation; owners of more than 20\%
-  of the total combined voting power of a corporation, the profits
-  interest of a partnership, or the beneficial interest of a trust or
-  unincorporated enterprise (if these entities are substantial
-  contributors to the foundation); and family members of any individuals
-  previously described.\footnote{({``'Disqualified Individual' -- Exempt
-    Operating Foundation,''} n.d.)}
-\item
-  \textbf{Grant-making (private nonoperating) foundations} are all other
-  private foundations.\footnote{({``Grant-Making Foundations,''} n.d.)}
-\end{enumerate}
-
-501(c)(3) private foundations indicate whether they are a private
-operating foundation when they file Form 1023 (Service 2020). This
-option is not available to Form 1023-EZ filers (Service 2014). Later,
-private operating foundations that want recognition of exempt private
-operating foundation status must file Form 8940, Request for
-Miscellaneous Determination, to obtain a determination
-letter.\footnote{({``Definition of Exempt Operating Foundation,''} n.d.)}
-
-Private foundations must file an annual Form 990-PF.\footnote{({``Instructions
-  for Form 990-PF (2022),''} n.d.)}
-
-\hypertarget{advantages-of-private-operating-foundations-and-exempt-operating-foundations-over-grant-making-private-nonoperating-foundations}{%
-\subsection{Advantages of private operating foundations and exempt
-operating foundations over grant-making (private nonoperating)
-foundations}\label{advantages-of-private-operating-foundations-and-exempt-operating-foundations-over-grant-making-private-nonoperating-foundations}}
-
-Private operating foundations have the following advantages over
-grant-making (private nonoperating) foundations:
-
-\begin{itemize}
-\tightlist
-\item
-  They are exempt from the excise tax on failure to distribute income.
-\item
-  Donors can deduct contributions to these foundations to the extent of
-  50\% of their adjusted gross income, instead of 30\%.
-\item
-  Private foundations can make qualifying distributions to them, as long
-  as they are not controlled by said private foundation.\footnote{({``Private
-    Operating Foundations,''} n.d.)}
-\end{itemize}
-
-In addition, \emph{exempt} operating foundations have the following
-advantages over grant-making (private nonoperating) foundations:
-
-\begin{itemize}
-\tightlist
-\item
-  They are exempt from taxes on net investment income.
-\item
-  Private foundations can make grants to them without following
-  expenditure responsibility requirements.\footnote{({``Exempt Operating
-    Foundations,''} n.d.)}
-\end{itemize}
-
-\hypertarget{advantages-of-public-charities-over-private-foundations}{%
-\subsection{Advantages of public charities over private
-foundations}\label{advantages-of-public-charities-over-private-foundations}}
-
 The IRS imposes several taxes, restrictions, and requirements on private
 foundations that it does not place on public charities:
 
@@ -757,8 +1193,230 @@ foundations that it does not place on public charities:
     Foundations,''} n.d.)}
 \end{itemize}
 
-\hypertarget{a1-charitable-trusts}{%
-\section{4947(a)(1) charitable trusts}\label{a1-charitable-trusts}}
+Most 501(c)(3) public charities must file an annual Form 990-N, 990-EZ,
+or 990.\footnote{({``Annual Exempt Organization Return: Who Must
+  File,''} n.d.)}
+
+\hypertarget{c3-public-foundation-trust-or-grant-making-organization-community-foundation}{%
+\subsubsection{501(c)(3) public foundation, trust, or grant-making
+organization: community
+foundation}\label{c3-public-foundation-trust-or-grant-making-organization-community-foundation}}
+
+Community foundations are ``organizations that make grants for
+charitable purposes in a specific community or region. The funds
+available to a community foundation are usually derived from many donors
+and held in an endowment that is independently administered; income
+earned by the endowment is then used to make grants.''\footnote{({``IRS
+  Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) community foundations using SUBSECCD
+(subsection code) and NTEECC (NTEECC primary purpose). Values of 3 for
+SUBSECCD indicate that an organization is a 501(c)(3) organization, and
+values of T31 for NTEECC indicate that an organization is a community
+foundation.
+
+\hypertarget{c3-public-foundation-trust-or-grant-making-organization-supporting-organization---single-organization-support}{%
+\subsubsection{501(c)(3) public foundation, trust, or grant-making
+organization: supporting organization - single organization
+support}\label{c3-public-foundation-trust-or-grant-making-organization-supporting-organization---single-organization-support}}
+
+Supporting organizations that provide support to a single organization
+are ``organizations existing as a support and fund-raising entity for a
+single institution.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) supporting organizations that provide support
+to a single organization using SUBSECCD (subsection code) and NTEECC
+(NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an
+organization is a 501(c)(3) organization, and values of A11, B11, C11,
+D11, E11, F11, G11, H11, I11, J11, K11, L11, M11, N11, O11, P11, Q11,
+R11, S11, T11, U11, V11, W11, X11, and Y11 for NTEECC indicate that an
+organization is a supporting organization that provides support to a
+single organization.
+
+\hypertarget{c3-public-foundation-trust-or-grant-making-organization-supporting-organization---multiple-organization-support}{%
+\subsubsection{501(c)(3) public foundation, trust, or grant-making
+organization: supporting organization - multiple organization
+support}\label{c3-public-foundation-trust-or-grant-making-organization-supporting-organization---multiple-organization-support}}
+
+Supporting organizations that provide support to multiple organizations
+are ``organizations that raise and distribute funds for multiple
+organizations.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify 501(c)(3) supporting organizations that provide support
+to multiple organizations using SUBSECCD (subsection code) and NTEECC
+(NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an
+organization is a 501(c)(3) organization, and values of A12, B12, C12,
+D12, E12, F12, G12, H12, I12, J12, K12, L12, M12, N12, O12, P12, Q12,
+R12, S12, T12, U12, V12, W12, X12, and Y12 for NTEECC indicate that an
+organization is a supporting organization that provides support to
+multiple organizations.
+
+\hypertarget{c3-public-foundation-trust-or-grant-making-organization-other-public-foundation}{%
+\subsubsection{501(c)(3) public foundation, trust, or grant-making
+organization: other public
+foundation}\label{c3-public-foundation-trust-or-grant-making-organization-other-public-foundation}}
+
+Public foundations are ``organizations that derive their funding or
+support primarily from the general public in carrying our their social,
+educational, religious or other charitable activities serving the common
+welfare. Although public foundations may provide direct charitable
+services to the public as other nonprofits do, their primary focus is on
+grantmaking.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify other 501(c)(3) public foundations using SUBSECCD
+(subsection code) and NTEECC (NTEECC primary purpose). Values of 3 for
+SUBSECCD indicate that an organization is a 501(c)(3) organization, and
+values of T30 for NTEECC indicate that an organization is a public
+foundation.
+
+\hypertarget{other-community-foundation}{%
+\subsection{Other community
+foundation}\label{other-community-foundation}}
+
+Community foundations are ``organizations that make grants for
+charitable purposes in a specific community or region. The funds
+available to a community foundation are usually derived from many donors
+and held in an endowment that is independently administered; income
+earned by the endowment is then used to make grants.''\footnote{({``IRS
+  Activity Codes,''} n.d.)}
+
+We can identify non-501(c)(3) community foundations using SUBSECCD
+(subsection code) and NTEECC (NTEECC primary purpose). Values of
+anything other than 3 for SUBSECCD indicate that an organization is a
+non-501(c)(3) organization, and values of T31 for NTEECC indicate that
+an organization is a community foundation.
+
+\hypertarget{other-supporting-organization---single-organization-support}{%
+\subsection{Other supporting organization - single organization
+support}\label{other-supporting-organization---single-organization-support}}
+
+Supporting organizations that provide support to a single organization
+are ``organizations existing as a support and fund-raising entity for a
+single institution.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify non-501(c)(3) supporting organizations that provide
+support to a single organization using SUBSECCD (subsection code) and
+NTEECC (NTEECC primary purpose). Values of anything other than 3 for
+SUBSECCD indicate that an organization is a non-501(c)(3) organization,
+and values of A11, B11, C11, D11, E11, F11, G11, H11, I11, J11, K11,
+L11, M11, N11, O11, P11, Q11, R11, S11, T11, U11, V11, W11, X11, and Y11
+for NTEECC indicate that an organization is a supporting organization
+that provides support to a single organization.
+
+\hypertarget{other-supporting-organization---multiple-organization-support}{%
+\subsection{Other supporting organization - multiple organization
+support}\label{other-supporting-organization---multiple-organization-support}}
+
+Supporting organizations that provide support to multiple organizations
+are ``organizations that raise and distribute funds for multiple
+organizations.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify non-501(c)(3) supporting organizations that provide
+support to multiple organizations using SUBSECCD (subsection code) and
+NTEECC (NTEECC primary purpose). Values of anything other than 3 for
+SUBSECCD indicate that an organization is a non-501(c)(3) organization,
+and values of A12, B12, C12, D12, E12, F12, G12, H12, I12, J12, K12,
+L12, M12, N12, O12, P12, Q12, R12, S12, T12, U12, V12, W12, X12, and Y12
+for NTEECC indicate that an organization is a supporting organization
+that provides support to multiple organizations.
+
+\hypertarget{other-public-foundation}{%
+\subsection{Other public foundation}\label{other-public-foundation}}
+
+Public foundations are ``organizations that derive their funding or
+support primarily from the general public in carrying our their social,
+educational, religious or other charitable activities serving the common
+welfare. Although public foundations may provide direct charitable
+services to the public as other nonprofits do, their primary focus is on
+grantmaking.''\footnote{({``IRS Activity Codes,''} n.d.)}
+
+We can identify other non-501(c)(3) public foundations using SUBSECCD
+(subsection code) and NTEECC (NTEECC primary purpose). Values of
+anything other than 3 for SUBSECCD indicate that an organization is a
+non-501(c)(3) organization, and values of T30 for NTEECC indicate that
+an organization is a public foundation.
+
+\hypertarget{c17-trust-providing-for-the-payment-of-supplemental-unemployment-compensation-benefits}{%
+\subsection{501(c)(17) trust providing for the payment of supplemental
+unemployment compensation
+benefits}\label{c17-trust-providing-for-the-payment-of-supplemental-unemployment-compensation-benefits}}
+
+An organization must meet the following requirements for to qualify for
+exemption from federal income tax as a 501(c)(17) trust providing for
+the payment of supplemental unemployment compensation benefits:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  ``The trust must constitute a valid trust under local law, be
+  evidenced by an executed written document, and be part of a written
+  plan.
+\item
+  The plan must be established and maintained by an employer or its
+  employees solely for the purpose of providing supplemental
+  unemployment compensation benefits.
+\item
+  The plan must provide that the corpus and income of the trust cannot
+  be used for, or diverted to, any purpose other than providing such
+  benefits prior to the satisfaction of all liabilities to the employees
+  covered by the plan.
+\item
+  Benefits must be determined according to objective standards, and may
+  not be determined solely in the discretion of the trustees.
+\item
+  The eligibility requirements and the benefits payable must not
+  discriminate in favor of officers, shareholders, supervisory
+  employees, or highly compensated employees.~ Benefits payable under
+  the plan will not be considered discriminatory if they bear a uniform
+  relationship to the total compensation of the employees covered by the
+  plan.''\footnote{({``Supplemental Unemployment Benefits Trust -
+    501(c)(17),''} n.d.)}
+\end{enumerate}
+
+These trusts apply for recognition of exemption from federal income tax
+by filing Form 1024.\footnote{({``Supplemental Unemployment Benefits
+  Trust - 501(c)(17),''} n.d.)} They must file an annual Form 990-N,
+990-EZ, or 990 (Service 2023).
+
+We can identify 501(c)(17) trusts providing for the payment of
+supplemental unemployment compensation benefits using SUBSECCD
+(subsection code). Values of 17 indicate that an organization is a
+501(c)(17) trust providing for the payment of supplemental unemployment
+compensation benefits.
+
+\hypertarget{c18-employee-funded-pension-trust}{%
+\subsection{501(c)(18) employee funded pension
+trust}\label{c18-employee-funded-pension-trust}}
+
+501(c)(18) employee funded pension trusts pay benefits under pension
+plans that employees fund (Service 2023). These trusts apply for
+recognition of exemption from federal income tax by filing Form
+1024.\footnote{({``Supplemental Unemployment Benefits Trust -
+  501(c)(17),''} n.d.)} They must file an annual Form 990-N, 990-EZ, or
+990 (Service 2023).
+
+We can identify 501(c)(18) employee funded pension trusts using SUBSECCD
+(subsection code). Values of 18 indicate that an organization is a
+501(c)(18) employee funded pension trust.
+
+\hypertarget{c21-black-lung-benefit-trust}{%
+\subsection{501(c)(21) black lung benefit
+trust}\label{c21-black-lung-benefit-trust}}
+
+Coal mine operators fund 501(c)(21) black lung benefit trusts ``to
+satisfy their liability for disability or death due to black lung
+diseases'' (Service 2023, 69). These trusts apply for recognition of
+exemption from federal income tax by filing Form 1024.\footnote{({``Supplemental
+  Unemployment Benefits Trust - 501(c)(17),''} n.d.)} They must file an
+annual Form 990 (Service 2023).
+
+We can identify 501(c)(21) black lung benefit trusts using SUBSECCD
+(subsection code). Values of 21 indicate that an organization is a
+501(c)(21) black lung benefit trust.
+
+\hypertarget{a1-charitable-trust-treated-as-a-private-foundation}{%
+\subsection{4947(a)(1) charitable trust treated as a private
+foundation}\label{a1-charitable-trust-treated-as-a-private-foundation}}
 
 A 4947(a)(1) charitable trusts is ``a trust that is not tax exempt, all
 of the unexpired interests of which are devoted to one or more
@@ -767,19 +1425,50 @@ was allowed under a specific section of the Internal Revenue
 Code.''\footnote{({``Charitable Trusts,''} n.d.)}
 
 The IRS treats them as private foundations unless they meet one of the
-requirements for being a public charity.\footnote{({``Charitable
-  Trusts,''} n.d.)}
+requirements for being a 501(c)(3) public charity. This means the IRS
+subjects them to the same taxes, restrictions, and requirements of
+private foundations, which are more stringent than those it places on
+public charities.\footnote{({``Charitable Trusts,''} n.d.)}
+
+4947(a)(1) charitable trusts treated as private foundations must file an
+annual Form 990-PF.\footnote{({``Instructions for Form 990-PF (2022),''}
+  n.d.)}
+
+We can identify 4947(a)(1) charitable trusts that are treated as private
+foundations using SUBSECCD (subsection code). Values of 92 indicate that
+an organization is a 4947(a)(1) charitable trust treated as a private
+foundation.
+
+\hypertarget{a1-charitable-trust-not-treated-as-a-private-foundation}{%
+\subsection{4947(a)(1) charitable trust not treated as a private
+foundation}\label{a1-charitable-trust-not-treated-as-a-private-foundation}}
+
+A 4947(a)(1) charitable trusts is ``a trust that is not tax exempt, all
+of the unexpired interests of which are devoted to one or more
+charitable purposes, and for which a charitable contribution deduction
+was allowed under a specific section of the Internal Revenue
+Code.''\footnote{({``Charitable Trusts,''} n.d.)}
+
+The IRS treats them as private foundations unless they meet one of the
+requirements for being a 501(c)(3) public charity. This means that
+4941(a)(1) charitable trusts that are not treated as private foundations
+are not subjected to the same taxes, restrictions, and requirements of
+private foundations, which are more stringent than those the IRS places
+on public charities.\footnote{({``Charitable Trusts,''} n.d.)}
 
 4947(a)(1) charitable trusts not treated as private foundations must
 file an annual Form 990-EZ or 990.\footnote{({``Instructions for Form
   990-EZ (2022),''} n.d.; {``Instructions for Form 990 Return of
-  Organization Exempt from Income Tax (2022),''} n.d.)} 4947(a)(1)
-charitable trusts treated as private foundations must file an annual
-Form 990-PF.\footnote{({``Instructions for Form 990-PF (2022),''} n.d.)}
+  Organization Exempt from Income Tax (2022),''} n.d.)}
 
-\hypertarget{a2-split-interest-charitable-trusts}{%
-\section{4947(a)(2) split-interest charitable
-trusts}\label{a2-split-interest-charitable-trusts}}
+We can identify 4947(a)(1) charitable trusts that are not treated as
+private foundations using SUBSECCD (subsection code). Values of 91
+indicate that an organization is a 4947(a)(1) charitable trust not
+treated as a private foundation.
+
+\hypertarget{a2-split-interest-charitable-trust}{%
+\subsection{4947(a)(2) split-interest charitable
+trust}\label{a2-split-interest-charitable-trust}}
 
 4947(a)(2) split-interest charitable trusts ``make distributions to both
 charitable and noncharitable beneficiaries, while providing tax benefits
@@ -791,142 +1480,16 @@ tax.\footnote{({``Instructions for Form 5227 (2022),''} n.d.)}
 5227: Split-Interest Trust Information Return.\footnote{({``Instructions
   for Form 5227 (2022),''} n.d.)}
 
-\hypertarget{fndncd---reason-for-501c3-status}{%
-\section{FNDNCD - reason for 501(c)(3)
-status}\label{fndncd---reason-for-501c3-status}}
+We can identify 4947(a)(2) split-interest charitable trusts using
+SUBSECCD (subsection code). Values of 90 indicate that an organization
+is a 4947(a)(2) split-interest charitable trust.
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1644}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1644}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6712}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Value
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Description
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Meaning
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-00 & All organizations except 501(c)(3) & Organizations that are not
-501(c)(3) public charities or private foundations \\
-02 & Private operating foundation exempt from paying excise taxes on
-investment income & 501(c)(3) private foundations: exempt operating
-foundations \\
-03 & Private operating foundation (other) & 501(c)(3) private
-foundations: private operating foundations \\
-04 & Private non-operating foundation & 501(c)(3) private foundations:
-grant-making (private nonoperating) foundations \\
-09 & Suspense & ??? \\
-10 & Church & 501(c)(3) public charities: They qualify as public
-charities because they are a church, convention of churches, or
-association of churches. \\
-11 & School & 501(c)(3) public charities: They qualify as public
-charities because they are a school. \\
-12 & Hospital or medical research organization & 501(c)(3) public
-charities: They qualify as public charities because they are a hospital,
-cooperative hospital service organization, or a medical research
-organization operated in conjunction with a hospital. \\
-13 & Organization operated for the benefit of a public (government owned
-or run) college or university & 501(c)(3) public charities: They qualify
-as public charities because they are operated for the benefit of a
-college or university that is owned or operated by a governmental
-unit. \\
-14 & Governmental unit & 501(c)(3) public charities: They qualify as
-public charities because they are a federal, state, or local government
-or governmental unit. \\
-15 & Organization with a substantial portion of support from a
-governmental unit or the general public & 501(c)(3) public charities:
-They qualify as public charities because they normally receive a
-substantial part of their support from a governmental unit or from the
-general public. \\
-16 & Org income is \textless=1/3 investment or unrelated business and
-\textgreater1/3 donated or related to purpose & 501(c)(3) public
-charities: They qualify as public charities because they normally
-receive more than 33 and 1/3\% of their support from contributions,
-membership fees, and gross receipts from activities related to their
-exempt functions and receives no more than 33 and 1/3 percent of their
-support from gross investment income and unrelated business taxable
-income from businesses acquired by the organization after June 30,
-1975. \\
-17 & Supporting Organization 509(a)(3) for benefit and in conjunction
-with organization(s) coded 10-16 & ??? \\
-18 & Organization organized and operated to test for public safety &
-501(c)(3) public charities: They qualify as public charities because
-they are organized and operated exclusively for testing for public
-safety. \\
-21 & Supporting Organization 509(a)(3) Type I & 501(c)(3) public
-charities: They qualify as public charities because they are type I
-509(a)(3) supporting organizations -- those operated, supervised, or
-controlled by the supported organization(s) by giving the supported
-organization(s) the power to regularly appoint or elect a majority of
-the directors or trustees of the supporting organization. \\
-22 & Supporting Organization 509(a)(3) Type II & 501(c)(3) public
-charities: They qualify as public charities because they are type II
-509(a)(3) supporting organizations -- those supervised or controlled in
-connection with the supported organization(s) by having control or
-management of the supporting organization vested in the same persons
-that control or manage the supported organization(s). \\
-23 & Supporting Organization 509(a)(3) Type III functionally integrated
-& 501(c)(3) public charities: They qualify as public charities because
-they are type III functionally integrated 509(a)(3) supporting
-organizations -- those operated in connection with, and functionally
-integrated with, the supported organization(s). \\
-24 & Supporting Organization 509(a)(3) Type III not functionally
-integrated & 501(c)(3) public charities: They qualify as public
-charities because they are type III not functionally integrated
-509(a)(3) supporting organizations -- those operated in connection with
-the supported organization(s) that are not functionally integrated. \\
-\end{longtable}
+\hypertarget{not-a-foundation-trust-or-grant-making-organization}{%
+\subsection{Not a foundation, trust, or grant-making
+organization}\label{not-a-foundation-trust-or-grant-making-organization}}
 
-\hypertarget{frcd---filing-requirement-code}{%
-\section{FRCD - filing requirement
-code}\label{frcd---filing-requirement-code}}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0833}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4583}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4583}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Value
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Description
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Meaning
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-000 & 990 - Not required to file (all other) & \\
-001 & 990PF Required - 990 not required to file (all other) & \\
-010 & 990 (all other) or 990EZ return & \\
-011 & 990PF Required (all other) & \\
-020 & 990 - Required to file Form 990-N (Income less than \$25,000 per
-year) & \\
-021 & 990PF Required - 990 Required to file Form 990-N (Income less than
-\$25,000 per year) & \\
-030 & 990 - Group return & \\
-031 & 990PF Required - Group return & \\
-040 & 990 - Required to file Form 990-BL, Black Lung Trusts & \\
-041 & 990PF Required - 990 Required to file Form 990-BL, Black Lung
-Trusts & \\
-060 & 990 - Not required to file (church) & \\
-061 & 990PF Required - Not required to file (church) & \\
-070 & 990 - Government 501(c)(1) & \\
-071 & 990PF Required - Government 501(c)(1) & \\
-130 & 990 - Not required to file (religious organization) & \\
-131 & 990PF Required - Not required to file (religious organization)
-& \\
-140 & 990 - Not required to file (instrumentalities of states or
-political subdivisions) & \\
-141 & 990PF Required - Not required to file (instrumentalities of states
-or political subdivisions) & \\
-\end{longtable}
+Organizations not described above are coded as ``not a foundation,
+trust, or grant-making organization.''
 
 \bookmarksetup{startatroot}
 
@@ -991,6 +1554,10 @@ Service. \url{https://www.irs.gov/instructions/i990ez}.
 {``Instructions for Form 990-PF (2022).''} n.d. Internal Revenue
 Service. \url{https://www.irs.gov/instructions/i990pf}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-activity-codes}{}}%
+{``IRS Activity Codes.''} n.d. National Center for Charitable
+Statistics. \url{https://nccs.urban.org/publication/irs-activity-codes}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-knuth84}{}}%
 Knuth, Donald E. 1984. {``Literate Programming.''} \emph{Comput. J.} 27
 (2): 97--111. \url{https://doi.org/10.1093/comjnl/27.2.97}.
@@ -1019,10 +1586,19 @@ Under Section 501(c)(3) of the Internal Revenue Code.''} Washington, DC.
 Public Support.''} Washington, DC.
 \url{https://www.irs.gov/pub/irs-pdf/f990sa.pdf}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-irs-2023c}{}}%
+---------. 2023. {``Tax-Exempt Status for Your Organization.''}
+Washington, DC. \url{https://www.irs.gov/pub/irs-pdf/p557.pdf}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-irs-split-interest-trust-stats}{}}%
 {``SOI Tax Stats - Split-Interest Trust Statistics.''} n.d. Internal
 Revenue Service.
 \url{https://www.irs.gov/statistics/soi-tax-stats-split-interest-trust-statistics}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-irs-501c17}{}}%
+{``Supplemental Unemployment Benefits Trust - 501(c)(17).''} n.d.
+Internal Revenue Service.
+\url{https://www.irs.gov/charities-non-profits/other-non-profits/supplemental-unemployment-benefits-trust-501c17}.
 
 \end{CSLReferences}
 

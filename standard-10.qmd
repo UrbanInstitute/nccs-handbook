@@ -7,7 +7,7 @@ bibliography: references.bib
 This chapter explains NCCS's taxonomy for foundations, trusts, and grant-making organizations:
 
 | Value | Organization Type                                                                                                                                                           |
-|-------|-----------------------------------------------------------------|
+|-------------|----------------------------------------------------------|
 | 0     | Not a foundation, trust, or grant-making organization                                                                                                                       |
 | 1     | 501(c)(3) private foundation, trust, or grant-making organization: private operating foundation (IRS status) & corporate foundation (NTEE code)                             |
 | 2     | 501(c)(3) private foundation, trust, or grant-making organization: private operating foundation (IRS status) & private independent foundation (NTEE code)                   |
@@ -32,10 +32,9 @@ This chapter explains NCCS's taxonomy for foundations, trusts, and grant-making 
 | 21    | 501(c)(17) trust providing for the payment of supplemental unemployment compensation benefits                                                                               |
 | 22    | 501(c)(18) employee funded pension trust                                                                                                                                    |
 | 23    | 501(c)(21) black lung benefit trust                                                                                                                                         |
-| 24    | 501(c)(28) National Railroad Retirement Investment Trust                                                                                                                    |
-| 25    | 4947(a)(1) charitable trust treated as a private foundation                                                                                                                 |
-| 26    | 4947(a)(1) charitable trust not treated as a private foundation                                                                                                             |
-| 27    | 4947(a)(2) split-interest charitable trust                                                                                                                                  |
+| 24    | 4947(a)(1) charitable trust treated as a private foundation                                                                                                                 |
+| 25    | 4947(a)(1) charitable trust not treated as a private foundation                                                                                                             |
+| 26    | 4947(a)(2) split-interest charitable trust                                                                                                                                  |
 
 Each type of organization is described in detail below.
 
