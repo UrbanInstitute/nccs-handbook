@@ -1,0 +1,75 @@
+# Summary
+
+In summary, this book has no content whatsoever.
+
+```{r}
+1 + 1
+```
+
+## Section 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Id consectetur purus ut faucibus pulvinar elementum. Aenean et tortor at risus viverra adipiscing at. Ornare massa eget egestas purus viverra. Ultrices sagittis orci a scelerisque purus semper eget duis at. Neque egestas congue quisque egestas diam in arcu cursus. Magna ac placerat vestibulum lectus mauris ultrices eros. Nunc lobortis mattis aliquam faucibus purus. Lobortis elementum nibh tellus molestie. Sed libero enim sed faucibus turpis. Id consectetur purus ut faucibus pulvinar elementum. Id consectetur purus ut faucibus pulvinar elementum. Ut aliquam purus sit amet. Tincidunt ornare massa eget egestas purus viverra accumsan. Pharetra et ultrices neque ornare aenean euismod. Nec dui nunc mattis enim ut tellus elementum. Tincidunt arcu non sodales neque sodales ut etiam sit amet.
+
+Aenean et tortor at risus viverra adipiscing at. Id volutpat lacus laoreet non curabitur gravida. Diam maecenas sed enim ut sem viverra aliquet eget. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Tortor vitae purus faucibus ornare suspendisse sed. Auctor elit sed vulputate mi sit amet mauris commodo. Orci sagittis eu volutpat odio facilisis. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Faucibus in ornare quam viverra orci sagittis eu. Non nisi est sit amet facilisis magna etiam tempor. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. In tellus integer feugiat scelerisque. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Velit ut tortor pretium viverra suspendisse potenti nullam. Lectus urna duis convallis convallis. Senectus et netus et malesuada fames ac turpis egestas. Sed enim ut sem viverra aliquet eget sit. Sapien nec sagittis aliquam malesuada. Nulla malesuada pellentesque elit eget gravida.
+
+
+### Subection 1-1
+
+Volutpat ac tincidunt vitae semper quis lectus nulla at. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Ornare quam viverra orci sagittis eu volutpat odio. Cum sociis natoque penatibus et magnis dis parturient montes. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Scelerisque in dictum non consectetur a erat nam at lectus. Sodales neque sodales ut etiam sit amet nisl. Faucibus turpis in eu mi. Egestas dui id ornare arcu odio. Interdum consectetur libero id faucibus nisl tincidunt eget. Eu ultrices vitae auctor eu. Ut etiam sit amet nisl. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius.
+
+Suspendisse sed nisi lacus sed viverra tellus in. Pretium quam vulputate dignissim suspendisse in est ante in. Augue eget arcu dictum varius duis at. Sed arcu non odio euismod. Volutpat diam ut venenatis tellus in. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Purus viverra accumsan in nisl nisi scelerisque eu. Vel quam elementum pulvinar etiam non. Auctor augue mauris augue neque. Sed arcu non odio euismod. Natoque penatibus et magnis dis. In ante metus dictum at. Risus viverra adipiscing at in tellus.
+
+### Subsection 1-2
+
+Enim neque volutpat ac tincidunt. Curabitur vitae nunc sed velit dignissim sodales ut eu. Elit at imperdiet dui accumsan sit. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Proin nibh nisl condimentum id venenatis a condimentum. Lacinia at quis risus sed vulputate odio ut enim blandit. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Vitae semper quis lectus nulla at volutpat. Vel pharetra vel turpis nunc eget lorem. Nascetur ridiculus mus mauris vitae ultricies leo integer. Consequat mauris nunc congue nisi vitae suscipit tellus. Egestas purus viverra accumsan in nisl nisi scelerisque. Aliquam vestibulum morbi blandit cursus risus at. Viverra vitae congue eu consequat ac felis donec. Lacus suspendisse faucibus interdum posuere.
+
+```{r, eval=F}
+dat$hour12 <- format( date.vec, format="%l %p" )
+table( dat$hour12 ) %>% head() %>% pander()
+
+# set the levels so they are in the correct order
+time.levels <-
+  c( "12 AM", " 1 AM", " 2 AM", " 3 AM", " 4 AM", " 5 AM", 
+     " 6 AM", " 7 AM", " 8 AM", " 9 AM", "10 AM", "11 AM", 
+     "12 PM", " 1 PM", " 2 PM", " 3 PM", " 4 PM", " 5 PM", 
+     " 6 PM", " 7 PM", " 8 PM", " 9 PM", "10 PM", "11 PM" )
+
+dat$hour12 <- factor( dat$hour12, levels=time.levels )
+table( dat$hour12 ) %>% head() %>% pander()
+```
+
+
+## Section 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Fermentum iaculis eu non diam phasellus. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus semper eget duis at. Ornare quam viverra orci sagittis. Congue eu consequat ac felis donec et odio pellentesque diam. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Egestas sed tempus urna et pharetra pharetra massa massa. Massa tincidunt nunc pulvinar sapien et ligula. Duis ultricies lacus sed turpis tincidunt id aliquet. At augue eget arcu dictum varius duis. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Velit scelerisque in dictum non consectetur a erat nam at. Est ullamcorper eget nulla facilisi etiam dignissim diam. Enim lobortis scelerisque fermentum dui faucibus in. Senectus et netus et malesuada fames ac turpis. Adipiscing tristique risus nec feugiat.
+
+```{r, eval=F}
+qplot( data=d3, x=as.numeric(as.character(hour)), y=harm ) + 
+  geom_line( color="steelblue", size=0.8 ) + 
+  geom_point( color="darkblue", size=3 ) + 
+  geom_hline( yintercept=mean.harm, color="black" ) + 
+  facet_wrap( ~ age, ncol=4 ) + 
+  xlab("Time of Day (24hrs)") + ylab("Rate of Harm") +
+  ggtitle("Proportion of Accidents Resulting in Harm") +
+  # theme_fivethirtyeight() 
+  theme_wsj( base_size=10, color="gray" )
+```
+
+Lorem donec massa sapien faucibus et molestie ac feugiat sed. Fermentum odio eu feugiat pretium nibh ipsum. Neque sodales ut etiam sit amet nisl purus. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Iaculis urna id volutpat lacus laoreet. Adipiscing diam donec adipiscing tristique risus nec. Scelerisque felis imperdiet proin fermentum leo vel orci porta non. Ultricies tristique nulla aliquet enim tortor at auctor urna. Lacus luctus accumsan tortor posuere ac ut. Sagittis vitae et leo duis ut. Sed lectus vestibulum mattis ullamcorper velit. A cras semper auctor neque vitae. Sed tempus urna et pharetra. Vulputate dignissim suspendisse in est ante in.
+
+Vestibulum lectus mauris ultrices eros in cursus turpis massa. Commodo odio aenean sed adipiscing diam. Tellus at urna condimentum mattis pellentesque id nibh. Scelerisque purus semper eget duis at tellus. Pellentesque id nibh tortor id. Nunc faucibus a pellentesque sit. Amet tellus cras adipiscing enim eu. Nunc non blandit massa enim nec dui nunc mattis enim. Dolor sit amet consectetur adipiscing. Tristique senectus et netus et malesuada fames ac turpis egestas. Lobortis elementum nibh tellus molestie.
+
+## Citation Style
+
+See the [citation style guide](https://quarto.org/docs/authoring/footnotes-and-citations.html#sec-citations):
+
+| Markdown Format                                                   | Output (default Chicago Style)                                | Output (custom csi)                             |
+|-------------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------------------|
+| Blah Blah [see @knuth1984, pp. 33-35; also @wickham2015, chap. 1] | Blah Blah (see Knuth 1984, 33–35; also Wickham 2015, chap. 1) | Blah Blah see [1], pp. 33-35; also [1], chap. 1 |
+| Blah Blah [@knuth1984, pp. 33-35, 38-39 and passim]               | Blah Blah (Knuth 1984, 33–35, 38–39 and passim)               | Blah Blah [1], pp. 33-35, 38-39 and passim      |
+| Blah Blah [@wickham2015; @knuth1984].                             | Blah Blah (Wickham 2015; Knuth 1984).                         | Blah Blah [1, 2].                               |
+| Wickham says blah [-@wickham2015]                                 | Wickham says blah (2015)                                      | Wickham says blah [1]                           |
+| @knuth1984 says blah.                                             | Knuth (1984) says blah.                                       | [1] says blah.                                  |
+| @knuth1984 [p. 33] says blah.                                     | Knuth (1984, 33) says blah.                                   | [1] [p. 33] says blah.                          |
+
+
