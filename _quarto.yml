@@ -33,6 +33,8 @@ format:
     css: style.css
   pdf:
     documentclass: scrreprt
+  # docx:
+  #   reference-doc: ui-docx-template.dotm
 
 editor: visual
 
