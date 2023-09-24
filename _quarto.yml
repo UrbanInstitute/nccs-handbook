@@ -10,6 +10,7 @@ book:
   - Hannah Martin
   date: last-modified
   sidebar: 
+    style: "docked"
     background: "#1273A1"  
     logo: img/logo-white.png
   chapters:

@@ -84,7 +84,7 @@ div.csl-indent {
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -105,7 +105,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/logo-white.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -224,13 +224,13 @@ div.csl-indent {
 <p>This chapter explains NCCS’s taxonomy for foundations, trusts, and grant-making organizations:</p>
 <table class="table">
 <colgroup>
-<col style="width: 8%">
-<col style="width: 13%">
-<col style="width: 14%">
-<col style="width: 20%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 0%">
+<col style="width: 1%">
+<col style="width: 2%">
+<col style="width: 2%">
+<col style="width: 1%">
+<col style="width: 9%">
+<col style="width: 82%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -260,7 +260,7 @@ div.csl-indent {
 <td>private operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: private operating foundation (IRS status) &amp; corporate foundation (NTEE code)</td>
-<td>FNDNCD == 3 &amp; NTEECC == “T21”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 3 &amp; NTEECC == “T21”</td>
 </tr>
 <tr class="odd">
 <td>2</td>
@@ -269,7 +269,7 @@ div.csl-indent {
 <td>exempt operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: exempt operating foundation (IRS status) &amp; corporate foundation (NTEE code)</td>
-<td>FNDNCD == 2 &amp; NTEECC == “T21”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 2 &amp; NTEECC == “T21”</td>
 </tr>
 <tr class="even">
 <td>3</td>
@@ -278,7 +278,7 @@ div.csl-indent {
 <td>grant-making (private nonoperating)</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: grant-making (private nonoperating) foundation (IRS status) &amp; corporate foundation (NTEE code)</td>
-<td>FNDNCD == 4 &amp; NTEECC == “T21”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 4 &amp; NTEECC == “T21”</td>
 </tr>
 <tr class="odd">
 <td>4</td>
@@ -287,7 +287,7 @@ div.csl-indent {
 <td>private operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: private operating foundation (IRS status) &amp; private independent foundation (NTEE code)</td>
-<td>FNDNCD == 3 &amp; NTEECC == “T22”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 3 &amp; NTEECC == “T22”</td>
 </tr>
 <tr class="even">
 <td>5</td>
@@ -296,7 +296,7 @@ div.csl-indent {
 <td>exempt operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: exempt operating foundation (IRS status) &amp; private independent foundation (NTEE code)</td>
-<td>FNDNCD == 2 &amp; NTEECC == “T22”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 2 &amp; NTEECC == “T22”</td>
 </tr>
 <tr class="odd">
 <td>6</td>
@@ -305,7 +305,7 @@ div.csl-indent {
 <td>grant-making (private nonoperating)</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: grant-making (private nonoperating) foundation (IRS status) &amp; private independent foundation (NTEE code)</td>
-<td>FNDNCD == 4 &amp; NTEECC == “T22”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 4 &amp; NTEECC == “T22”</td>
 </tr>
 <tr class="even">
 <td>7</td>
@@ -314,7 +314,7 @@ div.csl-indent {
 <td>private operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: private operating foundation (IRS status) &amp; private operating foundation (NTEE code)</td>
-<td>FNDNCD == 3 &amp; NTEECC == “T23”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 3 &amp; NTEECC == “T23”</td>
 </tr>
 <tr class="odd">
 <td>8</td>
@@ -323,7 +323,7 @@ div.csl-indent {
 <td>exempt operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: exempt operating foundation (IRS status) &amp; private operating foundation (NTEE code)</td>
-<td>FNDNCD == 2 &amp; NTEECC == “T23”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 2 &amp; NTEECC == “T23”</td>
 </tr>
 <tr class="even">
 <td>9</td>
@@ -332,7 +332,7 @@ div.csl-indent {
 <td>grant-making (private nonoperating)</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: grant-making (private nonoperating) foundation (IRS status) &amp; private operating foundation (NTEE code)</td>
-<td>FNDNCD == 4 &amp; NTEECC == “T23”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 4 &amp; NTEECC == “T23”</td>
 </tr>
 <tr class="odd">
 <td>10</td>
@@ -341,7 +341,7 @@ div.csl-indent {
 <td>private operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: private operating foundation (IRS status), other (NTEE code)</td>
-<td>FNDNCD == 3 &amp; NTEECC != “T21” &amp; NTEECC != “T22” &amp; NTEECC != “T23”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 3 &amp; NTEECC != “T21” &amp; NTEECC != “T22” &amp; NTEECC != “T23”</td>
 </tr>
 <tr class="even">
 <td>11</td>
@@ -350,7 +350,7 @@ div.csl-indent {
 <td>exempt operating</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: exempt operating foundation (IRS status), other (NTEE code)</td>
-<td>FNDNCD == 2 &amp; NTEECC != “T21” &amp; NTEECC != “T22” &amp; NTEECC != “T23”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 2 &amp; NTEECC != “T21” &amp; NTEECC != “T22” &amp; NTEECC != “T23”</td>
 </tr>
 <tr class="odd">
 <td>12</td>
@@ -359,7 +359,7 @@ div.csl-indent {
 <td>grant-making (private nonoperating)</td>
 <td>501(c)(3)</td>
 <td>501(c)(3) private: grant-making (private nonoperating) foundation (IRS status), other (NTEE code)</td>
-<td>FNDNCD == 4 &amp; NTEECC != “T21” &amp; NTEECC != “T22” &amp; NTEECC != “T23”</td>
+<td>SUBSECCD == 3 &amp; FNDNCD == 4 &amp; NTEECC != “T21” &amp; NTEECC != “T22” &amp; NTEECC != “T23”</td>
 </tr>
 <tr class="even">
 <td>13</td>
@@ -498,13 +498,13 @@ div.csl-indent {
 <h4 data-number="7.1.1.1" class="anchored" data-anchor-id="c3-private-private-operating-foundation-irs-status-corporate-foundation-ntee-code"><span class="header-section-number">7.1.1.1</span> 501(c)(3) private: private operating foundation (IRS status) &amp; corporate foundation (NTEE code)</h4>
 <p>Private operating foundations (IRS status) use most of their resources to actively conduct their exempt activities.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
 <p>Corporate foundations (NTEE code) are “private foundations whose grant funds are derived primarily from the contributions of a profit-making business organization.”<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
-<p>We can identify 501(c)(3) private operating foundations (IRS status) that are also corporate foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of T21 for NTEECC indicate that an organization is a corporate foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) private operating foundations (IRS status) that are also corporate foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of T21 for NTEECC indicate that an organization is a corporate foundation (NTEE code).</p>
 </section>
 <section id="c3-private-exempt-operating-foundation-irs-status-corporate-foundation-ntee-code" class="level4" data-number="7.1.1.2">
 <h4 data-number="7.1.1.2" class="anchored" data-anchor-id="c3-private-exempt-operating-foundation-irs-status-corporate-foundation-ntee-code"><span class="header-section-number">7.1.1.2</span> 501(c)(3) private: exempt operating foundation (IRS status) &amp; corporate foundation (NTEE code)</h4>
 <p>Exempt operating foundations (IRS status) are private operating foundations that have been publicly supported for at least 10 years, have governing bodies with less than 25% disqualified individuals and that broadly represent the general public, and have no disqualified individuals as officers.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> “Disqualified individuals” in this case refers to substantial contributors to the foundation; owners of more than 20% of the total combined voting power of a corporation, the profits interest of a partnership, or the beneficial interest of a trust or unincorporated enterprise (if these entities are substantial contributors to the foundation); and family members of any individuals previously described.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
 <p>Corporate foundations (NTEE code) are “private foundations whose grant funds are derived primarily from the contributions of a profit-making business organization.”<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
-<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are also corporate foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of T21 for NTEECC indicate that an organization is a corporate foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are also corporate foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of T21 for NTEECC indicate that an organization is a corporate foundation (NTEE code).</p>
 </section>
 <section id="c3-private-grant-making-private-nonoperating-foundation-irs-status-corporate-foundation-ntee-code" class="level4" data-number="7.1.1.3">
 <h4 data-number="7.1.1.3" class="anchored" data-anchor-id="c3-private-grant-making-private-nonoperating-foundation-irs-status-corporate-foundation-ntee-code"><span class="header-section-number">7.1.1.3</span> 501(c)(3) private: grant-making (private nonoperating) foundation (IRS status) &amp; corporate foundation (NTEE code)</h4>
@@ -521,19 +521,19 @@ div.csl-indent {
 <li>Private foundations can make grants to them without following expenditure responsibility requirements.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
 </ul>
 <p>Corporate foundations (NTEE code) are “private foundations whose grant funds are derived primarily from the contributions of a profit-making business organization.”<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
-<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are also corporate foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 4 indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of T21 for NTEECC indicate that an organization is a corporate foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are also corporate foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 4 indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of T21 for NTEECC indicate that an organization is a corporate foundation (NTEE code).</p>
 </section>
 <section id="c3-private-private-operating-foundation-irs-status-private-independent-foundation-ntee-code" class="level4" data-number="7.1.1.4">
 <h4 data-number="7.1.1.4" class="anchored" data-anchor-id="c3-private-private-operating-foundation-irs-status-private-independent-foundation-ntee-code"><span class="header-section-number">7.1.1.4</span> 501(c)(3) private: private operating foundation (IRS status) &amp; private independent foundation (NTEE code)</h4>
 <p>Private operating foundations (IRS status) use most of their resources to actively conduct their exempt activities.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
 <p>Private independent foundations (NTEE code) are “private foundations that make grants based on charitable endowments. Because of their endowments, they are focused primarily on grantmaking and generally do not actively raise funds or seek public financial support. These are the most common type of private foundation They are generally endowed, usually from a single individual or family. Private foundations are considered family foundations if relatives or the original donor are still active on the board of trustees or in the operation of the foundation.”<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
-<p>We can identify 501(c)(3) private operating foundations (IRS status) that are also private independent foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of T22 for NTEECC indicate that an organization is a private independent foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) private operating foundations (IRS status) that are also private independent foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of T22 for NTEECC indicate that an organization is a private independent foundation (NTEE code).</p>
 </section>
 <section id="c3-private-exempt-operating-foundation-irs-status-private-independent-foundation-ntee-code-ntee-code" class="level4" data-number="7.1.1.5">
 <h4 data-number="7.1.1.5" class="anchored" data-anchor-id="c3-private-exempt-operating-foundation-irs-status-private-independent-foundation-ntee-code-ntee-code"><span class="header-section-number">7.1.1.5</span> 501(c)(3) private: exempt operating foundation (IRS status) &amp; private independent foundation (NTEE code) (NTEE code)</h4>
 <p>Exempt operating foundations (IRS status) are private operating foundations that have been publicly supported for at least 10 years, have governing bodies with less than 25% disqualified individuals and that broadly represent the general public, and have no disqualified individuals as officers.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> “Disqualified individuals” in this case refers to substantial contributors to the foundation; owners of more than 20% of the total combined voting power of a corporation, the profits interest of a partnership, or the beneficial interest of a trust or unincorporated enterprise (if these entities are substantial contributors to the foundation); and family members of any individuals previously described.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
 <p>Private independent foundations (NTEE code) are “private foundations that make grants based on charitable endowments. Because of their endowments, they are focused primarily on grantmaking and generally do not actively raise funds or seek public financial support. These are the most common type of private foundation They are generally endowed, usually from a single individual or family. Private foundations are considered family foundations if relatives or the original donor are still active on the board of trustees or in the operation of the foundation.”<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></p>
-<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are also private independent foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of T22 for NTEECC indicate that an organization is a private independent foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are also private independent foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of T22 for NTEECC indicate that an organization is a private independent foundation (NTEE code).</p>
 </section>
 <section id="c3-private-grant-making-private-nonoperating-foundation-irs-status-private-independent-foundation-ntee-code" class="level4" data-number="7.1.1.6">
 <h4 data-number="7.1.1.6" class="anchored" data-anchor-id="c3-private-grant-making-private-nonoperating-foundation-irs-status-private-independent-foundation-ntee-code"><span class="header-section-number">7.1.1.6</span> 501(c)(3) private: grant-making (private nonoperating) foundation (IRS status) &amp; private independent foundation (NTEE code)</h4>
@@ -550,19 +550,19 @@ div.csl-indent {
 <li>Private foundations can make grants to them without following expenditure responsibility requirements.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a></li>
 </ul>
 <p>Private independent foundations (NTEE code) are “private foundations that make grants based on charitable endowments. Because of their endowments, they are focused primarily on grantmaking and generally do not actively raise funds or seek public financial support. These are the most common type of private foundation They are generally endowed, usually from a single individual or family. Private foundations are considered family foundations if relatives or the original donor are still active on the board of trustees or in the operation of the foundation.”<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a></p>
-<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are also private independent foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 4 indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of T22 for NTEECC indicate that an organization is a private independent foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are also private independent foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; valuesof 4 indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of T22 for NTEECC indicate that an organization is a private independent foundation (NTEE code).</p>
 </section>
 <section id="c3-private-private-operating-foundation-irs-status-private-operating-foundation-ntee-code" class="level4" data-number="7.1.1.7">
 <h4 data-number="7.1.1.7" class="anchored" data-anchor-id="c3-private-private-operating-foundation-irs-status-private-operating-foundation-ntee-code"><span class="header-section-number">7.1.1.7</span> 501(c)(3) private: private operating foundation (IRS status) &amp; private operating foundation (NTEE code)</h4>
 <p>Private operating foundations (IRS status) use most of their resources to actively conduct their exempt activities.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
 <p>Private operating foundations (NTEE code) are “private foundations that use a bulk of their resources to provide charitable services or run charitable programs of their own. They make few, if any, grants to outside organizations and, like private independent foundations, they generally do not raise funds from the public.”<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
-<p>We can identify 501(c)(3) private operating foundations (IRS status) that are also private operating foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of T23 for NTEECC indicate that an organization is a private operating foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) private operating foundations (IRS status) that are also private operating foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of T23 for NTEECC indicate that an organization is a private operating foundation (NTEE code).</p>
 </section>
 <section id="c3-private-exempt-operating-foundation-irs-status-private-operating-foundation-ntee-code" class="level4" data-number="7.1.1.8">
 <h4 data-number="7.1.1.8" class="anchored" data-anchor-id="c3-private-exempt-operating-foundation-irs-status-private-operating-foundation-ntee-code"><span class="header-section-number">7.1.1.8</span> 501(c)(3) private: exempt operating foundation (IRS status) &amp; private operating foundation (NTEE code)</h4>
 <p>Exempt operating foundations (IRS status) are private operating foundations that have been publicly supported for at least 10 years, have governing bodies with less than 25% disqualified individuals and that broadly represent the general public, and have no disqualified individuals as officers.<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> “Disqualified individuals” in this case refers to substantial contributors to the foundation; owners of more than 20% of the total combined voting power of a corporation, the profits interest of a partnership, or the beneficial interest of a trust or unincorporated enterprise (if these entities are substantial contributors to the foundation); and family members of any individuals previously described.<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a></p>
 <p>Private operating foundations (NTEE code) are “private foundations that use a bulk of their resources to provide charitable services or run charitable programs of their own. They make few, if any, grants to outside organizations and, like private independent foundations, they generally do not raise funds from the public.”<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a></p>
-<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are also private operating foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of T23 for NTEECC indicate that an organization is a private operating foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are also private operating foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of T23 for NTEECC indicate that an organization is a private operating foundation (NTEE code).</p>
 </section>
 <section id="c3-private-grant-making-private-nonoperating-foundation-irs-status-private-operating-foundation-ntee-code" class="level4" data-number="7.1.1.9">
 <h4 data-number="7.1.1.9" class="anchored" data-anchor-id="c3-private-grant-making-private-nonoperating-foundation-irs-status-private-operating-foundation-ntee-code"><span class="header-section-number">7.1.1.9</span> 501(c)(3) private: grant-making (private nonoperating) foundation (IRS status) &amp; private operating foundation (NTEE code)</h4>
@@ -579,17 +579,17 @@ div.csl-indent {
 <li>Private foundations can make grants to them without following expenditure responsibility requirements.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a></li>
 </ul>
 <p>Private operating foundations (NTEE code) are “private foundations that use a bulk of their resources to provide charitable services or run charitable programs of their own. They make few, if any, grants to outside organizations and, like private independent foundations, they generally do not raise funds from the public.”<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a></p>
-<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are also private operating foundations (NTEE code) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 4 indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of T23 for NTEECC indicate that an organization is a private operating foundation (NTEE code).</p>
+<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are also private operating foundations (NTEE code) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 4 indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of T23 for NTEECC indicate that an organization is a private operating foundation (NTEE code).</p>
 </section>
 <section id="c3-private-private-operating-foundation-irs-status-other-ntee-code" class="level4" data-number="7.1.1.10">
 <h4 data-number="7.1.1.10" class="anchored" data-anchor-id="c3-private-private-operating-foundation-irs-status-other-ntee-code"><span class="header-section-number">7.1.1.10</span> 501(c)(3) private: private operating foundation (IRS status), other (NTEE code)</h4>
 <p>Private operating foundations (IRS status) use most of their resources to actively conduct their exempt activities.<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a></p>
-<p>We can identify 501(c)(3) private operating foundations (IRS status) that are not corporate foundations, private independent foundations, or private operating foundations (NTEE codes) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of anything other than T21, T22, and T23 for NTEECC indicate that an organization is not a corporate foundation, private independent foundation, or private operating foundation (NTEE codes).</p>
+<p>We can identify 501(c)(3) private operating foundations (IRS status) that are not corporate foundations, private independent foundations, or private operating foundations (NTEE codes) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 3 for FNDNCD indicate that an organization is a 501(c)(3) private operating foundation (IRS status), and values of anything other than T21, T22, and T23 for NTEECC indicate that an organization is not a corporate foundation, private independent foundation, or private operating foundation (NTEE codes).</p>
 </section>
 <section id="c3-private-exempt-operating-foundation-irs-status-other-ntee-code" class="level4" data-number="7.1.1.11">
 <h4 data-number="7.1.1.11" class="anchored" data-anchor-id="c3-private-exempt-operating-foundation-irs-status-other-ntee-code"><span class="header-section-number">7.1.1.11</span> 501(c)(3) private: exempt operating foundation (IRS status), other (NTEE code)</h4>
 <p>Exempt operating foundations (IRS status) are private operating foundations that have been publicly supported for at least 10 years, have governing bodies with less than 25% disqualified individuals and that broadly represent the general public, and have no disqualified individuals as officers.<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a> “Disqualified individuals” in this case refers to substantial contributors to the foundation; owners of more than 20% of the total combined voting power of a corporation, the profits interest of a partnership, or the beneficial interest of a trust or unincorporated enterprise (if these entities are substantial contributors to the foundation); and family members of any individuals previously described.<a href="#fn33" class="footnote-ref" id="fnref33" role="doc-noteref"><sup>33</sup></a></p>
-<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are not corporate foundations, private independent foundations, or private operating foundations (NTEE codes) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of anything other than T21, T22, and T23 for NTEECC indicate that an organization is not a corporate foundation, private independent foundation, or private operating foundation (NTEE codes).</p>
+<p>We can identify 501(c)(3) exempt operating foundations (IRS status) that are not corporate foundations, private independent foundations, or private operating foundations (NTEE codes) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 2 for FNDNCD indicate that an organization is a 501(c)(3) exempt operating foundation (IRS status), and values of anything other than T21, T22, and T23 for NTEECC indicate that an organization is not a corporate foundation, private independent foundation, or private operating foundation (NTEE codes).</p>
 </section>
 <section id="c3-private-grant-making-private-nonoperating-foundation-irs-status-other-ntee-code" class="level4" data-number="7.1.1.12">
 <h4 data-number="7.1.1.12" class="anchored" data-anchor-id="c3-private-grant-making-private-nonoperating-foundation-irs-status-other-ntee-code"><span class="header-section-number">7.1.1.12</span> 501(c)(3) private: grant-making (private nonoperating) foundation (IRS status), other (NTEE code)</h4>
@@ -605,7 +605,7 @@ div.csl-indent {
 <li>They are exempt from taxes on net investment income.</li>
 <li>Private foundations can make grants to them without following expenditure responsibility requirements.<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a></li>
 </ul>
-<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are not corporate foundations, private independent foundations, or private operating foundations (NTEE codes) using FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). Values of 4 indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of anything other than T21, T22, and T23 for NTEECC indicate that an organization is not a corporate foundation, private independent foundation, or private operating foundation (NTEE codes).</p>
+<p>We can identify 501(c)(3) grant-making (private nonoperating) foundations (IRS status) that are not corporate foundations, private independent foundations, or private operating foundations (NTEE codes) using SUBSECCD (subsection code), FNDNCD (reason for 501(c)(3) status) and NTEECC (NTEECC primary purpose). alues of 3 for SUBSECCD indicate that an organization is a 501(c)(3) organization; values of 4 for FNDNCD indicate that an organization is a 501(c)(3) grant-making (private nonoperating) foundation (IRS status), and values of anything other than T21, T22, and T23 for NTEECC indicate that an organization is not a corporate foundation, private independent foundation, or private operating foundation (NTEE codes).</p>
 </section>
 </section>
 <section id="c3-public-foundations-trusts-and-grant-making-organizations" class="level3" data-number="7.1.2">
