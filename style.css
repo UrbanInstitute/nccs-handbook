@@ -35,16 +35,19 @@
 /* left sidebar  */
 /* $grid-sidebar-width: 400px !default;  */
 /* width of text body  */
-$grid-body-width: 800px; 
+/* $grid-body-width: 800px; */
 /* width of right side bar  */
-$grid-margin-width: 400px; 
+/* $grid-margin-width: 400px; */
 /* gutter between text and sidebars  */
-$grid-column-gutter-width: 100px; */
+/* $grid-column-gutter-width: 100px; */
 
+/*
 main {
     margin-left: 100px;
     margin-right: 100px;
 }
+*/
+
 
 body {  
     background-color: #fff; 

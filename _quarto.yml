@@ -31,11 +31,11 @@ format:
     theme: lux
     highlight-style: solarized
     css: style.css
-#    grid:
-#      sidebar-width: 200px
-#      body-width: 800px
-#      margin-width: 400px
-#      gutter-width: 100px
+    grid:
+      sidebar-width: 225px
+      body-width: 900px
+      margin-width: 400px
+      gutter-width: 100px
   pdf:
     documentclass: scrreprt
   # docx:
