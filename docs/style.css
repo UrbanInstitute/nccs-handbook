@@ -35,15 +35,15 @@
 /* left sidebar  */
 /* $grid-sidebar-width: 400px !default;  */
 /* width of text body  */
-/* $grid-body-width: 800px;  */
+$grid-body-width: 800px; 
 /* width of right side bar  */
-/* $grid-margin-width: 300px !default;  */
+$grid-margin-width: 400px; 
 /* gutter between text and sidebars  */
-/* $grid-column-gutter-width: 200px; */
+$grid-column-gutter-width: 100px; */
 
 main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 body {  
