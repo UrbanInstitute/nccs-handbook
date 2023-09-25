@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -95,6 +114,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -203,10 +224,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#section-1" id="toc-section-1" class="nav-link active" data-scroll-target="#section-1"><span class="header-section-number">3.1</span> Section 1</a>
   <ul class="collapse">
   <li><a href="#subection-1-1" id="toc-subection-1-1" class="nav-link" data-scroll-target="#subection-1-1"><span class="header-section-number">3.1.1</span> Subection 1-1</a></li>
-  <li><a href="#subsection-1-2" id="toc-subsection-1-2" class="nav-link" data-scroll-target="#subsection-1-2"><span class="header-section-number">3.1.2</span> Subsection 1-2</a></li>
   </ul></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"><span class="header-section-number">3.2</span> Section 2</a></li>
-  <li><a href="#citation-style" id="toc-citation-style" class="nav-link" data-scroll-target="#citation-style"><span class="header-section-number">3.3</span> Citation Style</a></li>
+  <li><a href="#margin-text" id="toc-margin-text" class="nav-link" data-scroll-target="#margin-text"><span class="header-section-number">3.2</span> Margin Text</a>
+  <ul class="collapse">
+  <li><a href="#margin-figures" id="toc-margin-figures" class="nav-link" data-scroll-target="#margin-figures"><span class="header-section-number">3.2.1</span> Margin Figures</a></li>
+  <li><a href="#margin-tables" id="toc-margin-tables" class="nav-link" data-scroll-target="#margin-tables"><span class="header-section-number">3.2.2</span> Margin Tables</a></li>
+  <li><a href="#other-content" id="toc-other-content" class="nav-link" data-scroll-target="#other-content"><span class="header-section-number">3.2.3</span> Other Content</a></li>
+  <li><a href="#margin-references" id="toc-margin-references" class="nav-link" data-scroll-target="#margin-references"><span class="header-section-number">3.2.4</span> Margin References</a></li>
+  <li><a href="#asides" id="toc-asides" class="nav-link" data-scroll-target="#asides"><span class="header-section-number">3.2.5</span> Asides</a></li>
+  <li><a href="#margin-captions" id="toc-margin-captions" class="nav-link" data-scroll-target="#margin-captions"><span class="header-section-number">3.2.6</span> Margin Captions</a></li>
+  </ul></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"><span class="header-section-number">3.3</span> Section 2</a></li>
+  <li><a href="#citation-style" id="toc-citation-style" class="nav-link" data-scroll-target="#citation-style"><span class="header-section-number">3.4</span> Citation Style</a></li>
   </ul>
 </nav>
     </div>
@@ -240,15 +269,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="section-1" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="section-1"><span class="header-section-number">3.1</span> Section 1</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Id consectetur purus ut faucibus pulvinar elementum. Aenean et tortor at risus viverra adipiscing at. Ornare massa eget egestas purus viverra. Ultrices sagittis orci a scelerisque purus semper eget duis at. Neque egestas congue quisque egestas diam in arcu cursus. Magna ac placerat vestibulum lectus mauris ultrices eros. Nunc lobortis mattis aliquam faucibus purus. Lobortis elementum nibh tellus molestie. Sed libero enim sed faucibus turpis. Id consectetur purus ut faucibus pulvinar elementum. Id consectetur purus ut faucibus pulvinar elementum. Ut aliquam purus sit amet. Tincidunt ornare massa eget egestas purus viverra accumsan. Pharetra et ultrices neque ornare aenean euismod. Nec dui nunc mattis enim ut tellus elementum. Tincidunt arcu non sodales neque sodales ut etiam sit amet.</p>
-<p>Aenean et tortor at risus viverra adipiscing at. Id volutpat lacus laoreet non curabitur gravida. Diam maecenas sed enim ut sem viverra aliquet eget. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Tortor vitae purus faucibus ornare suspendisse sed. Auctor elit sed vulputate mi sit amet mauris commodo. Orci sagittis eu volutpat odio facilisis. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Faucibus in ornare quam viverra orci sagittis eu. Non nisi est sit amet facilisis magna etiam tempor. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. In tellus integer feugiat scelerisque. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Velit ut tortor pretium viverra suspendisse potenti nullam. Lectus urna duis convallis convallis. Senectus et netus et malesuada fames ac turpis egestas. Sed enim ut sem viverra aliquet eget sit. Sapien nec sagittis aliquam malesuada. Nulla malesuada pellentesque elit eget gravida.</p>
-<section id="subection-1-1" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="subection-1-1"><span class="header-section-number">3.1.1</span> Subection 1-1</h3>
-<p>Volutpat ac tincidunt vitae semper quis lectus nulla at. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Ornare quam viverra orci sagittis eu volutpat odio. Cum sociis natoque penatibus et magnis dis parturient montes. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Scelerisque in dictum non consectetur a erat nam at lectus. Sodales neque sodales ut etiam sit amet nisl. Faucibus turpis in eu mi. Egestas dui id ornare arcu odio. Interdum consectetur libero id faucibus nisl tincidunt eget. Eu ultrices vitae auctor eu. Ut etiam sit amet nisl. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius.</p>
-<p>Suspendisse sed nisi lacus sed viverra tellus in. Pretium quam vulputate dignissim suspendisse in est ante in. Augue eget arcu dictum varius duis at. Sed arcu non odio euismod. Volutpat diam ut venenatis tellus in. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Purus viverra accumsan in nisl nisi scelerisque eu. Vel quam elementum pulvinar etiam non. Auctor augue mauris augue neque. Sed arcu non odio euismod. Natoque penatibus et magnis dis. In ante metus dictum at. Risus viverra adipiscing at in tellus.</p>
-</section>
-<section id="subsection-1-2" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="subsection-1-2"><span class="header-section-number">3.1.2</span> Subsection 1-2</h3>
-<p>Enim neque volutpat ac tincidunt. Curabitur vitae nunc sed velit dignissim sodales ut eu. Elit at imperdiet dui accumsan sit. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Proin nibh nisl condimentum id venenatis a condimentum. Lacinia at quis risus sed vulputate odio ut enim blandit. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Vitae semper quis lectus nulla at volutpat. Vel pharetra vel turpis nunc eget lorem. Nascetur ridiculus mus mauris vitae ultricies leo integer. Consequat mauris nunc congue nisi vitae suscipit tellus. Egestas purus viverra accumsan in nisl nisi scelerisque. Aliquam vestibulum morbi blandit cursus risus at. Viverra vitae congue eu consequat ac felis donec. Lacus suspendisse faucibus interdum posuere.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggridges)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -273,21 +293,166 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="standard-01_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Enim neque volutpat ac tincidunt. Curabitur vitae nunc sed velit dignissim sodales ut eu. Elit at imperdiet dui accumsan sit. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Proin nibh nisl condimentum id venenatis a condimentum. Lacinia at quis risus sed vulputate odio ut enim blandit. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Vitae semper quis lectus nulla at volutpat. Vel pharetra vel turpis nunc eget lorem. Nascetur ridiculus mus mauris vitae ultricies leo integer. Consequat mauris nunc congue nisi vitae suscipit tellus. Egestas purus viverra accumsan in nisl nisi scelerisque. Aliquam vestibulum morbi blandit cursus risus at. Viverra vitae congue eu consequat ac felis donec. Lacus suspendisse faucibus interdum posuere.</p>
+<section id="subection-1-1" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="subection-1-1"><span class="header-section-number">3.1.1</span> Subection 1-1</h3>
+<p>Volutpat ac tincidunt vitae semper quis lectus nulla at. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Ornare quam viverra orci sagittis eu volutpat odio. Cum sociis natoque penatibus et magnis dis parturient montes. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Scelerisque in dictum non consectetur a erat nam at lectus. Sodales neque sodales ut etiam sit amet nisl. Faucibus turpis in eu mi. Egestas dui id ornare arcu odio. Interdum consectetur libero id faucibus nisl tincidunt eget. Eu ultrices vitae auctor eu. Ut etiam sit amet nisl. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius.</p>
+<p>Suspendisse sed nisi lacus sed viverra tellus in. Pretium quam vulputate dignissim suspendisse in est ante in. Augue eget arcu dictum varius duis at. Sed arcu non odio euismod. Volutpat diam ut venenatis tellus in. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Purus viverra accumsan in nisl nisi scelerisque eu. Vel quam elementum pulvinar etiam non. Auctor augue mauris augue neque. Sed arcu non odio euismod. Natoque penatibus et magnis dis. In ante metus dictum at. Risus viverra adipiscing at in tellus.</p>
 </section>
 </section>
-<section id="section-2" class="level2 page-columns page-full" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="section-2"><span class="header-section-number">3.2</span> Section 2</h2>
+<section id="margin-text" class="level2 page-columns page-full" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="margin-text"><span class="header-section-number">3.2</span> Margin Text</h2>
+<section id="margin-figures" class="level3 page-columns page-full" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="margin-figures"><span class="header-section-number">3.2.1</span> Margin Figures</h3>
+<p>Figures that you create using code cells can be placed in the margin by using the <code>column: margin</code> code cell option. If the code produces more than one figure, each of the figures will be placed in the margin.</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-mtcars</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "MPG vs horsepower, colored by transmission."</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: margin</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>mtcars2 <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>mtcars2<span class="sc">$</span>am <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  mtcars<span class="sc">$</span>am, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'automatic'</span>, <span class="st">'manual'</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mtcars2, <span class="fu">aes</span>(hp, mpg, <span class="at">color =</span> am)) <span class="sc">+</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">method =</span> <span class="st">"loess"</span>) <span class="sc">+</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">'bottom'</span>)</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<div id="fig-mtcars" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="standard-01_files/figure-html/fig-mtcars-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;3.1: MPG vs horsepower, colored by transmission.</figcaption>
+</figure>
+</div>
+</div></div></div>
+</section>
+<section id="margin-tables" class="level3 page-columns page-full" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="margin-tables"><span class="header-section-number">3.2.2</span> Margin Tables</h3>
+<p>You an also place tables in the margin of your document by specifying <code>column: margin</code>.</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: margin</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">mpg</th>
+<th style="text-align: right;">cyl</th>
+<th style="text-align: right;">disp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mazda RX4</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">160</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mazda RX4 Wag</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">160</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Datsun 710</td>
+<td style="text-align: right;">22.8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">108</td>
+</tr>
+</tbody>
+</table>
+</div></div></div>
+</section>
+<section id="other-content" class="level3 page-columns page-full" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="other-content"><span class="header-section-number">3.2.3</span> Other Content</h3>
+<p>You can also place content in the margin by targeting the margin column using a div with the .<code>column-margin</code> class. For example:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>::: {.column-margin}</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>We know from *the first fundamental theorem of calculus* that for $x$ in $<span class="co">[</span><span class="ot">a, b</span><span class="co">]</span>$:</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>We know from <em>the first fundamental theorem of calculus</em> that for <span class="math inline">\(x\)</span> in <span class="math inline">\([a, b]\)</span>:</p>
+<p><span class="math display">\[\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).\]</span></p>
+</div></div></section>
+<section id="margin-references" class="level3 page-columns page-full" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="margin-references"><span class="header-section-number">3.2.4</span> Margin References</h3>
+<p>Footnotes and the bibliography typically appear at the end of the document, but you can choose to have them placed in the margin by setting the following option[^1] in the document front matter:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">reference-location</span><span class="kw">:</span><span class="at"> margin</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">citation-location</span><span class="kw">:</span><span class="at"> margin</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>With these options set, footnotes and citations will (respectively) be automatically be placed in the margin of the document rather than the bottom of the page.</p>
+<p>For example, according to <span class="citation" data-cites="irs-2022f">Service (<a href="references.html#ref-irs-2022f" role="doc-biblioref">2022</a>)</span> 501(c)(3) organizations indicate which exempt purpose(s) they advance when they file Form 1023 or 1023-EZ to apply for recognition of exemption from federal income tax (aka “tax-exempt status”) <span class="citation" data-cites="irs-2014b irs-2020a">(<a href="references.html#ref-irs-2014b" role="doc-biblioref">Service 2014</a>, <a href="references.html#ref-irs-2020a" role="doc-biblioref">2020</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-irs-2022f" class="csl-entry" role="listitem">
+———. 2022. <span>“Schedule a (Form 990): Public Charity Status and Public Support.”</span> Washington, DC. <a href="https://www.irs.gov/pub/irs-pdf/f990sa.pdf">https://www.irs.gov/pub/irs-pdf/f990sa.pdf</a>.
+</div><div id="ref-irs-2014b" class="csl-entry" role="listitem">
+Service, Internal Revenue. 2014. <span>“Form 1023-EZ: Streamlined Application for Recognition of Exemption Under Section 501(c)(3) of the Internal Revenue Code.”</span> Washington, DC. <a href="https://www.irs.gov/pub/irs-prior/f1023ez--2014.pdf">https://www.irs.gov/pub/irs-prior/f1023ez--2014.pdf</a>.
+</div><div id="ref-irs-2020a" class="csl-entry" role="listitem">
+———. 2020. <span>“Form 1023: Application for Recognition of Exemption Under Section 501(c)(3) of the Internal Revenue Code.”</span> Washington, DC. <a href="https://www.pay.gov/public/form/preview/pdf/104">https://www.pay.gov/public/form/preview/pdf/104</a>.
+</div></div></section>
+<section id="asides" class="level3 page-columns page-full" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="asides"><span class="header-section-number">3.2.5</span> Asides</h3>
+<div class="page-columns page-full"><p>Asides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number). </p><div class="no-row-height column-margin column-container"><span class="">This is a span that has the class <code>aside</code> which places it in the margin without a footnote number.</span></div></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is a span that has the class aside which places it in the margin without a footnote number.</span><span class="co">]</span>{.aside}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="margin-captions" class="level3 page-columns page-full" data-number="3.2.6">
+<h3 data-number="3.2.6" class="anchored" data-anchor-id="margin-captions"><span class="header-section-number">3.2.6</span> Margin Captions</h3>
+<p>For figures and tables, you may leave the content in the body of the document while placing the caption in the margin of the document. Using <code>cap-location: margin</code> in a code cell or document front matter to control this. For example:</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-cap-margin</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "MPG vs horsepower, colored by transmission."</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| cap-location: margin</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>mtcars2 <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>mtcars2<span class="sc">$</span>am <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  mtcars<span class="sc">$</span>am, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">'automatic'</span>, <span class="st">'manual'</span>)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mtcars2, <span class="fu">aes</span>(hp, mpg, <span class="at">color =</span> am)) <span class="sc">+</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">method =</span> <span class="st">"loess"</span>) <span class="sc">+</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">'bottom'</span>)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display page-columns page-full">
+<div id="fig-cap-margin" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="standard-01_files/figure-html/fig-cap-margin-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption margin-caption">Figure&nbsp;3.2: MPG vs horsepower, colored by transmission.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="section-2" class="level2 page-columns page-full" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="section-2"><span class="header-section-number">3.3</span> Section 2</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Fermentum iaculis eu non diam phasellus. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Purus semper eget duis at. Ornare quam viverra orci sagittis. Congue eu consequat ac felis donec et odio pellentesque diam. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Egestas sed tempus urna et pharetra pharetra massa massa. Massa tincidunt nunc pulvinar sapien et ligula. Duis ultricies lacus sed turpis tincidunt id aliquet. At augue eget arcu dictum varius duis. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Velit scelerisque in dictum non consectetur a erat nam at. Est ullamcorper eget nulla facilisi etiam dignissim diam. Enim lobortis scelerisque fermentum dui faucibus in. Senectus et netus et malesuada fames ac turpis. Adipiscing tristique risus nec feugiat.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>( <span class="at">data=</span>d3, <span class="at">x=</span><span class="fu">as.numeric</span>(<span class="fu">as.character</span>(hour)), <span class="at">y=</span>harm ) <span class="sc">+</span> </span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>( <span class="at">color=</span><span class="st">"steelblue"</span>, <span class="at">size=</span><span class="fl">0.8</span> ) <span class="sc">+</span> </span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>( <span class="at">color=</span><span class="st">"darkblue"</span>, <span class="at">size=</span><span class="dv">3</span> ) <span class="sc">+</span> </span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>( <span class="at">yintercept=</span>mean.harm, <span class="at">color=</span><span class="st">"black"</span> ) <span class="sc">+</span> </span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>( <span class="sc">~</span> age, <span class="at">ncol=</span><span class="dv">4</span> ) <span class="sc">+</span> </span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Time of Day (24hrs)"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Rate of Harm"</span>) <span class="sc">+</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Proportion of Accidents Resulting in Harm"</span>) <span class="sc">+</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># theme_fivethirtyeight() </span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_wsj</span>( <span class="at">base_size=</span><span class="dv">10</span>, <span class="at">color=</span><span class="st">"gray"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>( <span class="at">data=</span>d3, <span class="at">x=</span><span class="fu">as.numeric</span>(<span class="fu">as.character</span>(hour)), <span class="at">y=</span>harm ) <span class="sc">+</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>( <span class="at">color=</span><span class="st">"steelblue"</span>, <span class="at">size=</span><span class="fl">0.8</span> ) <span class="sc">+</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>( <span class="at">color=</span><span class="st">"darkblue"</span>, <span class="at">size=</span><span class="dv">3</span> ) <span class="sc">+</span> </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>( <span class="at">yintercept=</span>mean.harm, <span class="at">color=</span><span class="st">"black"</span> ) <span class="sc">+</span> </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>( <span class="sc">~</span> age, <span class="at">ncol=</span><span class="dv">4</span> ) <span class="sc">+</span> </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Time of Day (24hrs)"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Rate of Harm"</span>) <span class="sc">+</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Proportion of Accidents Resulting in Harm"</span>) <span class="sc">+</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># theme_fivethirtyeight() </span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_wsj</span>( <span class="at">base_size=</span><span class="dv">10</span>, <span class="at">color=</span><span class="st">"gray"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Lorem donec massa sapien faucibus et molestie ac feugiat sed. Fermentum odio eu feugiat pretium nibh ipsum. Neque sodales ut etiam sit amet nisl purus. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Iaculis urna id volutpat lacus laoreet. Adipiscing diam donec adipiscing tristique risus nec. Scelerisque felis imperdiet proin fermentum leo vel orci porta non. Ultricies tristique nulla aliquet enim tortor at auctor urna. Lacus luctus accumsan tortor posuere ac ut. Sagittis vitae et leo duis ut. Sed lectus vestibulum mattis ullamcorper velit. A cras semper auctor neque vitae. Sed tempus urna et pharetra. Vulputate dignissim suspendisse in est ante in.</p>
 <div class="cell page-columns page-full">
@@ -295,15 +460,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="standard-01_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="standard-01_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption class="figure-caption">An informative figure capture here.</figcaption>
 </figure>
 </div>
 </div></div></div>
 <p>Vestibulum lectus mauris ultrices eros in cursus turpis massa. Commodo odio aenean sed adipiscing diam. Tellus at urna condimentum mattis pellentesque id nibh. Scelerisque purus semper eget duis at tellus. Pellentesque id nibh tortor id. Nunc faucibus a pellentesque sit. Amet tellus cras adipiscing enim eu. Nunc non blandit massa enim nec dui nunc mattis enim. Dolor sit amet consectetur adipiscing. Tristique senectus et netus et malesuada fames ac turpis egestas. Lobortis elementum nibh tellus molestie.</p>
 </section>
-<section id="citation-style" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="citation-style"><span class="header-section-number">3.3</span> Citation Style</h2>
+<section id="citation-style" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="citation-style"><span class="header-section-number">3.4</span> Citation Style</h2>
 <p>See the <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html#sec-citations">citation style guide</a>:</p>
 <table class="table">
 <colgroup>
@@ -351,6 +516,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+
 
 
 </section>
