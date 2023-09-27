@@ -43,6 +43,10 @@ format:
 
 editor: visual
 
+website:
+  google-analytics: "G-H0JSB95M2S"
+
+
 # SYNTAX HIGHLIGHTING
 # https://kate-editor.org/themes/
 # https://www.garrickadenbuie.com/blog/pandoc-syntax-highlighting-examples/
