@@ -1,0 +1,77 @@
+---
+bibliography: references.bib
+---
+
+# 501(c) and Related Organizations
+
+## Overview
+
+## 501c Groups
+
+| Group Name                                 | Group Description | List of 501(c) Types |
+|--------------------------------------------|-------------------|----------------------|
+| Community Improvement and General Services |                   |                      |
+| Membership Communities                     |                   |                      |
+| Membership Services                        |                   |                      |
+| Cooperative and Community Owenership       |                   |                      |
+| Trust and Grant Making                     |                   |                      |
+| Government Sponsored                       |                   |                      |
+| Political Organizations                    |                   |                      |
+
+## Community Improvement and General Services
+
+### 501(c)(3) - Charitable Organizations
+
+501(c)(3) is the most common type of nonprofit.
+
+### 501(c)(4) - **Civic Leagues and Social Welfare Organizations**
+
+can be a political organization.
+
+### 501(c)(6) - Business Leagues, Chambers of Commerce, Real Estate Boards
+
+A business league is an association of indivduals promoting their common business interests and improving business conditions. For example, trade and professional associations are business leagues. A business league is not to engage in a regular for-profit business activities. None of their earnings may be used to benefit any individual memeber or private shareholder.
+
+A chamber of commerce is an organization whose primary purpose is to promote common economic interest of all commercial enterprises within their community or trade.
+
+501(c)(6) organizations may engage in lobbying and legislative advocacy related to their primary propose, although they may be required to provide members notice that they are doing so or be subject to a proxy tax.
+
+See @irs-501c6 for more details on 501c(6) organizations.
+
+## Membership Communities 
+
+### 501(c)(7) - Social and Recreational Clubs
+
+The primary purpose of a 501(c)(7) organization is for the members to engage in either predominantly social or recreational activities. Type of 501(c)(7) organizations include social clubs (college fraternities and sororities, social fraternal societies, country clubs, etc.) and recreational clubs (ammeter sports clubs, hobby clubs, etc).
+
+501(c)(7) organizations have strict regulars on memberships and activities:
+
+-   All income sources must come directly from the members.
+
+-   The vast majority of organizational activities must be reserved for members.
+
+-   Membership must be non-discriminatory on the basis of race or color. A 501(c)(7) organization may limit membership to members of a particular religion if the primary purpose of the organization is to further the teachings or principles of that religion.
+
+### 501(c)(10) - Fraternal Beneficiary Societies
+
+A 501(c)(10) organization "devote\[s\] their net earnings exclusively to religious, charitable, scientific, literary, educational, and fraternal purposes" [@irs-501c8-501c10]. These organizations are very similar to 501(c)(8) organizations, except that a 501(c)(10) may not provide insurance to its members. The Masons are the most well known example of a 501(c)(10).
+
+### 501(c)(19) - Post or Organization of Past or Present Members of the Armed Forces
+
+				
+
+			
+
+		
+
+	
+
+#### 501(c)(13) Cemeteries Companies
+
+A 501(c)(13) cemetery is for the private use of its members. These organizations are distinct from for-profit cemeteries because anyone who purchases a burial plot is automatically a member of the organization [@donorbox-501c13].
+
+Income from 501(c)(13) organization must be used to pay for the operating expenses of the cemetery or crematorium, to purchase cemetery property, or to be placed in a fund that will contribute to the perpetual care of the cemetery grounds.
+
+A 501(c)(13) organization cannot directly operate a mortuary business. All mortuary services must be run in a independent incorporated organization with no overlap between the cemetery\'s and the mortuary\'s boards of directors [@irs-atg-501c13].
+
+			

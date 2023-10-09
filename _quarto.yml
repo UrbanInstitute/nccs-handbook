@@ -8,6 +8,7 @@ book:
   author:   
   - Jesse Lecy   
   - Hannah Martin
+  - Olivia Beck
   date: last-modified
   sidebar: 
     style: "docked"
@@ -21,6 +22,7 @@ book:
     - standard-02.qmd
     - standard-03.qmd
     - standard-04.qmd
+    - standard-06.qmd
     - standard-10.qmd
     - references.qmd
 
