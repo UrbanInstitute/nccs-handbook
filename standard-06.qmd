@@ -8,29 +8,79 @@ bibliography: references.bib
 
 ## 501c Groups
 
-| Group Name                                 | Group Description | List of 501(c) Types |
-|--------------------------------------------|-------------------|----------------------|
-| Community Improvement and General Services |                   |                      |
-| Membership Communities                     |                   |                      |
-| Membership Services                        |                   |                      |
-| Cooperative and Community Owenership       |                   |                      |
-| Trust and Grant Making                     |                   |                      |
-| Government Sponsored                       |                   |                      |
-| Political Organizations                    |                   |                      |
++--------------------------------+------------------------------------+-------------+--------------------+
+| Group                          | Sub-Group                          | Description | 501c Types         |
++================================+====================================+=============+====================+
+| Community and Societal Benefit | General                            |             | -   **501(c)(3)**  |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(4)**  |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   501(c)(6)      |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   501(c)(13)     |
++--------------------------------+------------------------------------+-------------+--------------------+
+|                                | Political                          |             | -   **527**        |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(4)**  |
++--------------------------------+------------------------------------+-------------+--------------------+
+|                                | Cooperative or Community Ownership |             | -   **501(c)(16)** |
++--------------------------------+------------------------------------+-------------+--------------------+
+|                                | Membership Community               |             | -   501(c)(7)      |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   501(c)(10)     |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   501(c)(19)     |
++--------------------------------+------------------------------------+-------------+--------------------+
+| Mutual Membership Benefit      | Corporation                        |             | -   **501(c)(1)**  |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(2)**  |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(25)** |
++--------------------------------+------------------------------------+-------------+--------------------+
+|                                | Insurance                          |             | -   **501(c)(12)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(17)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(22)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(26)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(27)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(29)** |
++--------------------------------+------------------------------------+-------------+--------------------+
+|                                | Pension/Retirement                 |             | -   **501(c)(11)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(24)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(24)** |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(28)** |
++--------------------------------+------------------------------------+-------------+--------------------+
+|                                | Community-Based MMB                |             | -   **501(c)(5)**  |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(8)**  |
+|                                |                                    |             |                    |
+|                                |                                    |             | -   **501(c)(23)** |
++--------------------------------+------------------------------------+-------------+--------------------+
+|                                |                                    |             |                    |
++--------------------------------+------------------------------------+-------------+--------------------+
 
-## Community Improvement and General Services
+## Community and Societal Benefit
 
-### 501(c)(3) - Charitable Organizations
+### General
+
+#### 501(c)(3) - Charitable Organizations
 
 501(c)(3) is the most common type of nonprofit.
 
-### 501(c)(4) - **Civic Leagues and Social Welfare Organizations**
+#### 501(c)(4) - **Civic Leagues and Social Welfare Organizations**
 
 can be a political organization.
 
-### 501(c)(6) - Business Leagues, Chambers of Commerce, Real Estate Boards
+#### 501(c)(6) - Business Leagues, Chambers of Commerce, Real Estate Boards
 
-A business league is an association of indivduals promoting their common business interests and improving business conditions. For example, trade and professional associations are business leagues. A business league is not to engage in a regular for-profit business activities. None of their earnings may be used to benefit any individual memeber or private shareholder.
+A business league is an association of individuals promoting their common business interests and improving business conditions. For example, trade and professional associations are business leagues. A business league is not to engage in a regular for-profit business activities. None of their earnings may be used to benefit any individual member or private shareholder.
 
 A chamber of commerce is an organization whose primary purpose is to promote common economic interest of all commercial enterprises within their community or trade.
 
@@ -38,9 +88,27 @@ A chamber of commerce is an organization whose primary purpose is to promote com
 
 See @irs-501c6 for more details on 501c(6) organizations.
 
-## Membership Communities 
+#### 501(c)(13) Cemeteries Companies
 
-### 501(c)(7) - Social and Recreational Clubs
+A 501(c)(13) cemetery is for the private use of its members. These organizations are distinct from for-profit cemeteries because anyone who purchases a burial plot is automatically a member of the organization [@donorbox-501c13].
+
+Income from 501(c)(13) organization must be used to pay for the operating expenses of the cemetery or crematorium, to purchase cemetery property, or to be placed in a fund that will contribute to the perpetual care of the cemetery grounds.
+
+A 501(c)(13) organization cannot directly operate a mortuary business. All mortuary services must be run in a independent incorporated organization with no overlap between the cemetery's and the mortuary's boards of directors [@irs-501c19].
+
+### Political 
+
+#### IRC 527 - Political Organizations
+
+#### 501(c)(4) - **Civic Leagues and Social Welfare Organizations**
+
+### Cooperative or Community Ownership
+
+#### 501(c)(16) - Cooperative Organizations to Finance Crop Operations
+
+### Membership Community
+
+#### 501(c)(7) - Social and Recreational Clubs
 
 The primary purpose of a 501(c)(7) organization is for the members to engage in either predominantly social or recreational activities. Type of 501(c)(7) organizations include social clubs (college fraternities and sororities, social fraternal societies, country clubs, etc.) and recreational clubs (ammeter sports clubs, hobby clubs, etc).
 
@@ -52,26 +120,102 @@ The primary purpose of a 501(c)(7) organization is for the members to engage in 
 
 -   Membership must be non-discriminatory on the basis of race or color. A 501(c)(7) organization may limit membership to members of a particular religion if the primary purpose of the organization is to further the teachings or principles of that religion.
 
-### 501(c)(10) - Fraternal Beneficiary Societies
+#### 501(c)(10) - Fraternal Beneficiary Societies
 
 A 501(c)(10) organization "devote\[s\] their net earnings exclusively to religious, charitable, scientific, literary, educational, and fraternal purposes" [@irs-501c8-501c10]. These organizations are very similar to 501(c)(8) organizations, except that a 501(c)(10) may not provide insurance to its members. The Masons are the most well known example of a 501(c)(10).
 
-### 501(c)(19) - Post or Organization of Past or Present Members of the Armed Forces
+#### 501(c)(19) - Post or Organization of Past or Present Members of the Armed Forces
 
-				
+The IRS defines "Armed Forces of the United States" to be "all regular and reserve components of the uniformed services which are subject to the jurisdiction of the Secretary of Defense, the Secretary of the Army, the Secretary of the Navy, or the Secretary of the Air Force, and each term also includes the Coast Guard" [@irs-501c19].
 
-			
+A 501(c)(19) organization must be either a organization of past or present members of the United States Armed Forces, an auxiliary unit or society of such organization, or a trust or foundation for such organization [@irs-501c19]. At least 75% of the members must be current or past members of the United States Armed Forces, and at least 97.5% of its members must be current or past members of the United States Armed Forces, cadets, students in ROTC programs or Armed Services academies, or family members of such individuals.
 
-		
+They may engage in a broad range of activities without jeopardizing their tax-exempt status, including, but not limited to,
 
-	
+-   Promoting the social welfare of the community
 
-#### 501(c)(13) Cemeteries Companies
+-   Assisting disabled and needy war veterans and members of the U.S. Armed Forces and their dependents, and the widows and orphans of deceased veterans;
 
-A 501(c)(13) cemetery is for the private use of its members. These organizations are distinct from for-profit cemeteries because anyone who purchases a burial plot is automatically a member of the organization [@donorbox-501c13].
+-   Providing entertainment, care and assistance to hospitalized veterans or members of the U.S. Armed Forces;
 
-Income from 501(c)(13) organization must be used to pay for the operating expenses of the cemetery or crematorium, to purchase cemetery property, or to be placed in a fund that will contribute to the perpetual care of the cemetery grounds.
+-   Carrying on programs to perpetuate the memory of deceased veterans and members of the Armed Forces, and to comfort their survivors;
 
-A 501(c)(13) organization cannot directly operate a mortuary business. All mortuary services must be run in a independent incorporated organization with no overlap between the cemetery\'s and the mortuary\'s boards of directors [@irs-atg-501c13].
+-   Conducting programs for religious, charitable, scientific, literacy or educational purposes
 
-			
+-   Sponsoring or participating in activities of a patriotic nature;
+
+-   Providing insurance benefits for their members or dependents of their members, or both; or
+
+-   Providing social and recreational activities for their members.
+
+Most 501(c)(19) organizations are part of a formal group exemption letter, namely, they are local chapter of a central organization who organizational structure is recognized by the IRS [@irs-p3386].
+
+Veterans' Organizations may also be a 501(c)(2), 501(c)(4), 501(c)(7), 501(c)(8), or 501(c)(10) depending on their scope of mission. See @irs-p3386 for more details. Here we summarize the primary differences between these a 501(c)(19) and veterans' organizations in other 501(c) types.
+
+-   A 501(c)(2) veterans' organization is a title holding organization of a 501(c)(4), 501(c)(7), 501(c)(8), 501(c)(10), or 501(c)(19) veterans' organization. Its sole purpose is to hold real estate titles for the primary organization.
+
+-   A 501(c)(4) veterans' organization is exclusively dedicated to promoting the social welfare of the community and there are no membership requirements.
+
+-   A 501(c)(7) veterans' organization is one who whose activities are social and recreational, such as operating a bar, restaurant, canteen or casino for members. They are often operated in conjunction with 501(c)(4) veterans' organizations. They are required to have a certain percentage of their members be past or present members of the United States Armed Forces.
+
+-   A 501(c)(8) veterans' organization is a fraternal club is a fraternal society.
+
+-   A 501(c)(10) veterans' organization is very similar to a 501(c)(8) veterans' organization except that it cannot provide benefits to its members.
+
+## Mutual Membership Benefits
+
+### Corporation
+
+#### 501(c)(1) - Corporations Organized Under Act of Congress, including Federal Credit Unions and National Farm Loan Associations
+
+#### 501(c)(2) - Title-holding Corporations for Exempt Organizations
+
+#### 501(c)(25) - Real Property Title: Holding Corporations or Trusts with Multiple Parents
+
+### Insurance 
+
+-   **501(c)(12)**
+
+-   **501(c)(17)**
+
+-   **501(c)(22)**
+
+-   **501(c)(26)**
+
+-   **501(c)(27)**
+
+-   **501(c)(29)**
+
+### Pension/Retirement
+
+-   **501(c)(11)**
+
+-   **501(c)(24)**
+
+-   **501(c)(24)**
+
+-   **501(c)(28)**
+
+### Community-Based Membership
+
+#### 501(c)(5) **Labor, Agricultural and Horticultural Organizations**
+
+The IRS defines the terms "labor" as the performance of service as employees [@irs-501c5].
+
+According to @irs-501c5, a 501(c)(5) labor organization is "an association of workers who have combined to protect or promote the interests of the members by bargaining collectively with their employers to secure better working conditions, wages, and similar benefits". Their primary purpose must be the betterment of their labor conditions, the improvement of the quality of their product, and the development of their occupation.
+
+IRC 501(g) defines agricultural under 501(c)(5) as the art or science of cultivating land or underwater vegetation, harvesting crops or aquatic resources, or raising livestock. According to the IRS, horticulture is a specific type of agriculture specifically for the purpose of cultivating a garden or orchard, the science or art of growing fruits, vegetables, and flowers or ornamental plants [@irs-501c5].
+
+501(c)(5) agricultural organizations are dedicated to the betterment of the conditions of those engaged in agriculture, the improvement of their products, their occupational efficiency.
+
+#### 501(c)(8) Fraternal Beneficiary Society
+
+A 501(c)(8) organization must operate under the lodge system, namely of that carries out its activities "under a form of organization that comprises local branches called lodges, chapters, and the like" [@irs-501c8-501c10]. The lodge system requires a single parent organization and multiple subordinate local chapters.
+
+Their primary purpose must be fraternal and to provide for the payment of life, sick, accident, or other benefits of its members.
+
+A 501(c)(8) is similar to a 501(c)(10) except....................
+
+#### 501(c)(23)
+
+A 501(c)(23) organization is a veterans' association organized before 1880 with a principal purpose of providing insurance and other benefits to veterans or their dependents. More than 75% of its members must be past or present members of the United States Armed Forces [@irs-501c19]..........................................
