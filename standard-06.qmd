@@ -6,65 +6,85 @@ bibliography: references.bib
 
 ## Overview
 
+Abbreviations used:
+
+-   IRS - Internal Revenue Service
+
+-   IRC - Internal Revenue Code: A comprehensive set of tax laws used by the IRS
+
 ## 501c Groups
 
-+--------------------------------+------------------------------------+-------------+--------------------+
-| Group                          | Sub-Group                          | Description | 501c Types         |
-+================================+====================================+=============+====================+
-| Community and Societal Benefit | General                            |             | -   **501(c)(3)**  |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(4)**  |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   501(c)(6)      |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   501(c)(13)     |
-+--------------------------------+------------------------------------+-------------+--------------------+
-|                                | Political                          |             | -   **527**        |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(4)**  |
-+--------------------------------+------------------------------------+-------------+--------------------+
-|                                | Cooperative or Community Ownership |             | -   **501(c)(16)** |
-+--------------------------------+------------------------------------+-------------+--------------------+
-|                                | Membership Community               |             | -   501(c)(7)      |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   501(c)(10)     |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   501(c)(19)     |
-+--------------------------------+------------------------------------+-------------+--------------------+
-| Mutual Membership Benefit      | Corporation                        |             | -   **501(c)(1)**  |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(2)**  |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(25)** |
-+--------------------------------+------------------------------------+-------------+--------------------+
-|                                | Insurance                          |             | -   **501(c)(12)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(17)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(22)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(26)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(27)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(29)** |
-+--------------------------------+------------------------------------+-------------+--------------------+
-|                                | Pension/Retirement                 |             | -   **501(c)(11)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(24)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(24)** |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(28)** |
-+--------------------------------+------------------------------------+-------------+--------------------+
-|                                | Community-Based MMB                |             | -   **501(c)(5)**  |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(8)**  |
-|                                |                                    |             |                    |
-|                                |                                    |             | -   **501(c)(23)** |
-+--------------------------------+------------------------------------+-------------+--------------------+
-|                                |                                    |             |                    |
-+--------------------------------+------------------------------------+-------------+--------------------+
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Group                          | Sub-Group                                       | Description                                             | 501c Types        |
++================================+=================================================+=========================================================+===================+
+| Community and Societal Benefit | General                                         |                                                         | -   **501(c)(3)** |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   **501(c)(4)** |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(6)     |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(13)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(k)        |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(q)        |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Community and Societal Benefit | Political                                       |                                                         | -   **527**       |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   **501(c)(4)** |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Community and Societal Benefit | Community Ownership and Cooperative Opperation  |                                                         | -   501(c)(16)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(e)        |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(f)        |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(n)        |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Community and Societal Benefit | Membership Community                            |                                                         | -   501(c)(7)     |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(10)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(19)    |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Mutual Membership Benefit      | Corporation                                     |                                                         | -   501(c)(1)     |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(2)     |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(25)    |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Mutual Membership Benefit      | Insurance                                       |                                                         | -   501(c)(9)     |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(12)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(15)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(17)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(22)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(26)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(27)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(29)    |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Mutual Membership Benefit      | Pension/Retirement                              |                                                         | -   501(c)(11)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(18)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(28)    |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+| Mutual Membership Benefit      | Community-Based MMB                             |                                                         | -   501(c)(5)     |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(8)     |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(23)    |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
+|                                | Defunct                                         | These are historical 501(c) types that no longer exist. | -   501(c)(20)    |
+|                                |                                                 |                                                         |                   |
+|                                |                                                 |                                                         | -   501(c)(24)    |
++--------------------------------+-------------------------------------------------+---------------------------------------------------------+-------------------+
 
 ## Community and Societal Benefit
 
@@ -96,15 +116,90 @@ Income from 501(c)(13) organization must be used to pay for the operating expens
 
 A 501(c)(13) organization cannot directly operate a mortuary business. All mortuary services must be run in a independent incorporated organization with no overlap between the cemetery's and the mortuary's boards of directors [@irs-501c19].
 
+#### 501(k) - Child Care Organizations
+
+An organization is tax-exempt under 501(k) if,
+
+-   it provides child care away from the home,
+
+-   substantially all of the care provided by the organization is for purposes of
+    enabling individuals to be gainfully employed,
+
+-   the services are available tothe general public,
+
+-   must also be categorized as a public charity or a private foundation.
+
+IRC 501(k) enables eligible child care organizations to be treated as a educational organization under 501(c)(3) without having to demonstrate the meet the 501(c)(3) definitions of "educational" or "charitable" [@irs-501k].
+
+#### 501(q) - **Credit Counseling Organizations**
+
+Some credit counseling organizations are eligible to be tax-exempt under 501(q). See @irs-501-all for the specific requirements.
+
 ### Political 
 
 #### IRC 527 - Political Organizations
+
+https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section527&num=0&edition=prelim
 
 #### 501(c)(4) - **Civic Leagues and Social Welfare Organizations**
 
 ### Cooperative or Community Ownership
 
 #### 501(c)(16) - Cooperative Organizations to Finance Crop Operations
+
+The primary purpose of a 501(c)(16) is to "\[finance\] crop operations in conjunction with activities of a marketing or purchasing association" [@irs-pub557]. Generally, this consists of "financing the ordinary crop operations of such members or other producers" [@irs-501c16].
+
+#### 501(e) - **Cooperative Hospital Service Organizations**
+
+According to @irs-501e,
+
+> "Section 501(e) is the exclusive and controlling section under which a cooperative hospital service organization can qualify as a charitable organization. A cooperative hospital service organization which meets the requirements of section 501(e) and this section shall be treated as an organization described in section 501(c)(3)"
+
+To qualify as a 501(e) an organization must,
+
+-   be organized and operated on a cooperative basis,
+
+-   Perform, on a centralized basis, only one or more specifically enumerated services which, if performed directly by a single tax exempt hospital would grant them tax-exempt status
+
+-   Only perform such service(s) solely for two or more patron-hospitals. Patron-hospitals are those that,
+
+    -   are tax-exempt under section 501(c)(3), and
+
+    -   are owned and operated by the United States, a State, the District of Columbia, or a possession of the United States, or a political subdivision or an agency or instrumentality of any of the foregoing.
+
+-   Solely "engage in the following services: data processing, purchasing (including the purchasing and dispensing of drugs and pharmaceuticals to patron-hospitals), warehousing, billing and collection, food, clinical (including radiology), industrial engineering (including the installation, maintenance and repair of bio-medical and similar equipment), laboratory, printing, communications, record center, and personnel (including recruitment, selection, testing, training, education and placement of personnel) services" [@irs-501e]. Laundry services are specifically non included in allowable servides [@irs-health-care]. An organization that engages in any actives outside of those previously listed is not eligible for 501(e) status.
+
+For the differences between 501(c)(3), 501(c)(4), and 501(e), see @irs-health-care.
+
+#### 501(f) - **Cooperative Service Organizations of Operating Educational Organizations**
+
+A organization is tax-exempt under 501(f) if they "organized and operated
+solely to provide collectively certain investment services in stock and securities
+with money contributed by their members, which in general are exempt schools" [@irs-502]. For more information, see @irs-501-all .
+
+#### 501(n) - Charitable Risk Pools
+
+A 501(n) organization pools certain insurance risks of 501(c) (3) organizations. See @irs-501-all for more details.
+
+#### 521 -  Farmers' Cooperative Associations 
+
+IRC 521 is a special tax treatment only available to farmer cooperatives. According to @irs-521, a 521 cooperative must,
+
+-   be a farmers' cooperative,
+
+-   market the products of members and other producers or purchase supplies and other equipment for members and other persons,
+
+-   return margins to all patrons (members and nonmembers),
+
+-   Ensure dividends on capital stock may not exceed the legal rate of interest in the State of incorporation or 8 percent per year, whichever is greater,
+
+-   Have 85% voting stock must be owned by producers who use the cooperative's services,
+
+-   Ensure the value of marketing and purchasing transactions with members must exceed that of such transactions with nonmembers,
+
+-   Ensure purchasing for persons who are neither members nor producers can't exceed 15% of total purchasing activity.
+
+See @irs-521 for a detailed history of 521 organizations.
 
 ### Membership Community
 
@@ -162,39 +257,240 @@ Veterans' Organizations may also be a 501(c)(2), 501(c)(4), 501(c)(7), 501(c)(8)
 
 -   A 501(c)(10) veterans' organization is very similar to a 501(c)(8) veterans' organization except that it cannot provide benefits to its members.
 
+#### 501(d) - Religious and Apostolic Associations
+
+A 501(d) is a membership organization that is required to
+
+-   be a religious or apostolic association or
+    corporation,
+
+-   maintain a common treasury or community treasury,
+
+-   engage in a business for the common benefit of its members,
+
+-   have the members include in the gross income as dividends received their
+    entire pro rata share of the organization's taxable income for the year,
+    whether or not such income is actually distributed to them.
+
+The primary purpose of a 501(d) organization is to operate communal commercial enterprises and give its proceeds to the common benefit of its members [@irs-501d]. For this reason, contributions to the organization are not deductible. For a detailed discussion, see @irs-501d.
+
 ## Mutual Membership Benefits
 
 ### Corporation
 
 #### 501(c)(1) - Corporations Organized Under Act of Congress, including Federal Credit Unions and National Farm Loan Associations
 
+A 501(c)(1) organization is one that is an instrumentality of the United States that was organized under an Act of Congress and was specifically granted tax exemption. There are different rules for establishing a 501(c)(1) pre- and post- The Tax Reform Act of 1984 [@irs-501c1]. They are exempt from filing IRS Form 990.
+
+Examples of 501(c)(1) organization include:
+
+-   American National Red Cross, commonly known as American Red
+    Cross
+
+-   Federal Credit Unions, Intermediate Credit Banks, Deposit Insurance Corporation, Home Loan Banks, Land Banks, Reserve Banks
+
+-   Federal Land Bank Associations, formerly National Farm Loan Association
+
+-   Federal National Mortgage Association, commonly known as Fannie
+    Mae
+
+-   Federal Savings and Loan Insurance Corporation (FSLIC)
+
+-   Pension Benefit Guaranty Corporation
+
+-   Public Housing Administration
+
+-   United States Capitol Historical Society
+
 #### 501(c)(2) - Title-holding Corporations for Exempt Organizations
+
+A 501(c)(2) organization exists "for the exclusive purpose of holding title to property, collecting income therefrom, and turning over the entire amount thereof, less expenses" to one or more tax-exempt organizations [@irs-501c2]. In this way, a 501(c)(2) organization only exists as a tax-exmpet by holding assests for another tax-exempt organization(s).
+
+The only permissible activities of a 501(c)(2) are
+
+-   holding title to property,
+
+-   collecting the income from it, and
+
+-   turning over the entire amount, less expenses, to an exempt organization.
+
+According to the IRS, "if an organization's charter allows corporate purposes and powers beyond holding property and collecting income, then the corporation isn\'t organized for the 'exclusive purpose' of holding title to property" [@irs-501c2-atg].
+
+501(c)(2)s are companies acting as investment and holding companies. A operating company is not eligible to be a 501(c)(2). A 501(c)(2) can be a business or commercial trust classified as an association, but cannot be a "ordinary trust" [@irs-501c2-atg].
+
+Tax-exempt organizations often establish a 501(c)(2) to lower their own risk.
 
 #### 501(c)(25) - Real Property Title: Holding Corporations or Trusts with Multiple Parents
 
+A 501(c)(25) organization specially provides tax-exemption for title holding organizations with up to 35 independent shareholders or other beneficiaries. 	The holdings of a 501(c)(25) are limited to interests in real property. To qualify as a 501(c)(25) the IRC [@irs-501c25] requires the organization to:
+
+-   Be organized for the exclusive purposes of acquiring real property and
+    holding title to, and collecting income from that property and remitting the
+    entire amount of income from such property (less expenses) to its
+    shareholders, or beneficiaries described below.
+
+-   Be a corporation with no more than 35 shareholders or a trust with no more
+    than 35 beneficiaries.
+
+-   Each shareholder or beneficiary may have only one class of stock or
+    beneficial interest.
+
+-   The organization may be organized as a non-stock corporation if its articles of
+    incorporation or bylaws provide members with the same rights as required by
+    law
+
+-   A corporation or trust must permit its shareholders or beneficiaries to dismiss
+    the corporation\'s or trust\'s investment adviser, upon the shareholders or
+    beneficiaries majority vote
+
+Each shareholder/beneficiary must be one of:
+
+-   A qualified pension, profit sharing, or stock bonus plan under 401(a)
+
+-   A 414(d) governmental plan
+
+-   The United States, any State or political subdivision thereof, or any agency or instrumentality or any of the foregoing
+
+-   Any 501(c)(3)
+
+The activities of the 501(c)(25) are considered the activies of the shareholders/beneficiaries. A 501(c)(25) must comply with all IRC rules in order for the shareholders/beneficiaries to retain tax-exempt status.
+
 ### Insurance 
 
--   **501(c)(12)**
+#### 501(c)(9) - **Voluntary Employees' Beneficiary Association**
 
--   **501(c)(17)**
+A 501(c)(9) organization consists of employees who provide pay life, sick, accident, or similar benefits to their members and other designated beneficiaries [@irs-501c9]. A 501(c)(9) organization exists through mutual employment or membership to a labor union. The membership in this organization is required to be voluntary. It is also required to have a non-discrimination requirement for higher-paid employees (i.e. higher-paid employees cannot have better benefits than lower-paid employees). A 501(c)(9) may be funded by the employees or their employer.
 
--   **501(c)(22)**
+#### 501(c)(12) - Benevolent Life Insurance Associations, Mutual Ditch or Irrigation Companies, Mutual or Cooperative Telephone Companies, and Like Organizations
 
--   **501(c)(26)**
+According to @irs-501c12, the purpose of a 501(c)(12) is to provide
 
--   **501(c)(27)**
+> "\[provide\] federal income tax exemption for benevolent life
+> insurance associations of a purely local character, mutual ditch or irrigation companies, mutual or cooperative telephone companies, electric companies, or 'like organizations' ..... \[to its\] members at the lowest possible cost."
 
--   **501(c)(29)**
+A 501(c)(12) must,
+
+-   receive at least 85% of their annual income from its members,
+
+-   soley use any income collected to meet the cooperative's losses and expenses,
+
+-   be organized and operated as a cooperative.
+
+#### 501(c)(15) - Mutual Insurance Companies or Associations
+
+A 501(c)(15) is an insurance company that provides its members with property damage, marine, funeral, or burial insurance with less that \$600,000 in gross reciepts. Membership is restricted to policy holders and all policy holders are required to be members. Generally, membership is exclusive to the residents of a particular community [@irs-501c15]. A 501(c)(15) must provide insurance at a substantial cost and may not have an unreasonable accumulation of funds.
+
+If a 501(c)(15) pays benefits in cash upon death, it is no longer considered a 501(c)(15), and rather is considered at 501(c)(12). 501(c)(15) organizations are prohibited from providing life insurance.
+
+#### 501(c)(17) - Supplemental Unemployment Benefit Trusts
+
+A 501(c)(17) trust is a tax-exempt organization whose sole purpose its to offer Supplemental Unemployment Benefit(s) (SUB) to employees and is non-discriminatory. A 501(c)(17) trust can only may benefits if the employee\'s involuntary separation from their employment results from a reduction in the work force, the discontinuation of the operation, or other similar conditions [@irs-501c17-atg].
+
+It may offer sick and accident benefits only if they are subordinate to unemployment compensation benefits [@irs-501c17-atg]. It may not offer death, vacation, or retirement benefits.
+
+#### 501(c)(24) - **Black Lung Benefit Trusts**
+
+The 501(c)(24) exemption category was established by the Federal Black Lung Benefit Act (also known as the Federal Coal Mine Health and Safety Act
+of 1969 to require coal mine operators to provide benefits to their employees diagnosed with black lung disease due to their exposure to coal. This law restricts the "black lung disease diagnoses to only those working with coal" [@irs-501c25]. In 1977, the Black Lung Benefits Revenue Act of 1977 amended the IRC to
+establish the Black Lung Disability Trust Fund to fund medical expenses when the benefits are not paid by the respective mine operator. A 501(c)(25) trust must be written, an oral trust is insufficient even if valid under state law.
+
+According to @irs-501c25, the activities of a 501(c)(25) trust can only include,
+
+-   Establish, in whole or in part, the coal mine operator\'s liability for, or with respect to, claims for compensation for disability or death due to pneumoconiosis under Black Lung Acts,
+
+-   Pay premiums for insurance exclusively covering this liability,
+
+-   Pay administrative and other incidental expenses of this trust connected to the trust operation and claim processing (against the coal mine operator under Black Lung Acts),
+
+-   Pay accident or health benefits for retired miners, their spouses and dependents (including administrative and other incidental expenses of this trust) or premiums for insurance exclusively covering these benefits,
+
+-   Invest in qualified investments (but only those exceeding current year obligations),
+
+-   Pay into the Black Lung Disability Trust Fund or into the general fund of the United States Treasury.
+
+#### 501(c)(22) - **Withdrawal Liability Payment Fund**
+
+The primary purpose of a 501(c)(22) organization is "to provide funds to meet the liability of employers withdrawing from a multi-employer pension fund" [@irs-pub557].
+
+For the technical requirements of a 501(c)(22), see @cornell-pub557.
+
+#### 501(c)(26) - **State-Sponsored High-Risk Health Coverage Organizations**
+
+A 501(c)(26) organization is one that is
+
+> "a membership organization established by a state exclusively to provide coverage for medical care on a nonprofit basis to high-risk individuals who are state residents. It can provide coverage either by issuing insurance itself or by entering into an arrangement with a health maintenance organization (HMO). The state must determine the composition of membership in the organization. No part of the net earnings of the organization can inure to the benefit of any private shareholder or individual" [@irs-pub557].
+
+High risk individuals include the "individuals, their spouses, and qualifying children, who, because of a pre-existing medical condition who can't get medical coverage for that condition through insurance or an HMO, or can get coverage for that condition only at a rate that is substantially higher than the rate for the same coverage from the state-sponsored organization" [@irs-pub557].
+
+#### 
+501(c)(27) - Qualified State-Sponsored Workers' Compensation Organizations
+
+There are two categories of 501(c)(27),
+
+1.  501(c)(27)(A) - Pre-June 1, 1996, Organizations, and
+2.  501(c)(27)(B) - Organizations formed after December 31, 1997
+
+According to @irs-pub557 qualify as a 501(c)(27)(A), an organization must have all of the following:
+
+-   Be established by a state before June 1, 1996,
+
+-   Dedicaded exclusively to reimburse its members for losses under workers' compensation acts,
+
+-   The state requires that the membership consist of all persons who issue insurance covering workers' compensation losses in the state and all persons and government entities who self-insure against those losses,
+
+-   It operates as a nonprofit organization by returning surplus income to its members or workers' compensation policyholders on a periodic basis and by reducing initial premiums
+
+According to @irs-pub557, any organization (including a mutual insurance company) can be a 501(c)(27(B) organization if:
+
+-   It is created by state law and is organized and operated under state law exclusively to:
+
+    -   provide workmen's compensation insurance which is required by state law or state law must provide significant disincentives if employers fail to
+
+    -   purchase such insurance, andprovide related coverage which is incidental to workmen's compensation insurance,
+
+-   It provides workmen's compensation insurance to any employer in the state (for employees in the state or temporarily assigned out-of-state) which seeks such insurance and meets other reasonable requirements relating to the insurance.
+
+-   The state makes a financial commitment to such organization either by extending its full faith and credit to the initial debt of the organization or by providing the initial operating capital of the organization.
+
+-   The assets of the organization revert to the state upon dissolution or the organization isn't permitted to dissolve under state law.
+
+-   The majority of the board of directors or oversight body of such organization are appointed by the chief executive officer or other executive branch official of the state, by the state legislature, or by both.
+
+#### 501(c)(29) - **CO-OP Health Insurance Issuers**
+
+A 501(c)(29) organization is "a qualified nonprofit health insurance issuer which has received a loan or grant under the CO-OP Program" [@irs-pub557]. Generally, this exemption applies to organization receiving loans or repayable grants only if:
+
+-   The organization has applied for recognition of exemption;
+
+-   The organization has received a loan or a repayable grant under the CO-OP program and is in compliance with all requirements of the CO-OP program and any agreement with CMS;
+
+-   No part of the organization\'s net earnings inures to the benefit of any private shareholder or individual, except that the organization is required by section 1322(c)(4) of the Affordable Care Act to use its profits to lower premiums, improve benefits or improve the quality of health care delivered to its members;
+
+-   No substantial part of the organization\'s activities involves attempts to influence legislation; and the organization doesn't participate or intervene in political campaigns.
 
 ### Pension/Retirement
 
--   **501(c)(11)**
+#### 501(c)(11) - Teachers' Retirement Fund Associations
 
--   **501(c)(24)**
+The primary propose of a 501(c)(11) is to provide a local teachers' association for payment of retirement benefits of teachers and other school employees. A 501(c)(11) organization is solely funded through taxes, member donations, and investment revenue. The activities of a 501(c)(11) must be exclusively be "local in charter" [@irs-501c11-atg].
 
--   **501(c)(24)**
+#### 501(c)(18) - Employee Funded Pension Trust (created before June 25, 1959)
 
--   **501(c)(28)**
+A 501(c)(18) trust is a plan created before June 25, 1959 for "the payment of benefits under a pension plan funded only by contributions of employees" [@irs-501c18]. A 501(c)(18) trust must:
+
+-   be funded solely from contributions of employees who are members of the plan,
+
+-   have been created before June 25, 1959 and not since had substantial changes in the trust charter or in the character of the beneficiaries,
+
+-   provide solely for the payment of pension or retirement benefits to its beneficiaries,
+
+-   only provide of pension or retirement benefits and not any other type of benefits,
+
+-   be non-discriminatory.
+
+#### 501(c)(28) - National Railroad Retirement Investment Trust
+
+The 501(c)(28) tax-exempt state applies to the National Railroad Retirement Investment Trust (NRRIT) which is managed by the U.S. Railroad Retirement Board. It was established as part of the Railroad Retirement and Survivor's Improvement Act of 2001 to expand benefits to members and diversify its investment portfolio. For more details see @railroad-retirement-board.
 
 ### Community-Based Membership
 
@@ -210,12 +506,37 @@ IRC 501(g) defines agricultural under 501(c)(5) as the art or science of cultiva
 
 #### 501(c)(8) Fraternal Beneficiary Society
 
+The IRC does not define the term "fraternal society". A commonly used definition is from the National Union v. Marlow 74 F. 775, 778-79 (8th Cir. 1896) [@irs-501c8-501c10]:
+
+> "A fraternal beneficiary society \... would be one whose members
+> have adopted the same, or a very similar calling, avocation, or
+> profession, or who are working in union to accomplish some
+> worthy object, and who for that reason have banded themselves
+> together as an association or society to aid and assist one another,
+> and to promote the common cause"
+
+While a fraternal society often engages in social activities, this alone is not enough to consider an organization a fraternal society. Similarly, if the members of an organization have a common tie or goal, this on its own is also not enough to consider a organization a fraternal society. A fraternal society must have a common tie, goal, calling, avocation, or profession **and** primarily engage in fraternal activities.
+
 A 501(c)(8) organization must operate under the lodge system, namely of that carries out its activities "under a form of organization that comprises local branches called lodges, chapters, and the like" [@irs-501c8-501c10]. The lodge system requires a single parent organization and multiple subordinate local chapters.
 
-Their primary purpose must be fraternal and to provide for the payment of life, sick, accident, or other benefits of its members.
+The primary purpose of a 501(c)(8) must be fraternal and to provide for the payment of life, sick, accident, or other benefits of its members. They are required to provide benefits to the majority of, but not all of, its members.
 
-A 501(c)(8) is similar to a 501(c)(10) except....................
+A 501(c)(8) may engage in some political activity such as endorsing candidates for public office without loosing their tax-exempt status. They are also allowed to participate in a state-sponsored reinsurance pool.
 
-#### 501(c)(23)
+A 501(c)(8) is similar to a 501(c)(10) except a 501(c)(8) must have "an established
+system for the payment to its members, or their dependents, of life, sick,
+accident, or other benefits", whereas a 501(c)(10) may not provide insurance to its members[@irs-501c8-501c10].
 
-A 501(c)(23) organization is a veterans' association organized before 1880 with a principal purpose of providing insurance and other benefits to veterans or their dependents. More than 75% of its members must be past or present members of the United States Armed Forces [@irs-501c19]..........................................
+#### 501(c)(23) - **Veterans\' Organizations (Before 1880)**
+
+A 501(c)(23) organization is a veterans' association organized before 1880 with a principal purpose of providing insurance and other benefits to veterans or their dependents. More than 75% of its members must be past or present members of the United States Armed Forces [@irs-501c19].
+
+### Defunct 
+
+#### 501(c)(20) - Group Legal Services Plan Organizations
+
+A 501(c)(20) was an organization whose exclusive function of which is to form part of a qualified group legal services plan(s) to its members. This status was eliminated after June 30, 1992. 501(c)(20) organizations were able to request a status change to 501(c)(9) [@irs-det-manual]. See @bloomberg-501c20 for more details.
+
+#### 501(c)(24) - ERISA 				
+
+A 501(c)(24) was a "pre-1988 single-employer benefit trusts described in section 4049 of the Employee Retirement Income Security Act of 1974" [@irs-list-of-eo]. This 501(c) type was repealed by the Pension Protection Act of 2006.
