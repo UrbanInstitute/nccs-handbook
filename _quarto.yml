@@ -5,6 +5,7 @@ project:
 book:
   title: "NCCS Research Guide"
   output-file: "research-guide"
+  google-analytics: "G-H0JSB95M2S"
   author:   
   - Jesse Lecy   
   - Hannah Martin
