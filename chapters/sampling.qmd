@@ -1,0 +1,98 @@
+# Creating a Sample of Nonprofits
+
+This chapter outlines the considerations that go into creating a sample of nonprofits for analysis.
+
+## Foreign Nonprofits
+
+First, determine if your sample will include foreign nonprofits. The IRS retains a list of tax-exempt organizations with filing addresses located outside of the United States (including Puerto Rico) on the [BMF Website](https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf).
+
+The following code snippet demonstrates how to extract the EINs associated with these foreign nonprofits:
+
+```{r, eval=FALSE}
+# Link to dataset on IRS Site
+eo_xx <- data.table::fread("https://www.irs.gov/pub/irs-soi/eo_xx.csv")
+# Convert EIN to EIN2 format.
+eo_xx <- eo_xx |>
+  dplyr::mutate(
+    EIN2 = format_ein(EIN, to = "n")
+  ) |>
+  dplyr::mutate(
+    EIN2 = format_ein(EIN2, to = "id")
+  ) |>
+  dplyr::pull(EIN2)
+```
+
+These `EIN2` values can now be used to filter out foreign nonprofits from the sample.
+
+:::{.callout-note}
+### format_ein
+The `format_ein` function can be accessed via the `nccsdata` package or replicated using the code chunk below:
+
+```{r, eval=FALSE}
+format_ein <- function(x, to="id") {
+  if(to == "id") {   
+    x <- stringr::str_pad(x, 9, side="left", pad="0")
+    sub1 <- substr(x, 1, 2)
+    sub2 <- substr(x, 3, 9)
+    ein  <- paste0("EIN-", sub1, "-", sub2) 
+    return(ein)
+  }
+  
+  if(to == "n") {  
+    x <- gsub("[^0-9]", "", x)
+    return(x)
+  }
+}
+```
+:::
+
+## Return Type and Tax Year
+
+Next, determine if your sample will include all return types or only a subset and the desired tax years. The `CORE` datasets are already partitioned according to the return type and tax year but the `Efile` datasets are not.
+
+The `RETURN_TYPE` variable in the `Efiler` catalog can be filtered to include only the desired return types, and the `TAX_YEAR` variable can be used to filter by tax year. 
+
+```{r, eval=FALSE}
+# Load Efiler from NCCS Site
+efile_21_p08_raw <- data.table::fread("https://nccs-efile.s3.us-east-1.amazonaws.com/public/v2025/F9-P08-T00-REVENUE-2021.csv")
+# Filter by Return Type and Tax Year
+efile_21_p08 <- efile_21_p08_raw |>
+  dplyr::filter(
+    TAX_YEAR == "2021",
+    RETURN_TYPE == "990" # or 990EZ for Form 990-EZ
+  )
+```
+
+## Organization Type
+
+Next, determine if your sample will include all 501(c) organization types or only a subset. The `BMF_SUBSECTION_CODE` variable in the BMF can be filtered to include only the desired 501(c) types, and the `NCCS_LEVEL_1` variable distinguishes between public charities, private foundations and other nonprofits.
+
+The following code snippet demonstrates how the `BMF_SUBSECTION_CODE` and `NCCS_LEVEL_1` can be used to split a sample into the different organization types.
+
+```{r, eval=FALSE}
+# Load Unified BMF from NCCS Site
+unified_bmf <- data.table::fread("https://nccs-data.urban.org/data/bmf/2020/eo_sample_2020.csv")
+# Create organization type variable
+unified_bmf <- unified_bmf |>
+  dplyr::mutate(
+  "Organization Type" = dplyr::case_when(
+        BMF_SUBSECTION_CODE == 3 & NCCS_LEVEL_1 == "501C3 PRIVATE FOUNDATION" ~ "501(c)(3) Private Foundation",
+        BMF_SUBSECTION_CODE == 3 & NCCS_LEVEL_1 == "501C3 CHARITY" ~ "501(c)(3) Public Charity",
+        BMF_SUBSECTION_CODE < 30 & BMF_SUBSECTION_CODE >= 1 ~ sprintf("501(c)(%s)", BMF_SUBSECTION_CODE),
+        BMF_SUBSECTION_CODE == 40 ~ "501(c)(d)",
+        BMF_SUBSECTION_CODE == 50 ~ "501(c)(e)",
+        BMF_SUBSECTION_CODE == 60 ~ "501(c)(f)",
+        BMF_SUBSECTION_CODE == 70 ~ "501(c)(k)",
+        is.na(BMF_SUBSECTION_CODE) ~ "501(c)(3) Public Charities",
+        .default = "501(c)(3) Public Charity"
+      )
+  )
+```
+
+You can then extract the `EIN2` values associated with the desired organization type for your sample.
+
+## Group, Amended and Partial Returns
+
+Nonprofits can file partial returns, amended returns, or group returns. 
+
+- **Partial Returns**: A nonprofit may file a partial return if it has multiple chapters or affiliates. The `BMF_GROUP_RETURN` variable in the BMF can be used to identify partial returns.
