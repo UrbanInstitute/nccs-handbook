@@ -1,0 +1,258 @@
+---
+bibliography: ../references.bib
+---
+
+# Creating a Sample of Nonprofits
+
+This chapter outlines the steps that go into creating a hypothetical sample of nonprofits for analysis.
+
+## Foreign Nonprofits
+
+First, determine if your sample will include foreign nonprofits. The IRS retains a list of tax-exempt organizations with filing addresses located outside of the United States (including Puerto Rico) on the [BMF Website](https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf).
+
+The following code snippet demonstrates how to extract the EINs associated with these foreign nonprofits.
+
+```{r, eval=FALSE}
+# Link to dataset on IRS Site
+eo_xx <- data.table::fread("https://www.irs.gov/pub/irs-soi/eo_xx.csv")
+# Convert EIN to EIN2 format.
+eo_xx <- eo_xx |>
+  dplyr::mutate(
+    EIN2 = format_ein(EIN, to = "n")
+  ) |>
+  dplyr::mutate(
+    EIN2 = format_ein(EIN2, to = "id")
+  ) |>
+  dplyr::pull(EIN2)
+```
+
+These `EIN2` values can now be used to filter out foreign nonprofits from the sample.
+
+:::{.callout-note}
+### format_ein
+The `format_ein` function can be accessed via the `nccsdata` package or replicated using the code chunk below:
+
+```{r, eval=FALSE}
+format_ein <- function(x, to="id") {
+  if(to == "id") {   
+    x <- stringr::str_pad(x, 9, side="left", pad="0")
+    sub1 <- substr(x, 1, 2)
+    sub2 <- substr(x, 3, 9)
+    ein  <- paste0("EIN-", sub1, "-", sub2) 
+    return(ein)
+  }
+  
+  if(to == "n") {  
+    x <- gsub("[^0-9]", "", x)
+    return(x)
+  }
+}
+```
+:::
+
+## Return Type and Tax Year
+
+Next, determine if your sample will include all return types or only a subset and the desired tax years. The `CORE` datasets are already partitioned according to the return type and tax year but the `Efile` datasets are not.
+
+The `RETURN_TYPE` variable in the `Efiler` catalog can be filtered to include only the desired return types, and the `TAX_YEAR` variable can be used to filter by tax year. 
+
+```{r, eval=FALSE}
+# Load Efiler from NCCS Site
+efile_p08_raw <- data.table::fread("https://nccs-efile.s3.us-east-1.amazonaws.com/public/v2025/F9-P08-T00-REVENUE-2021.csv")
+# Filter by Return Type and Tax Year
+efile_p08 <- efile_p08_raw |>
+  dplyr::filter(
+    TAX_YEAR == "2021",
+    RETURN_TYPE == "990" # or 990EZ for Form 990-EZ
+  )
+```
+
+## Organization Type
+
+Decide if your sample will include all 501(c) organization types or only a subset. The `BMF_SUBSECTION_CODE` variable in the BMF can be filtered to include only the desired 501(c) types, and the `NCCS_LEVEL_1` variable distinguishes between public charities, private foundations and other nonprofits.
+
+The following code snippet demonstrates how the `BMF_SUBSECTION_CODE` and `NCCS_LEVEL_1` can be used to split a sample into the different organization types.
+
+```{r, eval=FALSE}
+# Load Unified BMF from NCCS Site
+unified_bmf <- data.table::fread("https://nccs-data.urban.org/data/bmf/2020/eo_sample_2020.csv")
+# Create organization type variable
+unified_bmf <- unified_bmf |>
+  dplyr::mutate(
+  "Organization Type" = dplyr::case_when(
+        BMF_SUBSECTION_CODE == 3 & NCCS_LEVEL_1 == "501C3 PRIVATE FOUNDATION" ~ "501(c)(3) Private Foundation",
+        BMF_SUBSECTION_CODE == 3 & NCCS_LEVEL_1 == "501C3 CHARITY" ~ "501(c)(3) Public Charity",
+        BMF_SUBSECTION_CODE < 30 & BMF_SUBSECTION_CODE >= 1 ~ sprintf("501(c)(%s)", BMF_SUBSECTION_CODE),
+        BMF_SUBSECTION_CODE == 40 ~ "501(c)(d)",
+        BMF_SUBSECTION_CODE == 50 ~ "501(c)(e)",
+        BMF_SUBSECTION_CODE == 60 ~ "501(c)(f)",
+        BMF_SUBSECTION_CODE == 70 ~ "501(c)(k)",
+        is.na(BMF_SUBSECTION_CODE) ~ "501(c)(3) Public Charities",
+        .default = "501(c)(3) Public Charity"
+      )
+  )
+```
+
+You can then extract the `EIN2` values associated with the desired organization type for your sample.
+
+## Group, Amended, and Partial Returns
+
+Nonprofits can file partial returns, amended returns, or group returns. 
+
+- **Amended Returns**: A nonprofit may file an amended return if the organization
+previously filed a return with the IRS for a tax year and is now filing another return for the same tax year to amend the previously filed return [@irs990instructions].
+- **Group Returns**: A group return is a single return filed by a central organization on behalf of itself and its affiliates. The central organization is responsible for ensuring that the return is complete and accurate and that the affiliates meet the requirements for filing a group return [@irs4573].
+- **Partial Returns**: A partial return typically occurs when an organization changes its accounting period. According to the IRS:
+
+> An organization may change its accounting period by filing a return for the short tax period that results from the change. A "short tax period" is an accounting period of less than 12 months, and usually occurs when an organization starts operations, changes its accounting period or terminates. This can result in an organization submitting multiple returns for the same tax year [@irs_accounting_period].
+
+Typically, partial returns should be included since they represent separate filings for different accounting periods. However, only the most recent or relevant amended returns and group returns may be included from the sample to prevent a double counting of records.
+
+Partial returns can be isolated with the `RETURN_PARTIAL_X` variable.
+
+```{r, eval=FALSE}
+partial_returns <- efile_p08 |>
+  dplyr::filter(RETURN_PARTIAL_X == TRUE)
+```
+
+Group returns can be isolated with the `RETURN_GROUP_X` variable.
+
+```{r, eval=FALSE}
+group_returns <- efile_p08 |>
+  dplyr::filter(RETURN_GROUP_X == TRUE)
+```
+
+Amended returns can be isolated with the `RETURN_AMENDED_X` variable.
+
+```{r, eval=FALSE}
+amended_returns <- efile_p08 |>
+  dplyr::filter(RETURN_AMENDED_X == TRUE)
+```
+
+The `RETURN_TIMESTAMP` variable can be used to select the most recent return for each set of group or amended returns.
+
+```{r, eval=FALSE}
+# Package to convert character timestamp to datetime
+require(lubridate)
+# Isolate most recent group returns
+most_recent_group_returns <- group_returns |>
+  dplyr::mutate(
+    RETURN_TIME_STAMP = lubridate::ymd_hms(RETURN_TIME_STAMP)
+  ) |>
+  group_by(EIN2) |>
+  slice_max(order_by = RETURN_TIME_STAMP)
+# Isolate most recent amended returns`
+most_recent_amended_returns <- amended_returns |>
+  dplyr::mutate(
+    RETURN_TIME_STAMP = lubridate::ymd_hms(RETURN_TIME_STAMP)
+  ) |>
+  group_by(EIN2) |>
+  slice_max(order_by = RETURN_TIME_STAMP)
+```
+
+
+These can then be added to the sample or used to filter out duplicate records.
+
+## Geographic Sampling
+
+If you are interested in a specific geographic area, the Unified BMF contains FIPS codes at the state, county, CBSA, tract and block level for easy filtering. For additional geographic units, you can use the `tigris` package coupled with the `sf` package to perform a spatial join with the BMF's `LATITUDE` and `LONGITUDE` columns.
+
+The following code snippet walks through a spatial join that maps each BMF record to a congressional district.
+
+```{r, eval=FALSE}
+require(tigris)
+require(sf)
+
+# Load Congressional District data (2020)
+cd_tigris <- tigris::congressional_districts()
+cd_transformed <- sf::st_transform(cd_tigris, 4326)
+cd_transformed <- cd_transformed |>
+  dplyr::rename("CENSUS_STATE_FIPS" = STATEFP20)
+
+# Create sf object using LONGITUDE and LATITUDE columns in BMF
+bmf_sample <- unified_bmf |>
+  sf::st_as_sf(coords = c("LONGITUDE", "LATITUDE"), crs = 4326)
+# Map BMF coordinates to Congressional districts
+bmf_sample <- sf::st_join(bmf_sample, cd_transformed, join = sf::st_intersects)
+```
+
+## Subsector Sampling
+
+The NCCS classifies nonprofits into 12 major subsectors based on their `NTEEV2`. The first 3 characters of the `NTEEV2` column in the BMF can be used to filter the sample by subsector.
+
+```{r, eval=FALSE}
+bmf_sample <- bmf_sample |>
+  dplyr::mutate(SUBSECTOR = substr(NTEEV2, 1, 3)) |>
+  dplyr::mutate(
+    SUBSECTOR = dplyr::case_when(
+      SUBSECTOR == "ART" ~ "Arts, Culture, and Humanities",
+      SUBSECTOR == "EDU" ~ "Education (Excluding Universities)",
+      SUBSECTOR == "ENV" ~ "Environment and Animals",
+      SUBSECTOR == "HEL" ~ "Health (Excluding Hospitals)",
+      SUBSECTOR == "HMS" ~ "Human Services",
+      SUBSECTOR == "IFA" ~ "International, Foreign Affairs",
+      SUBSECTOR == "PSB" ~ "Public, Societal Benefit",
+      SUBSECTOR == "REL" ~ "Religion Related",
+      SUBSECTOR == "MMB" ~ "Mutual/Membership Benefit",
+      SUBSECTOR == "UNU" ~ "Unclassified",
+      SUBSECTOR == "UNI" ~ "Universities",
+      SUBSECTOR == "HOS" ~ "Hospitals",
+      .default = "Unclassified"  # Default case for unmatched codes
+    )
+  )
+```
+
+## Size Sampling
+
+NCCS recommends grouping nonprofits into size categories based on the nonprofit's total expenses instead of its total assets.
+
+Expenses often provide a better measure of a nonprofit's operational scale and impact because:
+
+ - They reflect the organization's actual annual activity level and program delivery.
+ - They demonstrate how much money is being deployed toward the nonprofit's mission.
+ - They correlate more directly with staffing levels and organizational complexity.
+ - They're less subject to distortion from endowments or capital holdings.
+ - The IRS and many regulatory frameworks use expense thresholds for reporting requirements.
+
+Assets can be misleading as a size metric because:
+
+ - A nonprofit might have substantial assets (like buildings or endowments) but minimal programming.
+ - Assets can fluctuate significantly based on market conditions.
+ - Some nonprofits with major impact operate with minimal assets (e.g., those focused on service delivery).
+ - Asset values can be concentrated in illiquid holdings (property, equipment).
+ 
+The `F9_01_EXP_TOT_CY` variable from Part I of the Form 990 can be used to group nonprofits into size categories. It can be verified using the `F9_09_EXP_TOT_TOT` variable from Part IX of the Form 990.
+
+The following code snippet demonstrates how to group nonprofits into size categories based on their total expenses.
+
+```{r, eval=FALSE}
+# Load in part I of the form 990
+efile_p01_raw <- data.table::fread("https://nccs-efile.s3.us-east-1.amazonaws.com/public/v2025/F9-P01-T00-SUMMARY-2021.csv")
+
+efile_p01 <- efile_p01_raw |>
+dplyr::mutate(
+    expense_category = dplyr::case_when(
+      F9_01_EXP_TOT_CY < 100000 ~ "Less than $100K",
+      F9_01_EXP_TOT_CY >= 100000 &
+        F9_01_EXP_TOT_CY < 500000 ~ "Between $100K and $499K",
+      F9_01_EXP_TOT_CY >= 500000 &
+        F9_01_EXP_TOT_CY < 1000000 ~ "Between $500K and $999K",
+      F9_01_EXP_TOT_CY >= 1000000 &
+        F9_01_EXP_TOT_CY < 5000000 ~ "Between $1M and $4.99M",
+      F9_01_EXP_TOT_CY >= 5000000 &
+        F9_01_EXP_TOT_CY < 10000000 ~ "Between $5M and $9.99M",
+      F9_01_EXP_TOT_CY >= 10000000 ~ "Greater than $10M",
+      .default = "No Expenses Provided"
+    )
+```
+
+## Arriving at the final sample
+
+After filtering each efile dataset and the BMF to arrive at your final sample, you can perform a join to merge the datasets together. The `EIN2` and `OBJECTID` variables can be used as the key to merge the datasets. Additionaly `tidylog` can be used to track the number of rows before and after each merge.
+
+```{r, eval=FALSE}
+final_sample <- efile_p08 |>
+  tidylog::left_join(efile_p01, by = join_by("EIN2" == "EIN2",
+                                              "OBJECTID" == "OBJECTID")) |>
+  tidylog::left_join(bmf_sample, by = join_by("EIN2" == "EIN2"))
+```
